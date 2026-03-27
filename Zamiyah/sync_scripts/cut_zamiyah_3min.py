@@ -94,6 +94,11 @@ cam_a_url = f"file://localhost{quote(os.path.join(BASE, 'Footage/Cam A/C8826.MP4
 cam_b_url = f"file://localhost{quote(os.path.join(BASE, 'Footage/Cam B/C8890.MP4'))}"
 tascam_url = f"file://localhost{quote(os.path.join(BASE, 'Audio/TASCAM_1087S34.wav'))}"
 
+# Total file durations in frames (from ffprobe)
+CAM_A_TOTAL_F = 44820   # 1493.993s
+CAM_B_TOTAL_F = 45345   # 1511.510s
+TASCAM_TOTAL_F = 42879  # 1429.296s
+
 # Pre-compute all clips — straight timestamps, no processing
 tl = 0
 clips = []
@@ -152,7 +157,7 @@ L.append('          <name>V1: Cam A</name>')
 # File definition clipitem (first clip defines the file)
 L.append('          <clipitem id="v1_filedef">')
 L.append('            <name>C8826.MP4</name>')
-L.append(f'            <duration>{clips[0]["dur_f"]}</duration>')
+L.append(f'            <duration>{CAM_A_TOTAL_F}</duration>')
 L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
 L.append(f'            <start>{clips[0]["tl_s"]}</start><end>{clips[0]["tl_e"]}</end>')
 L.append(f'            <in>{clips[0]["in_a"]}</in><out>{clips[0]["out_a"]}</out>')
@@ -170,7 +175,7 @@ L.append('          </clipitem>')
 for c in clips[1:]:
     L.append(f'          <clipitem id="v1_{c["i"]}">')
     L.append('            <name>C8826.MP4</name>')
-    L.append(f'            <duration>{c["dur_f"]}</duration>')
+    L.append(f'            <duration>{CAM_A_TOTAL_F}</duration>')
     L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
     L.append(f'            <start>{c["tl_s"]}</start><end>{c["tl_e"]}</end>')
     L.append(f'            <in>{c["in_a"]}</in><out>{c["out_a"]}</out>')
@@ -188,7 +193,7 @@ if b_clips:
     bc = b_clips[0]
     L.append(f'          <clipitem id="v2_{bc["i"]}">')
     L.append('            <name>C8890.MP4</name>')
-    L.append(f'            <duration>{bc["dur_f"]}</duration>')
+    L.append(f'            <duration>{CAM_B_TOTAL_F}</duration>')
     L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
     L.append(f'            <start>{bc["tl_s"]}</start><end>{bc["tl_e"]}</end>')
     L.append(f'            <in>{bc["in_b"]}</in><out>{bc["out_b"]}</out>')
@@ -205,7 +210,7 @@ if b_clips:
     for bc in b_clips[1:]:
         L.append(f'          <clipitem id="v2_{bc["i"]}">')
         L.append('            <name>C8890.MP4</name>')
-        L.append(f'            <duration>{bc["dur_f"]}</duration>')
+        L.append(f'            <duration>{CAM_B_TOTAL_F}</duration>')
         L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
         L.append(f'            <start>{bc["tl_s"]}</start><end>{bc["tl_e"]}</end>')
         L.append(f'            <in>{bc["in_b"]}</in><out>{bc["out_b"]}</out>')
@@ -225,7 +230,7 @@ L.append('          <name>A1: Cam A Scratch</name>')
 for c in clips:
     L.append(f'          <clipitem id="a1_{c["i"]}">')
     L.append('            <name>C8826.MP4</name>')
-    L.append(f'            <duration>{c["dur_f"]}</duration>')
+    L.append(f'            <duration>{CAM_A_TOTAL_F}</duration>')
     L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
     L.append(f'            <start>{c["tl_s"]}</start><end>{c["tl_e"]}</end>')
     L.append(f'            <in>{c["in_a"]}</in><out>{c["out_a"]}</out>')
@@ -241,7 +246,7 @@ L.append('          <name>A2: Cam B Scratch</name>')
 for c in clips:
     L.append(f'          <clipitem id="a2_{c["i"]}">')
     L.append('            <name>C8890.MP4</name>')
-    L.append(f'            <duration>{c["dur_f"]}</duration>')
+    L.append(f'            <duration>{CAM_B_TOTAL_F}</duration>')
     L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
     L.append(f'            <start>{c["tl_s"]}</start><end>{c["tl_e"]}</end>')
     L.append(f'            <in>{c["in_b"]}</in><out>{c["out_b"]}</out>')
@@ -257,7 +262,7 @@ L.append('          <name>A3: TASCAM (Master)</name>')
 # First clip defines the file
 L.append(f'          <clipitem id="a3_0">')
 L.append('            <name>TASCAM_1087S34.wav</name>')
-L.append(f'            <duration>{clips[0]["dur_f"]}</duration>')
+L.append(f'            <duration>{TASCAM_TOTAL_F}</duration>')
 L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
 L.append(f'            <start>{clips[0]["tl_s"]}</start><end>{clips[0]["tl_e"]}</end>')
 L.append(f'            <in>{clips[0]["in_t"]}</in><out>{clips[0]["out_t"]}</out>')
@@ -271,7 +276,7 @@ L.append('          </clipitem>')
 for c in clips[1:]:
     L.append(f'          <clipitem id="a3_{c["i"]}">')
     L.append('            <name>TASCAM_1087S34.wav</name>')
-    L.append(f'            <duration>{c["dur_f"]}</duration>')
+    L.append(f'            <duration>{TASCAM_TOTAL_F}</duration>')
     L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
     L.append(f'            <start>{c["tl_s"]}</start><end>{c["tl_e"]}</end>')
     L.append(f'            <in>{c["in_t"]}</in><out>{c["out_t"]}</out>')
@@ -286,7 +291,7 @@ L.append('  </sequence>')
 L.append('</xmeml>')
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v6.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v7.xml")
 with open(out_path, "w") as fout:
     fout.write("\n".join(L))
 
