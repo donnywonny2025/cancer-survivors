@@ -71,6 +71,23 @@ Every survivor story follows this arc. Each section MUST be represented:
 - Moments with **natural warmth** (smiles, laughs)
 - Complete thoughts — never cut mid-sentence
 
+### Sentence Completion Check (AUTOMATED) ⚠️ MANDATORY
+Before finalizing the EDIT list, scan the last word of EVERY segment in the 
+WhisperX transcript. The out-point must land AFTER a completed thought.
+
+**How to check**: Look at the last word within each segment's time range.
+- Ends with `.` `!` `?` → ✅ Thought is complete
+- Ends with `,` → ⚠️ She's mid-list or mid-clause. EXTEND the out-point 
+  to the next period/sentence end.
+- Ends with no punctuation → ⚠️ Likely mid-phrase. Extend or verify.
+- Last word is a connector (`and`, `but`, `so`, `because`) → ❌ Definitely 
+  cut mid-thought. Must extend.
+
+**The logic**: You have the transcript. You can see what comes after the 
+out-point. If it's 2-3 more words that finish the sentence, extend. If it's 
+the start of a completely new topic, the cut is probably fine even on a comma — 
+she just trailed off. Use judgment, but CHECK every time.
+
 ### Avoid:
 - Repeating herself trying to find the right word
 - Moments where she seems uncertain unless that vulnerability is the point
