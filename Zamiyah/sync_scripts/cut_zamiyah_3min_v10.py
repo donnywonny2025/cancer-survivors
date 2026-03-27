@@ -58,7 +58,7 @@ EDIT = [
     (1303.394, 1312.945, "NURSE: love so dearly had cancer", "B"),       # Trimmed: skip 'So'
     (1312.374, 1329.527, "NURSE: somebody understands you", "A"),        # Connection
     # CUT: NURSE3 — "appreciate her" covered by NURSE2
-    (674.851, 699.382, "CLOSE: stay confident be yourself", "A"),        # Trimmed: skip 'Well,'
+    (680.163, 695.779, "CLOSE: stay confident be yourself", "A"),        # Trimmed: skip 'Well,' + interviewer Q + 'Okay.'
     (717.756, 720.009, "CLOSE: your journey is your journey", "A"),      # Ownership
     (721.120, 725.236, "CLOSE: break through anything", "B"),            # Final word
 ]
@@ -332,7 +332,7 @@ if errors:
     sys.exit(1)
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v12.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v13.xml")
 with open(out_path, "w") as fout:
     fout.write(xml_str)
 
