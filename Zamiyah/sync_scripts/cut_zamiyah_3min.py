@@ -2,13 +2,18 @@
 """
 Zamiyah 3-Minute Narrative — Word-Level Precision Cut
 Uses the PROVEN v34.2 Golden Layout XML pattern (L.append).
-No f-string XML templates. No list comprehensions. No shortcuts.
+Onset detector refines all Whisper timestamps to true speech start/end.
 """
 
-import os
+import os, sys
 from urllib.parse import quote
 
+# Import onset detector from framework
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../../_multicam_framework'))
+from onset_detector import find_onset, find_offset
+
 BASE = "/Volumes/WORK 2TB/WORK 2026/Bronson Cancer Equity Project/Cancer Survivors/Zamiyah"
+TASCAM = os.path.join(BASE, "Audio/TASCAM_1087S34.wav")
 CAM_A_OFFSET = 63.2819
 CAM_B_OFFSET = 75.7851
 FPS = 30
@@ -53,31 +58,41 @@ EDIT = [
 
 # ============================================================
 # Build using the PROVEN v34.2 L.append pattern
+# Onset detector corrects all Whisper timestamps first
 # ============================================================
 
 cam_a_url = f"file://localhost{quote(os.path.join(BASE, 'Footage/Cam A/C8826.MP4'))}"
 cam_b_url = f"file://localhost{quote(os.path.join(BASE, 'Footage/Cam B/C8890.MP4'))}"
 tascam_url = f"file://localhost{quote(os.path.join(BASE, 'Audio/TASCAM_1087S34.wav'))}"
 
-# Pre-compute all clips
+# Pre-compute all clips with onset-corrected timestamps
+print("🔍 Running onset detection on all cut points...")
 tl = 0
 clips = []
 for i, (start, end, label, cam) in enumerate(EDIT):
-    dur_f = f(end - start)
+    # Correct Whisper timestamps using audio energy analysis
+    true_start = find_onset(TASCAM, start)
+    true_end = find_offset(TASCAM, end)
+    
+    dur_f = f(true_end - true_start)
     tl_s = tl
     tl_e = tl + dur_f
-    in_a = f(start + CAM_A_OFFSET)
-    out_a = f(end + CAM_A_OFFSET)
-    in_b = f(start + CAM_B_OFFSET)
-    out_b = f(end + CAM_B_OFFSET)
-    in_t = f(start)
-    out_t = f(end)
+    in_a = f(true_start + CAM_A_OFFSET)
+    out_a = f(true_end + CAM_A_OFFSET)
+    in_b = f(true_start + CAM_B_OFFSET)
+    out_b = f(true_end + CAM_B_OFFSET)
+    in_t = f(true_start)
+    out_t = f(true_end)
+    
+    correction_ms = (start - true_start) * 1000
     clips.append({
         'i': i, 'tl_s': tl_s, 'tl_e': tl_e, 'dur_f': dur_f,
         'in_a': in_a, 'out_a': out_a,
         'in_b': in_b, 'out_b': out_b,
         'in_t': in_t, 'out_t': out_t,
-        'cam': cam, 'label': label
+        'cam': cam, 'label': label,
+        'onset_correction_ms': correction_ms,
+        'true_start': true_start, 'true_end': true_end
     })
     tl = tl_e
 
@@ -193,6 +208,7 @@ for c in clips:
     L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
     L.append(f'            <start>{c["tl_s"]}</start><end>{c["tl_e"]}</end>')
     L.append(f'            <in>{c["in_a"]}</in><out>{c["out_a"]}</out>')
+    L.append('            <enabled>FALSE</enabled>')
     L.append('            <file id="f_a"/>')
     L.append('            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>')
     L.append('          </clipitem>')
@@ -208,6 +224,7 @@ for c in clips:
     L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
     L.append(f'            <start>{c["tl_s"]}</start><end>{c["tl_e"]}</end>')
     L.append(f'            <in>{c["in_b"]}</in><out>{c["out_b"]}</out>')
+    L.append('            <enabled>FALSE</enabled>')
     L.append('            <file id="f_b"/>')
     L.append('            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>')
     L.append('          </clipitem>')
@@ -248,7 +265,7 @@ L.append('  </sequence>')
 L.append('</xmeml>')
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_Edit.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v3.xml")
 with open(out_path, "w") as fout:
     fout.write("\n".join(L))
 
@@ -259,11 +276,12 @@ print(f"   V1: {len(clips)} Cam A clips | V2: {len(b_clips)} Cam B switches")
 print(f"   → {out_path}")
 
 # EDL
-print(f"\n{'='*70}")
-print("EDIT DECISION LIST")
-print(f"{'='*70}")
+print(f"\n{'='*80}")
+print("EDIT DECISION LIST (with onset corrections)")
+print(f"{'='*80}")
 for c in clips:
-    ms, ss = divmod(c['in_t'] / FPS, 60)
-    me, se = divmod(c['out_t'] / FPS, 60)
+    ms, ss = divmod(c['true_start'], 60)
+    me, se = divmod(c['true_end'], 60)
     mt, st = divmod(c['tl_s'] / FPS, 60)
-    print(f"  {int(mt):02d}:{st:04.1f} | SRC [{int(ms):02d}:{ss:04.1f}-{int(me):02d}:{se:04.1f}] {c['dur_f']/FPS:5.1f}s | Cam {c['cam']} | {c['label']}")
+    corr = c['onset_correction_ms']
+    print(f"  {int(mt):02d}:{st:04.1f} | SRC [{int(ms):02d}:{ss:04.1f}-{int(me):02d}:{se:04.1f}] {c['dur_f']/FPS:5.1f}s | Cam {c['cam']} | onset:{corr:+.0f}ms | {c['label']}")

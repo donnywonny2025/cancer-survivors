@@ -26,8 +26,22 @@
 - **Vary the rhythm:** Don't cut at the same interval every time
 - **Let long stories breathe:** If someone is telling a story, don't cut away from them just because it's been 30 seconds
 
+## Audio Track Rules
+- **A1 (Cam A scratch) = MUTED** — reference only, never the active audio
+- **A2 (Cam B scratch) = MUTED** — reference only, never the active audio
+- **A3 (TASCAM master) = UNMUTED** — this is the real audio, always active
+- This is the professional standard. Scratch audio exists for sync verification only.
+
+## XML Generation Rules
+- **ALWAYS use the L.append() line-by-line pattern** from `gen_multicam_v34_2.py`
+- **NEVER use helper functions with positional arguments** for XMEML output (see BUG-001)
+- **Multiple sequences** can go in one XML under the same `<xmeml>` root tag
+- Bundle Golden Layout + selects + narrative cuts in one XML for rough edit delivery
+- File definitions go in the FIRST clipitem with inline `<file>` block; subsequent clips use `<file id="..."/>`
+
 ## Common Mistakes
 - Cutting too late (showing the listener when the speaker starts talking)
 - Never showing reactions (feels like a slide show)
 - Cutting mid-sentence when the same person is still talking
 - Using wide shot too much (podcast = intimacy = close-ups)
+- Using shortcut XML generators instead of the proven L.append pattern
