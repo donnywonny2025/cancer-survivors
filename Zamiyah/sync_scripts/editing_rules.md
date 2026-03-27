@@ -1,4 +1,4 @@
-# Multicam Podcast Editing Rules
+# Multicam Narrative Editing Rules
 
 ## The Cardinal Rule
 **If someone is talking, show them.** Even a 1-second interjection gets a cut. The viewer needs to see who's speaking.
@@ -26,22 +26,73 @@
 - **Vary the rhythm:** Don't cut at the same interval every time
 - **Let long stories breathe:** If someone is telling a story, don't cut away from them just because it's been 30 seconds
 
+---
+
 ## Audio Track Rules
-- **A1 (Cam A scratch) = MUTED** — reference only, never the active audio
-- **A2 (Cam B scratch) = MUTED** — reference only, never the active audio
-- **A3 (TASCAM master) = UNMUTED** — this is the real audio, always active
-- This is the professional standard. Scratch audio exists for sync verification only.
+- **A1 (Cam A scratch) = DISABLED** — `<enabled>FALSE</enabled>`, reference only
+- **A2 (Cam B scratch) = DISABLED** — `<enabled>FALSE</enabled>`, reference only
+- **A3 (TASCAM master) = ENABLED** — this is the real audio, always active
+- Scratch audio exists for sync verification only.
 
-## XML Generation Rules
-- **ALWAYS use the L.append() line-by-line pattern** from `gen_multicam_v34_2.py`
-- **NEVER use helper functions with positional arguments** for XMEML output (see BUG-001)
-- **Multiple sequences** can go in one XML under the same `<xmeml>` root tag
-- Bundle Golden Layout + selects + narrative cuts in one XML for rough edit delivery
-- File definitions go in the FIRST clipitem with inline `<file>` block; subsequent clips use `<file id="..."/>`
+## Video Track Rules
+- **V1: Cam A** — ALL segments present. Enabled when cam='A', disabled when cam='B'
+- **V2: Cam B** — ALL segments present. Enabled when cam='B', disabled when cam='A'
+- **Both tracks always have all clips.** Toggle `<enabled>` to switch cameras.
+- Editor can re-enable any disabled clip to change the camera angle.
 
-## Common Mistakes
-- Cutting too late (showing the listener when the speaker starts talking)
-- Never showing reactions (feels like a slide show)
-- Cutting mid-sentence when the same person is still talking
-- Using wide shot too much (podcast = intimacy = close-ups)
-- Using shortcut XML generators instead of the proven L.append pattern
+## Color Labels (Premiere)
+- **V1 / A1 (Cam A)** = Cerulean (blue)
+- **V2 / A2 (Cam B)** = Mango (orange)
+- **A3 (TASCAM)** = Forest (green)
+- Matching colors across video → audio makes tracks easy to identify.
+- Section/arc colors available in `ARC_COLORS` dict for future use.
+
+---
+
+## XML Generation Rules (XMEML v4)
+
+### Structure
+- **ALWAYS use the `L.append()` line-by-line pattern** — no helper functions, no shortcuts
+- File definitions go in the FIRST clipitem with inline `<file>` block
+- Subsequent clips reference with `<file id="..."/>`
+- Multiple sequences can go under one `<xmeml>` root tag
+
+### CRITICAL: Frame Rate (NTSC)
+- **NEVER multiply seconds × 30** for frame numbers
+- **ALWAYS use `round(seconds * 30000 / 1001)`** — this is 29.97fps NTSC
+- Error: 30fps math drifts ~1ms/sec → **1.4 seconds at 23 minutes**
+- Use `ntsc_frame()` from `media_probe.py`
+
+### CRITICAL: Clipitem `<duration>`
+- **`<duration>` = total source file duration in frames, NOT clip segment duration**
+- Cam A total: `int(round(1493.993 * 30000 / 1001))` = 44775 frames
+- Cam B total: `int(round(1511.510 * 30000 / 1001))` = 45300 frames
+- TASCAM total: `int(round(1429.296 * 30000 / 1001))` = 42836 frames
+
+### CRITICAL: Audio Bit Depth
+- **ALWAYS probe source files with `ffprobe`** before generating XML
+- TASCAM is **24-bit** (`pcm_s24le`), use `<depth>24</depth>`
+- Camera audio is **16-bit** (`pcm_s16be`), use `<depth>16</depth>`
+- Run `media_probe.py` preflight to auto-detect
+
+### Cut Point Timestamps
+- Source: WhisperX forced alignment (`Master_S34_Transcript_WhisperX.json`)
+- In-point = first_word_start − 150ms
+- Out-point = last_word_end + 100ms
+- NO onset detector — WhisperX phoneme boundaries are ground truth
+
+---
+
+## Pre-Flight Checklist
+Before generating ANY XML, run:
+```
+python3 _multicam_framework/media_probe.py <video_files> <audio_files>
+```
+It validates: frame rates match, bit depth detected, NTSC consistency, sample rates, resolutions.
+
+## Common Mistakes (see MISTAKES.md for details)
+1. Using helper functions for XML → broken XMEML (BUG-001)
+2. Wrong audio bit depth → misinterpreted frame positions (BUG-002)
+3. Energy-based onset detection → unreliable cut points (BUG-003)
+4. Segment duration in `<duration>` → Premiere confused (BUG-004)
+5. 30fps instead of 29.97fps → cumulative drift (BUG-005)
