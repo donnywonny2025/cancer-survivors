@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xmeml>
+<xmeml version="4">
+  <sequence>
+    <name>Zamiyah Intelligence Cut v35 (FINAL)</name>
+    <rate><timebase>30</timebase><ntsc>TRUE</ntsc><displayformat>DF</displayformat></rate>
+    <media>
+      <video>
+        <format><samplecharacteristics>
+          <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+          <width>3840</width><height>2160</height>
+        </samplecharacteristics></format>
+        <track>
+          <name>V1: Intel Cut (A/B Stack)</name>
+          <clipitem id="cut_0">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>0</start><end>360</end>
+            <in>1897</in><out>2257</out>
+            <file id="f_HOST_0">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_1">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>360</start><end>450</end>
+            <in>2634</in><out>2724</out>
+            <file id="f_GUEST_1">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_2">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>450</start><end>780</end>
+            <in>2347</in><out>2677</out>
+            <file id="f_HOST_2">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_3">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>780</start><end>900</end>
+            <in>3054</in><out>3174</out>
+            <file id="f_GUEST_3">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_4">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>900</start><end>960</end>
+            <in>2797</in><out>2857</out>
+            <file id="f_HOST_4">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_5">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>960</start><end>1050</end>
+            <in>3234</in><out>3324</out>
+            <file id="f_GUEST_5">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_6">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>1050</start><end>1080</end>
+            <in>2947</in><out>2977</out>
+            <file id="f_HOST_6">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_7">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>1080</start><end>2070</end>
+            <in>3354</in><out>4344</out>
+            <file id="f_GUEST_7">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_8">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>2070</start><end>2130</end>
+            <in>3967</in><out>4027</out>
+            <file id="f_HOST_8">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_9">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>2130</start><end>2220</end>
+            <in>4404</in><out>4494</out>
+            <file id="f_GUEST_9">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_10">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>2220</start><end>2340</end>
+            <in>4117</in><out>4237</out>
+            <file id="f_HOST_10">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_11">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>2340</start><end>2430</end>
+            <in>4614</in><out>4704</out>
+            <file id="f_GUEST_11">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_12">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>2430</start><end>2490</end>
+            <in>4327</in><out>4387</out>
+            <file id="f_HOST_12">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_13">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>2490</start><end>3300</end>
+            <in>4764</in><out>5574</out>
+            <file id="f_GUEST_13">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_14">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>3300</start><end>3750</end>
+            <in>5197</in><out>5647</out>
+            <file id="f_HOST_14">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_15">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>3750</start><end>4770</end>
+            <in>6024</in><out>7044</out>
+            <file id="f_GUEST_15">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_16">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>4770</start><end>5250</end>
+            <in>6667</in><out>7147</out>
+            <file id="f_HOST_16">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_17">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>5250</start><end>6690</end>
+            <in>7524</in><out>8964</out>
+            <file id="f_GUEST_17">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_18">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>6690</start><end>6960</end>
+            <in>8587</in><out>8857</out>
+            <file id="f_HOST_18">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_19">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>6960</start><end>7170</end>
+            <in>9234</in><out>9444</out>
+            <file id="f_GUEST_19">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_20">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>7170</start><end>7260</end>
+            <in>9067</in><out>9157</out>
+            <file id="f_HOST_20">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_21">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>7260</start><end>9000</end>
+            <in>9534</in><out>11274</out>
+            <file id="f_GUEST_21">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_22">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>9000</start><end>9210</end>
+            <in>10897</in><out>11107</out>
+            <file id="f_HOST_22">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_23">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>9210</start><end>9300</end>
+            <in>11484</in><out>11574</out>
+            <file id="f_GUEST_23">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_24">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>9300</start><end>9480</end>
+            <in>11197</in><out>11377</out>
+            <file id="f_HOST_24">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_25">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>9480</start><end>10980</end>
+            <in>11754</in><out>13254</out>
+            <file id="f_GUEST_25">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_26">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>10980</start><end>11010</end>
+            <in>12877</in><out>12907</out>
+            <file id="f_HOST_26">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_27">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>11010</start><end>11370</end>
+            <in>13284</in><out>13644</out>
+            <file id="f_GUEST_27">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_28">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>11370</start><end>11610</end>
+            <in>13267</in><out>13507</out>
+            <file id="f_HOST_28">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_29">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>11610</start><end>13920</end>
+            <in>13884</in><out>16194</out>
+            <file id="f_GUEST_29">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_30">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>13920</start><end>14160</end>
+            <in>15817</in><out>16057</out>
+            <file id="f_HOST_30">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_31">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>14160</start><end>14400</end>
+            <in>16434</in><out>16674</out>
+            <file id="f_GUEST_31">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_32">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>14400</start><end>14790</end>
+            <in>16297</in><out>16687</out>
+            <file id="f_HOST_32">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_33">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>14790</start><end>17160</end>
+            <in>17064</in><out>19434</out>
+            <file id="f_GUEST_33">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_34">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>17160</start><end>17310</end>
+            <in>19057</in><out>19207</out>
+            <file id="f_HOST_34">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_35">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>17310</start><end>19140</end>
+            <in>19584</in><out>21414</out>
+            <file id="f_GUEST_35">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_36">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>19140</start><end>19170</end>
+            <in>21037</in><out>21067</out>
+            <file id="f_HOST_36">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_37">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>19170</start><end>22710</end>
+            <in>21444</in><out>24984</out>
+            <file id="f_GUEST_37">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_38">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>22740</start><end>22770</end>
+            <in>24637</in><out>24667</out>
+            <file id="f_HOST_38">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_39">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>22770</start><end>24300</end>
+            <in>25044</in><out>26574</out>
+            <file id="f_GUEST_39">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_40">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>24330</start><end>24360</end>
+            <in>26227</in><out>26257</out>
+            <file id="f_HOST_40">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_41">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>24360</start><end>24450</end>
+            <in>26634</in><out>26724</out>
+            <file id="f_GUEST_41">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_42">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>24450</start><end>24570</end>
+            <in>26347</in><out>26467</out>
+            <file id="f_HOST_42">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_43">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>24570</start><end>26070</end>
+            <in>26844</in><out>28344</out>
+            <file id="f_GUEST_43">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_44">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>26070</start><end>26190</end>
+            <in>27967</in><out>28087</out>
+            <file id="f_HOST_44">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_45">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>26190</start><end>28020</end>
+            <in>28464</in><out>30294</out>
+            <file id="f_GUEST_45">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_46">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>28020</start><end>28080</end>
+            <in>29917</in><out>29977</out>
+            <file id="f_HOST_46">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_47">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>28080</start><end>29040</end>
+            <in>30354</in><out>31314</out>
+            <file id="f_GUEST_47">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_48">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>29040</start><end>29550</end>
+            <in>30937</in><out>31447</out>
+            <file id="f_HOST_48">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_49">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>29820</start><end>29940</end>
+            <in>32094</in><out>32214</out>
+            <file id="f_GUEST_49">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_50">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>29940</start><end>30390</end>
+            <in>31837</in><out>32287</out>
+            <file id="f_HOST_50">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_51">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>30420</start><end>32700</end>
+            <in>32694</in><out>34974</out>
+            <file id="f_GUEST_51">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_52">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>32850</start><end>33120</end>
+            <in>34747</in><out>35017</out>
+            <file id="f_HOST_52">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_53">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>33120</start><end>33240</end>
+            <in>35394</in><out>35514</out>
+            <file id="f_GUEST_53">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_54">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>33300</start><end>34410</end>
+            <in>35197</in><out>36307</out>
+            <file id="f_HOST_54">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_55">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>34500</start><end>35370</end>
+            <in>36774</in><out>37644</out>
+            <file id="f_GUEST_55">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_56">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>35370</start><end>35430</end>
+            <in>37267</in><out>37327</out>
+            <file id="f_HOST_56">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_57">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>35430</start><end>35580</end>
+            <in>37704</in><out>37854</out>
+            <file id="f_GUEST_57">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_58">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>35580</start><end>35760</end>
+            <in>37477</in><out>37657</out>
+            <file id="f_HOST_58">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_59">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>35790</start><end>36240</end>
+            <in>38064</in><out>38514</out>
+            <file id="f_GUEST_59">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_60">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>36330</start><end>36390</end>
+            <in>38227</in><out>38287</out>
+            <file id="f_HOST_60">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_61">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>36390</start><end>36600</end>
+            <in>38664</in><out>38874</out>
+            <file id="f_GUEST_61">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_62">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>36600</start><end>36690</end>
+            <in>38497</in><out>38587</out>
+            <file id="f_HOST_62">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_63">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>36690</start><end>36780</end>
+            <in>38964</in><out>39054</out>
+            <file id="f_GUEST_63">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_64">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>36780</start><end>37080</end>
+            <in>38677</in><out>38977</out>
+            <file id="f_HOST_64">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_65">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>37080</start><end>38549</end>
+            <in>39354</in><out>40823</out>
+            <file id="f_GUEST_65">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_66">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>38549</start><end>38753</end>
+            <in>40446</in><out>40650</out>
+            <file id="f_HOST_66">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_67">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>38753</start><end>38875</end>
+            <in>41027</in><out>41149</out>
+            <file id="f_GUEST_67">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_68">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>38875</start><end>39038</end>
+            <in>40772</in><out>40935</out>
+            <file id="f_HOST_68">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_69">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>39038</start><end>40663</end>
+            <in>41312</in><out>42937</out>
+            <file id="f_GUEST_69">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_70">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>40663</start><end>40750</end>
+            <in>42560</in><out>42647</out>
+            <file id="f_HOST_70">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_71">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>40771</start><end>41170</end>
+            <in>43045</in><out>43444</out>
+            <file id="f_GUEST_71">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_72">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>41170</start><end>41376</end>
+            <in>43067</in><out>43273</out>
+            <file id="f_HOST_72">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_73">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>41376</start><end>41582</end>
+            <in>43650</in><out>43856</out>
+            <file id="f_GUEST_73">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_74">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>41582</start><end>41899</end>
+            <in>43479</in><out>43796</out>
+            <file id="f_HOST_74">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_75">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>42134</start><end>42286</end>
+            <in>44408</in><out>44560</out>
+            <file id="f_GUEST_75">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_76">
+            <name>C8826_CamA</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>42360</start><end>42418</end>
+            <in>44257</in><out>44315</out>
+            <file id="f_HOST_76">
+              <name>C8826_CamA</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+          <clipitem id="cut_77">
+            <name>C8890_CamB</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>42482</start><end>42900</end>
+            <in>44756</in><out>45174</out>
+            <file id="f_GUEST_77">
+              <name>C8890_CamB</name>
+              <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+              <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+        </track>
+      </video>
+      <audio>
+        <numchannels>2</numchannels>
+        <track>
+          <name>A1: TASCAM Master (Mono L)</name>
+          <clipitem id="a1_t">
+            <name>TASCAM_1087S34.wav</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>0</start><end>42836</end>
+            <in>0</in><out>42836</out>
+            <file id="f_t">
+              <name>TASCAM_1087S34.wav</name>
+%20%20%20%20%20%20%20%20%20%20%20%20%20%20<pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+              <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio></media>
+            </file>
+            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
+          </clipitem>
+        </track>
+      </audio>
+    </media>
+  </sequence>
+</xmeml>

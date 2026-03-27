@@ -1,0 +1,11 @@
+{
+    "cam_a": "Footage/Cam A/C8826.MP4",
+    "cam_b": "Footage/Cam B/C8890.MP4",
+    "tascam": "Audio/TASCAM_1087S34.wav",
+    "sequence_settings": {
+        "width": 3840,
+        "height": 2160,
+        "timebase": 30,
+        "is_df": true
+    }
+}

@@ -1,0 +1,2305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmeml version="4">
+<sequence id="Zamiyah_Intelligent_Cut">
+    <name>Zamiyah_INTELLIGENT_NARRATIVE_V1</name>
+    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+    <media>
+        <video>
+            <format><samplecharacteristics>
+                <width>3840</width><height>2160</height>
+                <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                <dropframe>TRUE</dropframe>
+            </samplecharacteristics></format>
+            <track>
+                <clipitem id="clip_0_0">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>0</start>
+                    <end>360</end>
+                    <in>-1898</in>
+                    <out>-1538</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_360">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>360</start>
+                    <end>450</end>
+                    <in>-1538</in>
+                    <out>-1448</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_450">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>450</start>
+                    <end>1080</end>
+                    <in>-1448</in>
+                    <out>-818</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_1080">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>1080</start>
+                    <end>1920</end>
+                    <in>-818</in>
+                    <out>22</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_1920">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>1920</start>
+                    <end>2220</end>
+                    <in>22</in>
+                    <out>322</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_2220">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>2220</start>
+                    <end>3030</end>
+                    <in>322</in>
+                    <out>1132</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_3030">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>3030</start>
+                    <end>3750</end>
+                    <in>1132</in>
+                    <out>1852</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_3750">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>3750</start>
+                    <end>3960</end>
+                    <in>1852</in>
+                    <out>2062</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_3960">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>3960</start>
+                    <end>4050</end>
+                    <in>2062</in>
+                    <out>2152</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_4050">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>4050</start>
+                    <end>4590</end>
+                    <in>2152</in>
+                    <out>2692</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_4590">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>4590</start>
+                    <end>5490</end>
+                    <in>2692</in>
+                    <out>3592</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_5490">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>5490</start>
+                    <end>5820</end>
+                    <in>3592</in>
+                    <out>3922</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_5820">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>5820</start>
+                    <end>6030</end>
+                    <in>3922</in>
+                    <out>4132</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_6030">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>6030</start>
+                    <end>6690</end>
+                    <in>4132</in>
+                    <out>4792</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_6690">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>6690</start>
+                    <end>6900</end>
+                    <in>4792</in>
+                    <out>5002</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_6900">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>6900</start>
+                    <end>7170</end>
+                    <in>5002</in>
+                    <out>5272</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_7170">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>7170</start>
+                    <end>7440</end>
+                    <in>5272</in>
+                    <out>5542</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_7440">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>7440</start>
+                    <end>8070</end>
+                    <in>5542</in>
+                    <out>6172</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_8070">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>8070</start>
+                    <end>8310</end>
+                    <in>6172</in>
+                    <out>6412</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_8310">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>8310</start>
+                    <end>8520</end>
+                    <in>6412</in>
+                    <out>6622</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_8520">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>8520</start>
+                    <end>8610</end>
+                    <in>6622</in>
+                    <out>6712</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_8610">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>8610</start>
+                    <end>9300</end>
+                    <in>6712</in>
+                    <out>7402</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_9300">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>9300</start>
+                    <end>9780</end>
+                    <in>7402</in>
+                    <out>7882</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_9780">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>9780</start>
+                    <end>10500</end>
+                    <in>7882</in>
+                    <out>8602</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_10500">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>10500</start>
+                    <end>11160</end>
+                    <in>8602</in>
+                    <out>9262</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_11160">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>11160</start>
+                    <end>11370</end>
+                    <in>9262</in>
+                    <out>9472</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_11370">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>11370</start>
+                    <end>11610</end>
+                    <in>9472</in>
+                    <out>9712</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_11610">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>11610</start>
+                    <end>11880</end>
+                    <in>9712</in>
+                    <out>9982</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_11880">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>11880</start>
+                    <end>12000</end>
+                    <in>9982</in>
+                    <out>10102</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_12000">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>12000</start>
+                    <end>14070</end>
+                    <in>10102</in>
+                    <out>12172</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_14070">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>14070</start>
+                    <end>14160</end>
+                    <in>12172</in>
+                    <out>12262</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_14160">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>14160</start>
+                    <end>14400</end>
+                    <in>12262</in>
+                    <out>12502</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_14400">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>14400</start>
+                    <end>15540</end>
+                    <in>12502</in>
+                    <out>13642</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_15540">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>15540</start>
+                    <end>17160</end>
+                    <in>13642</in>
+                    <out>15262</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_17160">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>17160</start>
+                    <end>17580</end>
+                    <in>15262</in>
+                    <out>15682</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_17580">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>17580</start>
+                    <end>18450</end>
+                    <in>15682</in>
+                    <out>16552</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_18450">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>18450</start>
+                    <end>18720</end>
+                    <in>16552</in>
+                    <out>16822</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_18720">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>18720</start>
+                    <end>18960</end>
+                    <in>16822</in>
+                    <out>17062</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_18960">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>18960</start>
+                    <end>19350</end>
+                    <in>17062</in>
+                    <out>17452</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_19350">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>19350</start>
+                    <end>21180</end>
+                    <in>17452</in>
+                    <out>19282</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_21180">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>21180</start>
+                    <end>21480</end>
+                    <in>19312</in>
+                    <out>19612</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_21480">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>21480</start>
+                    <end>21870</end>
+                    <in>19612</in>
+                    <out>20002</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_21870">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>21870</start>
+                    <end>22110</end>
+                    <in>20032</in>
+                    <out>20272</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_22110">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>22110</start>
+                    <end>22320</end>
+                    <in>20272</in>
+                    <out>20482</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_22320">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>22320</start>
+                    <end>22710</end>
+                    <in>20482</in>
+                    <out>20872</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_22710">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>22710</start>
+                    <end>24240</end>
+                    <in>20872</in>
+                    <out>22402</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_24240">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>24240</start>
+                    <end>24570</end>
+                    <in>22432</in>
+                    <out>22762</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_24570">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>24570</start>
+                    <end>25440</end>
+                    <in>22762</in>
+                    <out>23632</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_25440">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>25440</start>
+                    <end>27990</end>
+                    <in>23632</in>
+                    <out>26182</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_27990">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>27990</start>
+                    <end>28980</end>
+                    <in>26182</in>
+                    <out>27172</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_28980">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>28980</start>
+                    <end>29850</end>
+                    <in>27622</in>
+                    <out>28492</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_29850">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>29850</start>
+                    <end>31980</end>
+                    <in>28522</in>
+                    <out>30652</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_31980">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>31980</start>
+                    <end>32550</end>
+                    <in>30652</in>
+                    <out>31222</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_32550">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>32550</start>
+                    <end>32670</end>
+                    <in>31222</in>
+                    <out>31342</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_32670">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>32670</start>
+                    <end>33780</end>
+                    <in>31402</in>
+                    <out>32512</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_33780">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>33780</start>
+                    <end>34650</end>
+                    <in>32602</in>
+                    <out>33472</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_34650">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>34650</start>
+                    <end>34710</end>
+                    <in>33472</in>
+                    <out>33532</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_34710">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>34710</start>
+                    <end>34890</end>
+                    <in>33532</in>
+                    <out>33712</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_34890">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>34890</start>
+                    <end>34920</end>
+                    <in>33832</in>
+                    <out>33862</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_34920">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>34920</start>
+                    <end>35130</end>
+                    <in>33892</in>
+                    <out>34102</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_35130">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>35130</start>
+                    <end>35280</end>
+                    <in>34102</in>
+                    <out>34252</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_35280">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>35280</start>
+                    <end>35370</end>
+                    <in>34252</in>
+                    <out>34342</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_35370">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>35370</start>
+                    <end>36120</end>
+                    <in>34432</in>
+                    <out>35182</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_36120">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>36120</start>
+                    <end>37915</end>
+                    <in>35182</in>
+                    <out>36977</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_37915">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>37915</start>
+                    <end>38078</end>
+                    <in>36977</in>
+                    <out>37140</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_38078">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>38078</start>
+                    <end>41326</end>
+                    <in>37140</in>
+                    <out>40387</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_41326">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>41326</start>
+                    <end>41383</end>
+                    <in>40462</in>
+                    <out>40519</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_0_41383">
+                    <name>C8826.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>41383</start>
+                    <end>41801</end>
+                    <in>40584</in>
+                    <out>41002</out>
+                    <file id="file_0">
+                        <name>C8826.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                    </file>
+                </clipitem>
+            </track>
+            <track>
+                <clipitem id="clip_1_0">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>0</start>
+                    <end>360</end>
+                    <in>-2274</in>
+                    <out>-1914</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_450">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>450</start>
+                    <end>1080</end>
+                    <in>-1824</in>
+                    <out>-1194</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_1470">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>1470</start>
+                    <end>1530</end>
+                    <in>-804</in>
+                    <out>-744</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_1920">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>1920</start>
+                    <end>2220</end>
+                    <in>-354</in>
+                    <out>-54</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_2595">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>2595</start>
+                    <end>2655</end>
+                    <in>321</in>
+                    <out>381</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_3030">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>3030</start>
+                    <end>3750</end>
+                    <in>756</in>
+                    <out>1476</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_3960">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>3960</start>
+                    <end>4050</end>
+                    <in>1686</in>
+                    <out>1776</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_4290">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>4290</start>
+                    <end>4350</end>
+                    <in>2016</in>
+                    <out>2076</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_4590">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>4590</start>
+                    <end>5490</end>
+                    <in>2316</in>
+                    <out>3216</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_5820">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>5820</start>
+                    <end>6030</end>
+                    <in>3546</in>
+                    <out>3756</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_6330">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>6330</start>
+                    <end>6390</end>
+                    <in>4056</in>
+                    <out>4116</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_6690">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>6690</start>
+                    <end>6900</end>
+                    <in>4416</in>
+                    <out>4626</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_7170">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>7170</start>
+                    <end>7440</end>
+                    <in>4896</in>
+                    <out>5166</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_7725">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>7725</start>
+                    <end>7785</end>
+                    <in>5451</in>
+                    <out>5511</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_8070">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>8070</start>
+                    <end>8310</end>
+                    <in>5796</in>
+                    <out>6036</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_8520">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>8520</start>
+                    <end>8610</end>
+                    <in>6246</in>
+                    <out>6336</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_8925">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>8925</start>
+                    <end>8985</end>
+                    <in>6651</in>
+                    <out>6711</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_9300">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>9300</start>
+                    <end>9780</end>
+                    <in>7026</in>
+                    <out>7506</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_10110">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>10110</start>
+                    <end>10170</end>
+                    <in>7836</in>
+                    <out>7896</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_10500">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>10500</start>
+                    <end>11160</end>
+                    <in>8226</in>
+                    <out>8886</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_11370">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>11370</start>
+                    <end>11610</end>
+                    <in>9096</in>
+                    <out>9336</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_11880">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>11880</start>
+                    <end>12000</end>
+                    <in>9606</in>
+                    <out>9726</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_13005">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>13005</start>
+                    <end>13065</end>
+                    <in>10731</in>
+                    <out>10791</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_14070">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>14070</start>
+                    <end>14160</end>
+                    <in>11796</in>
+                    <out>11886</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_14400">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>14400</start>
+                    <end>15540</end>
+                    <in>12126</in>
+                    <out>13266</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_16320">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>16320</start>
+                    <end>16380</end>
+                    <in>14046</in>
+                    <out>14106</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_17160">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>17160</start>
+                    <end>17580</end>
+                    <in>14886</in>
+                    <out>15306</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_17985">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>17985</start>
+                    <end>18045</end>
+                    <in>15711</in>
+                    <out>15771</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_18450">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>18450</start>
+                    <end>18720</end>
+                    <in>16176</in>
+                    <out>16446</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_18960">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>18960</start>
+                    <end>19350</end>
+                    <in>16686</in>
+                    <out>17076</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_20235">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>20235</start>
+                    <end>20295</end>
+                    <in>17961</in>
+                    <out>18021</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_21180">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>21180</start>
+                    <end>21480</end>
+                    <in>18936</in>
+                    <out>19236</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_21645">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>21645</start>
+                    <end>21705</end>
+                    <in>19401</in>
+                    <out>19461</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_21870">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>21870</start>
+                    <end>22110</end>
+                    <in>19656</in>
+                    <out>19896</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_22320">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>22320</start>
+                    <end>22710</end>
+                    <in>20106</in>
+                    <out>20496</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_23445">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>23445</start>
+                    <end>23505</end>
+                    <in>21231</in>
+                    <out>21291</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_24240">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>24240</start>
+                    <end>24570</end>
+                    <in>22056</in>
+                    <out>22386</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_24975">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>24975</start>
+                    <end>25035</end>
+                    <in>22791</in>
+                    <out>22851</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_25440">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>25440</start>
+                    <end>27990</end>
+                    <in>23256</in>
+                    <out>25806</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_28455">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>28455</start>
+                    <end>28515</end>
+                    <in>26271</in>
+                    <out>26331</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_28980">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>28980</start>
+                    <end>29850</end>
+                    <in>27246</in>
+                    <out>28116</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_30885">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>30885</start>
+                    <end>30945</end>
+                    <in>29181</in>
+                    <out>29241</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_31980">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>31980</start>
+                    <end>32550</end>
+                    <in>30276</in>
+                    <out>30846</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_32670">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>32670</start>
+                    <end>33780</end>
+                    <in>31026</in>
+                    <out>32136</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_34185">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>34185</start>
+                    <end>34245</end>
+                    <in>32631</in>
+                    <out>32691</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_34650">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>34650</start>
+                    <end>34710</end>
+                    <in>33096</in>
+                    <out>33156</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_34890">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>34890</start>
+                    <end>34920</end>
+                    <in>33456</in>
+                    <out>33486</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_35130">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>35130</start>
+                    <end>35280</end>
+                    <in>33726</in>
+                    <out>33876</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_35370">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>35370</start>
+                    <end>36120</end>
+                    <in>34056</in>
+                    <out>34806</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_36988">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>36988</start>
+                    <end>37048</end>
+                    <in>35674</in>
+                    <out>35734</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_37915">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>37915</start>
+                    <end>38078</end>
+                    <in>36602</in>
+                    <out>36765</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_39672">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>39672</start>
+                    <end>39732</end>
+                    <in>38358</in>
+                    <out>38418</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_41326">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>41326</start>
+                    <end>41383</end>
+                    <in>40086</in>
+                    <out>40144</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="clip_1_41562">
+                    <name>C8890.MP4</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>41562</start>
+                    <end>41622</end>
+                    <in>40388</in>
+                    <out>40448</out>
+                    <file id="file_1">
+                        <name>C8890.MP4</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                    </file>
+                </clipitem>
+            </track>
+        </video>
+        <audio>
+            <track>
+                <!-- Master TASCAM (Track A3) -->
+                <clipitem id="audio_0.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>0</start>
+                    <end>360</end>
+                    <in>0</in>
+                    <out>360</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_12.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>360</start>
+                    <end>450</end>
+                    <in>360</in>
+                    <out>450</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_15.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>450</start>
+                    <end>1080</end>
+                    <in>450</in>
+                    <out>1080</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_36.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>1080</start>
+                    <end>1920</end>
+                    <in>1080</in>
+                    <out>1920</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_64.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>1920</start>
+                    <end>2220</end>
+                    <in>1920</in>
+                    <out>2220</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_74.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>2220</start>
+                    <end>3030</end>
+                    <in>2220</in>
+                    <out>3030</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_101.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>3030</start>
+                    <end>3750</end>
+                    <in>3030</in>
+                    <out>3750</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_125.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>3750</start>
+                    <end>3960</end>
+                    <in>3750</in>
+                    <out>3960</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_132.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>3960</start>
+                    <end>4050</end>
+                    <in>3960</in>
+                    <out>4050</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_135.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>4050</start>
+                    <end>4590</end>
+                    <in>4050</in>
+                    <out>4590</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_153.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>4590</start>
+                    <end>5490</end>
+                    <in>4590</in>
+                    <out>5490</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_183.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>5490</start>
+                    <end>5820</end>
+                    <in>5490</in>
+                    <out>5820</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_194.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>5820</start>
+                    <end>6030</end>
+                    <in>5820</in>
+                    <out>6030</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_201.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>6030</start>
+                    <end>6690</end>
+                    <in>6030</in>
+                    <out>6690</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_223.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>6690</start>
+                    <end>6900</end>
+                    <in>6690</in>
+                    <out>6900</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_230.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>6900</start>
+                    <end>7170</end>
+                    <in>6900</in>
+                    <out>7170</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_239.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>7170</start>
+                    <end>7440</end>
+                    <in>7170</in>
+                    <out>7440</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_248.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>7440</start>
+                    <end>8070</end>
+                    <in>7440</in>
+                    <out>8070</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_269.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>8070</start>
+                    <end>8310</end>
+                    <in>8070</in>
+                    <out>8310</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_277.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>8310</start>
+                    <end>8520</end>
+                    <in>8310</in>
+                    <out>8520</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_284.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>8520</start>
+                    <end>8610</end>
+                    <in>8520</in>
+                    <out>8610</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_287.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>8610</start>
+                    <end>9300</end>
+                    <in>8610</in>
+                    <out>9300</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_310.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>9300</start>
+                    <end>9780</end>
+                    <in>9300</in>
+                    <out>9780</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_326.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>9780</start>
+                    <end>10500</end>
+                    <in>9780</in>
+                    <out>10500</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_350.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>10500</start>
+                    <end>11160</end>
+                    <in>10500</in>
+                    <out>11160</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_372.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>11160</start>
+                    <end>11370</end>
+                    <in>11160</in>
+                    <out>11370</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_379.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>11370</start>
+                    <end>11610</end>
+                    <in>11370</in>
+                    <out>11610</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_387.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>11610</start>
+                    <end>11880</end>
+                    <in>11610</in>
+                    <out>11880</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_396.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>11880</start>
+                    <end>12000</end>
+                    <in>11880</in>
+                    <out>12000</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_400.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>12000</start>
+                    <end>14070</end>
+                    <in>12000</in>
+                    <out>14070</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_469.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>14070</start>
+                    <end>14160</end>
+                    <in>14070</in>
+                    <out>14160</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_472.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>14160</start>
+                    <end>14400</end>
+                    <in>14160</in>
+                    <out>14400</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_480.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>14400</start>
+                    <end>15540</end>
+                    <in>14400</in>
+                    <out>15540</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_518.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>15540</start>
+                    <end>17160</end>
+                    <in>15540</in>
+                    <out>17160</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_572.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>17160</start>
+                    <end>17580</end>
+                    <in>17160</in>
+                    <out>17580</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_586.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>17580</start>
+                    <end>18450</end>
+                    <in>17580</in>
+                    <out>18450</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_615.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>18450</start>
+                    <end>18720</end>
+                    <in>18450</in>
+                    <out>18720</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_624.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>18720</start>
+                    <end>18960</end>
+                    <in>18720</in>
+                    <out>18960</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_632.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>18960</start>
+                    <end>19350</end>
+                    <in>18960</in>
+                    <out>19350</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_645.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>19350</start>
+                    <end>21180</end>
+                    <in>19350</in>
+                    <out>21180</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_707.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>21180</start>
+                    <end>21480</end>
+                    <in>21210</in>
+                    <out>21510</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_717.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>21480</start>
+                    <end>21870</end>
+                    <in>21510</in>
+                    <out>21900</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_731.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>21870</start>
+                    <end>22110</end>
+                    <in>21930</in>
+                    <out>22170</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_739.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>22110</start>
+                    <end>22320</end>
+                    <in>22170</in>
+                    <out>22380</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_746.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>22320</start>
+                    <end>22710</end>
+                    <in>22380</in>
+                    <out>22770</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_759.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>22710</start>
+                    <end>24240</end>
+                    <in>22770</in>
+                    <out>24300</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_811.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>24240</start>
+                    <end>24570</end>
+                    <in>24330</in>
+                    <out>24660</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_822.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>24570</start>
+                    <end>25440</end>
+                    <in>24660</in>
+                    <out>25530</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_851.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>25440</start>
+                    <end>27990</end>
+                    <in>25530</in>
+                    <out>28080</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_936.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>27990</start>
+                    <end>28980</end>
+                    <in>28080</in>
+                    <out>29070</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_984.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>28980</start>
+                    <end>29850</end>
+                    <in>29520</in>
+                    <out>30390</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1014.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>29850</start>
+                    <end>31980</end>
+                    <in>30420</in>
+                    <out>32550</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1085.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>31980</start>
+                    <end>32550</end>
+                    <in>32550</in>
+                    <out>33120</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1104.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>32550</start>
+                    <end>32670</end>
+                    <in>33120</in>
+                    <out>33240</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1110.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>32670</start>
+                    <end>33780</end>
+                    <in>33300</in>
+                    <out>34410</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1150.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>33780</start>
+                    <end>34650</end>
+                    <in>34500</in>
+                    <out>35370</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1179.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>34650</start>
+                    <end>34710</end>
+                    <in>35370</in>
+                    <out>35430</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1181.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>34710</start>
+                    <end>34890</end>
+                    <in>35430</in>
+                    <out>35610</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1191.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>34890</start>
+                    <end>34920</end>
+                    <in>35730</in>
+                    <out>35760</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1193.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>34920</start>
+                    <end>35130</end>
+                    <in>35790</in>
+                    <out>36000</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1200.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>35130</start>
+                    <end>35280</end>
+                    <in>36000</in>
+                    <out>36150</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1205.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>35280</start>
+                    <end>35370</end>
+                    <in>36150</in>
+                    <out>36240</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1211.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>35370</start>
+                    <end>36120</end>
+                    <in>36330</in>
+                    <out>37080</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1236.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>36120</start>
+                    <end>37915</end>
+                    <in>37080</in>
+                    <out>38875</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1295.84">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>37915</start>
+                    <end>38078</end>
+                    <in>38875</in>
+                    <out>39038</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1301.28">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>38078</start>
+                    <end>41326</end>
+                    <in>39038</in>
+                    <out>42286</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1412.0">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>41326</start>
+                    <end>41383</end>
+                    <in>42360</in>
+                    <out>42418</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+                <clipitem id="audio_1416.08">
+                    <name>TASCAM_1087S34.wav</name>
+                    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+                    <start>41383</start>
+                    <end>41801</end>
+                    <in>42482</in>
+                    <out>42900</out>
+                    <file id="file_audio">
+                        <name>TASCAM_1087S34.wav</name>
+                        <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                    </file>
+                </clipitem>
+            </track>
+        </audio>
+    </media>
+</sequence>
+</xmeml>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xmeml>
+<xmeml version="4">
+  <sequence>
+    <name>Zamiyah Multicam v9 (Word Sync Fix)</name>
+    <duration>45697</duration>
+    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+    <media>
+      <video>
+        <track>
+          <name>Cam A (Main)</name>
+          <clipitem id="v1_cam_a">
+            <name>C8826.MP4</name>
+            <duration>44775</duration>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <!-- Offset +63.3s: Tascam starts at 63.3s, Cam A at 0 -->
+            <start>0</start><end>44775</end>
+            <in>0</in><out>44775</out>
+            <file id="f_cam_a">
+                <name>C8826.MP4</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                <media><video><samplecharacteristics><rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+        </track>
+        <track>
+          <name>Cam B (Side)</name>
+          <clipitem id="v2_cam_b">
+            <name>C8890.MP4</name>
+            <duration>36235</duration>
+            <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+            <!-- Offset +72.6s relative to Tascam. 
+                 Cam A is +63.3s. 
+                 So Cam B starts 72.6 - 63.3 = 9.3s BEFORE Cam A.
+                 If Cam A is at 9.3s, Cam B is at 0.
+                 Let's keep Cam A at 0 and put Cam B at -9.3 (impossible)
+                 So Cam B at 0, Cam A at 9.3s, Tascam at 72.6s. -->
+            <start>0</start><end>45294</end>
+            <in>0</in><out>36235</out>
+            <file id="f_cam_b">
+                <name>C8890.MP4</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                <media><video><samplecharacteristics><rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+        </track>
+      </video>
+      <audio>
+        <numchannels>2</numchannels>
+        <track>
+          <name>TASCAM Master L</name>
+          <clipitem id="a1_tascam">
+            <name>TASCAM_1087S34.wav</name>
+            <duration>42836</duration>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <!-- Tascam starts 72.6s into the timeline -->
+            <start>2176</start><end>45012</end>
+            <in>0</in><out>42836</out>
+            <file id="f_tascam">
+                <name>TASCAM_1087S34.wav</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio></media>
+            </file>
+            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
+          </clipitem>
+        </track>
+        <track>
+          <clipitem id="a2_tascam">
+            <file id="f_tascam"/>
+            <sourcetrack><type>audio</type><trackindex>2</trackindex></sourcetrack>
+            <start>2176</start><end>45012</end>
+            <in>0</in><out>42836</out>
+          </clipitem>
+        </track>
+      </audio>
+    </media>
+  </sequence>
+</xmeml>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xmeml>
+<xmeml version="4">
+  <sequence>
+    <name>Zamiyah Cam A Sync v1</name>
+    <duration>34269</duration>
+    <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+    <media>
+      <video>
+        <format><samplecharacteristics>
+          <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+          <width>3840</width><height>2160</height>
+        </samplecharacteristics></format>
+        <track>
+          <enabled>TRUE</enabled>
+          <clipitem id="clip_v1">
+            <name>C8826.MP4</name>
+            <duration>44775</duration>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>738</start><end>34269</end>
+            <in>0</in><out>41914</out>
+            <file id="file_v1">
+                <name>C8826.MP4</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                <media><video><samplecharacteristics><rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+        </track>
+      </video>
+      <audio>
+        <numchannels>2</numchannels>
+        <format><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics></format>
+        <track>
+          <clipitem id="mic_0">
+            <name>TASCAM_S34</name>
+            <duration>34269</duration>
+            <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+            <start>0</start><end>34269</end>
+            <in>0</in><out>34269</out>
+            <file id="file_mic_0">
+                <name>TASCAM_S34</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio></media>
+            </file>
+          </clipitem>
+        </track>
+      </audio>
+    </media>
+  </sequence>
+</xmeml>

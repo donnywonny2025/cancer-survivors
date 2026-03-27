@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xmeml>
+<xmeml version="4">
+  <sequence>
+    <name>Zamiyah Cam A Sync v3 (HAND-CODE)</name>
+    <duration>36558</duration>
+    <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+    <media>
+      <video>
+        <track>
+          <clipitem id="cam_a_vid">
+            <name>C8826.MP4</name>
+            <duration>44775</duration>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>738</start><end>36558</end>
+            <in>0</in><out>44775</out>
+            <file id="file_c8826">
+                <name>C8826.MP4</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                <media><video><samplecharacteristics><rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate><width>3840</width><height>2160</height></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+        </track>
+      </video>
+      <audio>
+        <numchannels>4</numchannels>
+        <!-- MASTER TRACKS (1&2) -->
+        <track>
+          <clipitem id="tascam_l">
+            <name>TASCAM_1087S34.wav</name>
+            <duration>34269</duration>
+            <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+            <start>0</start><end>34269</end>
+            <in>0</in><out>34269</out>
+            <file id="file_tascam">
+                <name>TASCAM_1087S34.wav</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio></media>
+            </file>
+            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
+          </clipitem>
+        </track>
+        <track>
+          <clipitem id="tascam_r">
+            <name>TASCAM_1087S34.wav</name>
+            <duration>34269</duration>
+            <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+            <start>0</start><end>34269</end>
+            <in>0</in><out>34269</out>
+            <file id="file_tascam"/>
+            <sourcetrack><type>audio</type><trackindex>2</trackindex></sourcetrack>
+          </clipitem>
+        </track>
+        <!-- SCRATCH TRACKS (3&4) -->
+        <track>
+          <clipitem id="scratch_l">
+            <name>C8826.MP4</name>
+            <duration>44775</duration>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>738</start><end>36558</end>
+            <in>0</in><out>44775</out>
+            <file id="file_c8826"/>
+            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
+          </clipitem>
+        </track>
+        <track>
+          <clipitem id="scratch_r">
+            <name>C8826.MP4</name>
+            <duration>44775</duration>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>738</start><end>36558</end>
+            <in>0</in><out>44775</out>
+            <file id="file_c8826"/>
+            <sourcetrack><type>audio</type><trackindex>2</trackindex></sourcetrack>
+          </clipitem>
+        </track>
+      </audio>
+    </media>
+  </sequence>
+</xmeml>

@@ -1,0 +1,35 @@
+# Media files (too large for git)
+*.MP4
+*.mp4
+*.MOV
+*.mov
+*.WAV
+*.wav
+*.mp3
+*.aac
+*.m4a
+*.MXF
+*.mxf
+
+# Premiere Pro project files (binary)
+*.prproj
+*.pek
+*.cfa
+
+# Whisper models (large binaries)
+*.pt
+*.bin
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+/tmp/
+*.raw
+__pycache__/
+*.pyc
+
+# Photos (optional — uncomment if you want to track thumbnails)
+# *.jpg
+# *.png

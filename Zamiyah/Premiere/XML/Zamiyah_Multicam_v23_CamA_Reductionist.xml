@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xmeml>
+<xmeml version="4">
+  <sequence>
+    <name>Zamiyah Multicam v23 (Cam A Reductionist)</name>
+    <duration>48000</duration>
+    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+    <media>
+      <video>
+        <track>
+          <clipitem id="v1_a">
+            <name>C8826.MP4</name>
+            <duration>44775</duration>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>0</start><end>44775</end>
+            <in>0</in><out>44775</out>
+            <enabled>TRUE</enabled>
+            <file id="f_a">
+                <name>C8826.MP4</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                <media>
+                    <video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video>
+                    <audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio>
+                </media>
+            </file>
+            <link><link_trackindex>1</link_trackindex><link_clipindex>1</link_clipindex><link_type>video</link_type></link>
+            <link><link_trackindex>1</link_trackindex><link_clipindex>1</link_clipindex><link_type>audio</link_type></link>
+          </clipitem>
+        </track>
+      </video>
+      <audio>
+        <numchannels>2</numchannels>
+        <track>
+          <name>Cam A Audio</name>
+          <clipitem id="a1_a">
+            <name>C8826.MP4</name>
+            <duration>44775</duration>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>0</start><end>44775</end>
+            <in>0</in><out>44775</out>
+            <file id="f_a"/>
+            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
+            <link><link_trackindex>1</link_trackindex><link_clipindex>1</link_clipindex><link_type>video</link_type></link>
+            <link><link_trackindex>1</link_trackindex><link_clipindex>1</link_clipindex><link_type>audio</link_type></link>
+          </clipitem>
+        </track>
+        <track>
+          <name>TASCAM Master</name>
+          <clipitem id="a3_t">
+            <name>TASCAM_1087S34.wav</name>
+            <duration>42836</duration>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>1897</start><end>44733</end>
+            <in>0</in><out>42836</out>
+            <file id="f_t">
+                <name>TASCAM_1087S34.wav</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+                <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio></media>
+            </file>
+            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
+          </clipitem>
+          <clipitem id="a4_t">
+            <name>TASCAM_1087S34.wav</name>
+            <duration>42836</duration>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>1897</start><end>44733</end>
+            <in>0</in><out>42836</out>
+            <file id="f_t"/>
+            <sourcetrack><type>audio</type><trackindex>2</trackindex></sourcetrack>
+          </clipitem>
+        </track>
+      </audio>
+    </media>
+  </sequence>
+</xmeml>

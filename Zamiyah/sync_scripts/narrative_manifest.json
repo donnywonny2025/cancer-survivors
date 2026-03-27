@@ -1,0 +1,42 @@
+{
+  "project": "Zamiyah / Bronson Cancer Equity Project",
+  "vibe": "Resilient / Joyful / Taking Power Back",
+  "messaging_focus": [
+    "Social Determinants of Health (SDOH)",
+    "Mental Health & Identity Recovery",
+    "Social Support Systems (Caregiving)",
+    "Early Detection Empowerment"
+  ],
+  "mantra": "You're worth it.",
+  "master_audio": "TASCAM_1087S34.wav",
+  "gold_selects": [
+    {
+      "id": "INTRO_IDENTITY",
+      "start_text": "Hi, my name is Zimaya Williams",
+      "end_text": "Hodgkin's lymphoma.",
+      "label": "Identity (15s)",
+      "cam_preference": "A"
+    },
+    {
+      "id": "DIAGNOSIS_STORY",
+      "start_text": "I think the signs were very subtle at first",
+      "end_text": "neck and my chest were swollen",
+      "label": "The Diagnosis (45s)",
+      "cam_preference": "A"
+    },
+    {
+      "id": "SOCIAL_DET_FRAGILE",
+      "start_text": "some people treated me very fragile",
+      "end_text": "mentally grown as a person.",
+      "label": "SDOH: Fragility vs Growth (45s)",
+      "cam_preference": "A"
+    },
+    {
+      "id": "POWER_RESILIENCE",
+      "start_text": "overcome that fear, it's like you're taking your power back",
+      "end_text": "joyful, things like that.",
+      "label": "Empowerment: Taking Power Back (45s)",
+      "cam_preference": "A"
+    }
+  ]
+}

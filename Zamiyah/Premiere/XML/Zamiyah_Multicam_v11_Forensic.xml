@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xmeml>
+<xmeml version="4">
+  <sequence>
+    <name>Zamiyah Multicam v11 (3-Track Logic)</name>
+    <duration>45697</duration>
+    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+    <media>
+      <video>
+        <format><samplecharacteristics><rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate><width>3840</width><height>2160</height><pixelaspect>square</pixelaspect></samplecharacteristics></format>
+        <track>
+          <name>V1 - Cam A</name>
+          <clipitem id="v1_a">
+            <name>C8826.MP4</name>
+            <duration>44775</duration>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <!-- Cam A starts 12.5s (375 frames) AFTER Cam B -->
+            <start>375</start><end>45150</end>
+            <in>0</in><out>44775</out>
+            <file id="f_a">
+                <name>C8826.MP4</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+            </file>
+          </clipitem>
+        </track>
+        <track>
+          <name>V2 - Cam B</name>
+          <clipitem id="v2_b">
+            <name>C8890.MP4</name>
+            <duration>36235</duration>
+            <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+            <!-- Cam B is our absolute zero-point -->
+            <start>0</start><end>45294</end>
+            <in>0</in><out>36235</out>
+            <file id="f_b">
+                <name>C8890.MP4</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+            </file>
+          </clipitem>
+        </track>
+      </video>
+      <audio>
+        <numchannels>3</numchannels>
+        <!-- A1: CAM A SCRATCH -->
+        <track>
+          <name>A1 - Cam A Scratch</name>
+          <clipitem id="a1_a">
+            <file id="f_a"/>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>375</start><end>45150</end>
+            <in>0</in><out>44775</out>
+          </clipitem>
+        </track>
+        <!-- A2: CAM B SCRATCH -->
+        <track>
+          <name>A2 - Cam B Scratch</name>
+          <clipitem id="a2_b">
+            <file id="f_b"/>
+            <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+            <start>0</start><end>45294</end>
+            <in>0</in><out>36235</out>
+          </clipitem>
+        </track>
+        <!-- A3: TASCAM MASTER -->
+        <track>
+          <name>A3 - TASCAM Master</name>
+          <clipitem id="a3_t">
+            <name>TASCAM_1087S34.wav</name>
+            <duration>34269</duration>
+            <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+            <!-- Offset relative to Cam B (75.8s = 2272 frames) -->
+            <start>2272</start><end>36541</end>
+            <in>0</in><out>34269</out>
+            <file id="f_t">
+                <name>TASCAM_1087S34.wav</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+            </file>
+          </clipitem>
+        </track>
+      </audio>
+    </media>
+  </sequence>
+</xmeml>

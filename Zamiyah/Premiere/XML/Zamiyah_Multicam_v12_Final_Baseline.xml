@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xmeml>
+<xmeml version="4">
+  <sequence>
+    <name>Zamiyah Multicam v12 (Full Sync Fix)</name>
+    <duration>45697</duration>
+    <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+    <media>
+      <video>
+        <format>
+          <samplecharacteristics>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <width>3840</width><height>2160</height>
+            <pixelaspect>square</pixelaspect>
+            <fielddominance>none</fielddominance>
+          </samplecharacteristics>
+        </format>
+        <!-- V1: CAM A -->
+        <track>
+          <clipitem id="v1_a">
+            <name>C8826.MP4</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>279</start><end>45054</end>
+            <in>0</in><out>44775</out>
+            <file id="f_a">
+                <name>C8826.MP4</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20A/C8826.MP4</pathurl>
+                <media><video><samplecharacteristics><width>3840</width><height>2160</height><pixelaspect>square</pixelaspect></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+        </track>
+        <!-- V2: CAM B -->
+        <track>
+          <clipitem id="v2_b">
+            <name>C8890.MP4</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>0</start><end>45294</end>
+            <in>0</in><out>36235</out>
+            <file id="f_b">
+                <name>C8890.MP4</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Footage/Cam%20B/C8890.MP4</pathurl>
+                <media><video><samplecharacteristics><width>3840</width><height>2160</height><pixelaspect>square</pixelaspect></samplecharacteristics></video></media>
+            </file>
+          </clipitem>
+        </track>
+      </video>
+      <audio>
+        <numchannels>2</numchannels>
+        <!-- AUDIO 1: CAM A SCRATCH -->
+        <track>
+          <clipitem id="a1_a">
+            <name>C8826.MP4</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>279</start><end>45054</end>
+            <in>0</in><out>44775</out>
+            <file id="f_a"/>
+            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
+          </clipitem>
+        </track>
+        <!-- AUDIO 2: CAM B SCRATCH -->
+        <track>
+          <clipitem id="a2_b">
+            <name>C8890.MP4</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>0</start><end>45294</end>
+            <in>0</in><out>36235</out>
+            <file id="f_b"/>
+            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
+          </clipitem>
+        </track>
+        <!-- AUDIO 3: TASCAM MASTER L -->
+        <track>
+          <clipitem id="a3_t">
+            <name>TASCAM_1087S34.wav</name>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>2176</start><end>45012</end>
+            <in>0</in><out>42836</out>
+            <file id="f_t">
+                <name>TASCAM_1087S34.wav</name>
+                <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Zamiyah/Audio/TASCAM_1087S34.wav</pathurl>
+            </file>
+            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
+          </clipitem>
+        </track>
+        <!-- AUDIO 4: TASCAM MASTER R -->
+        <track>
+          <clipitem id="a4_t">
+            <file id="f_t"/>
+            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
+            <start>2176</start><end>45012</end>
+            <in>0</in><out>42836</out>
+            <sourcetrack><type>audio</type><trackindex>2</trackindex></sourcetrack>
+          </clipitem>
+        </track>
+      </audio>
+    </media>
+  </sequence>
+</xmeml>
