@@ -164,3 +164,31 @@ The same word means different things depending on WHERE and WHY.
 - [ ] Are there at least 3 camera switches?
 - [ ] Is the pacing varied (no metronomic cutting)?
 - [ ] Duration is 2:30 – 3:15?
+- [ ] Every segment's transcript scanned for stumbles/false starts?
+- [ ] Every segment's first words checked for orphaned question responses?
+
+---
+
+## Known Limitations — What This Agent CANNOT Do
+
+**I edit by ear, not by eye.** I have the full transcript with word-level 
+timestamps, but I cannot see the video. This means:
+
+- I don't know if she's looking at camera or looking away
+- I don't know if she's smiling, crying, or making a face
+- I don't know if she's gesturing, fidgeting, or still
+- I don't know if the composition is good or if someone walks behind her
+- A great soundbite with bad body language = bad edit, and I can't catch it
+
+**The workflow**:
+1. **AI (me)**: Build the best possible edit based on AUDIO intelligence —
+   transcript content, pacing, stumble removal, arc structure, head trimming.
+   This gets you ~80% of the way to a final edit.
+2. **Human editor (you)**: Watch the edit in Premiere. Swap cameras, adjust 
+   cuts, enable/disable clips based on what you SEE. Both cameras are on 
+   every segment specifically so you can toggle without losing sync.
+3. **AI (me)**: If you tell me "segment 5 doesn't look good on Cam A," I can 
+   swap it. But I need you to be the eyes.
+
+This is not a failure of the system — it's how it's designed to work right now.
+The dual-track layout exists specifically because I can't make visual judgments.
