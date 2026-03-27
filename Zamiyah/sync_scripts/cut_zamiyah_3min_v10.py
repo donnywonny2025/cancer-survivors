@@ -30,35 +30,30 @@ def f(s):
 # Last word end + 100ms = out-point
 # ============================================================
 EDIT = [
-    # v10: Tighter cut — redundant segments removed per Intelligent Cut rules
-    # 20 segments, ~3:03 — full arc preserved
+    # v13: Reordered arc — IDENTITY → SIGNS → MOMENT → PERSONALITY
+    # Keeps cancer context immediate: "diagnosed with lymphoma" → "signs were subtle"
+    # PERSONALITY comes after MOMENT as contrast: "but here's who I really am"
+    # 20 segments, ~2:48
     #
     # (in_point, out_point, label, camera)
-    (1404.337, 1409.673, "IDENTITY", "B"),                              # Hi, my name is Zamiyah
-    (83.762, 96.912, "PERSONALITY: dancing piano guitar", "A"),          # Trimmed head, extended to 'very musical person.'
-    # CUT: PERSONALITY2 — redundant with above
-    (45.156, 53.977, "SIGNS: subtle lymph nodes", "B"),                  # First symptoms
-    (55.669, 66.312, "SIGNS: fatigued drained", "A"),                    # How it felt
-    (132.925, 138.662, "MOMENT: always active dance", "A"),              # She was active
-    # CUT: MOMENT2+3 — "sleeping more" and "mom noticed" implied by MOMENT1+4
+    (1404.337, 1409.673, "IDENTITY", "B"),                              # Hi, my name is Zamiyah, diagnosed Hodgkin's lymphoma
+    (45.156, 53.977, "SIGNS: subtle lymph nodes", "B"),                  # Signs were subtle — flows from diagnosis
+    (55.669, 66.312, "SIGNS: fatigued drained", "A"),                    # How it felt physically
+    (132.925, 138.662, "MOMENT: always active dance", "A"),              # She was active — contrast
     (150.429, 155.485, "MOMENT: knew something wasn't right", "B"),      # Turning point
-    (256.837, 265.139, "COST: how much life you lose", "A"),             # Clean take, no stumble
-    (277.587, 281.222, "COST: confidence self-identity", "A"),           # Trimmed: skip 'routines...Sorry.' false start
-    # CUT: POWER1 — "catch it early" covered by POWER2
-    (429.395, 439.795, "POWER: fear is normal taking power back", "A"),  # Taking power back
+    (83.762, 96.912, "PERSONALITY: dancing piano guitar", "A"),          # Who she is beyond cancer — contrast beat
+    (256.837, 265.139, "COST: how much life you lose", "A"),             # What cancer takes from you
+    (277.587, 281.222, "COST: confidence self-identity", "A"),           # Deeper cost
+    (429.395, 439.795, "POWER: fear is normal taking power back", "A"),  # Empowerment
     (440.346, 455.715, "POWER: knowing is better", "B"),                 # Knowledge > fear
-    # CUT: CHANGE1 — "changed everything" too generic
-    (517.959, 522.837, "CHANGE: small days", "B"),                       # Finding joy
-    (526.803, 536.046, "CHANGE: value rest joy people", "A"),            # New values
-    # CUT: CHANGE4 — "learned about myself" covered by CHANGE5
+    (517.959, 522.837, "CHANGE: small days", "B"),                       # New perspective
+    (526.803, 536.046, "CHANGE: value rest joy people", "A"),            # What she values now
     (547.472, 552.569, "CHANGE: grown as person", "A"),                  # Growth
-    # CUT: MUSIC1 — "new things sew" weakest of the three
-    (821.965, 827.722, "MUSIC: write my own music", "A"),                # Trimmed: skip 'Sorry.'
-    (828.253, 835.933, "MUSIC: express feelings emotions", "A"),         # Through music
-    (1303.394, 1312.945, "NURSE: love so dearly had cancer", "B"),       # Trimmed: skip 'So'
+    (821.965, 827.722, "MUSIC: write my own music", "A"),                # Creative outlet
+    (828.253, 835.933, "MUSIC: express feelings emotions", "A"),         # Music as therapy
+    (1303.394, 1312.945, "NURSE: love so dearly had cancer", "B"),       # Support system
     (1312.374, 1329.527, "NURSE: somebody understands you", "A"),        # Connection
-    # CUT: NURSE3 — "appreciate her" covered by NURSE2
-    (680.163, 695.779, "CLOSE: stay confident be yourself", "A"),        # Trimmed: skip 'Well,' + interviewer Q + 'Okay.'
+    (680.163, 695.779, "CLOSE: stay confident be yourself", "A"),        # Advice to others
     (717.756, 720.009, "CLOSE: your journey is your journey", "A"),      # Ownership
     (721.120, 725.236, "CLOSE: break through anything", "B"),            # Final word
 ]
