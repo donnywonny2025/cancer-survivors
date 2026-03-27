@@ -104,6 +104,22 @@ CAM_A_TOTAL_F = int(round(1493.993 * 30000 / 1001))   # = 44775
 CAM_B_TOTAL_F = int(round(1511.510 * 30000 / 1001))   # = 45300
 TASCAM_TOTAL_F = int(round(1429.296 * 30000 / 1001))   # = 42836
 
+# Premiere clip label colors (track-based)
+COLOR_CAM_A = "Cerulean"    # V1 / A1 — blue
+COLOR_CAM_B = "Mango"       # V2 / A2 — orange
+COLOR_TASCAM = "Forest"     # A3 — green
+
+# Narrative arc colors (per-section)
+ARC_COLORS = {
+    "IDENTITY": "Cerulean",
+    "DIAGNOSIS": "Rose",
+    "TREATMENT": "Lavender",
+    "EMOTIONAL": "Iris",
+    "FAITH": "Forest",
+    "SUPPORT": "Mango",
+    "ADVICE": "Caribbean",
+}
+
 # Pre-compute all clips — straight timestamps, no processing
 tl = 0
 clips = []
@@ -156,17 +172,19 @@ L.append('            <colormatrix>709</colormatrix>')
 L.append('          </samplecharacteristics>')
 L.append('        </format>')
 
-# V1: Cam A — file definition + all clips
+# V1: Cam A — ALL segments, enabled when cam='A', disabled when cam='B'
 L.append('        <track>')
 L.append('          <name>V1: Cam A</name>')
-# File definition clipitem (first clip defines the file)
-L.append('          <clipitem id="v1_filedef">')
+# First clip defines the Cam A file
+c0 = clips[0]
+enabled_a = 'TRUE' if c0['cam'] == 'A' else 'FALSE'
+L.append(f'          <clipitem id="v1_0">')
 L.append('            <name>C8826.MP4</name>')
 L.append(f'            <duration>{CAM_A_TOTAL_F}</duration>')
 L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
-L.append(f'            <start>{clips[0]["tl_s"]}</start><end>{clips[0]["tl_e"]}</end>')
-L.append(f'            <in>{clips[0]["in_a"]}</in><out>{clips[0]["out_a"]}</out>')
-L.append('            <enabled>TRUE</enabled>')
+L.append(f'            <start>{c0["tl_s"]}</start><end>{c0["tl_e"]}</end>')
+L.append(f'            <in>{c0["in_a"]}</in><out>{c0["out_a"]}</out>')
+L.append(f'            <enabled>{enabled_a}</enabled>')
 L.append('            <file id="f_a">')
 L.append('                <name>C8826.MP4</name>')
 L.append(f'                <pathurl>{cam_a_url}</pathurl>')
@@ -175,53 +193,56 @@ L.append('                    <video><samplecharacteristics><width>3840</width><
 L.append('                    <audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio>')
 L.append('                </media>')
 L.append('            </file>')
+L.append(f'            <labels><label2>{COLOR_CAM_A}</label2></labels>')
 L.append('          </clipitem>')
-# Remaining V1 clips
 for c in clips[1:]:
+    enabled_a = 'TRUE' if c['cam'] == 'A' else 'FALSE'
     L.append(f'          <clipitem id="v1_{c["i"]}">')
     L.append('            <name>C8826.MP4</name>')
     L.append(f'            <duration>{CAM_A_TOTAL_F}</duration>')
     L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
     L.append(f'            <start>{c["tl_s"]}</start><end>{c["tl_e"]}</end>')
     L.append(f'            <in>{c["in_a"]}</in><out>{c["out_a"]}</out>')
-    L.append('            <enabled>TRUE</enabled>')
+    L.append(f'            <enabled>{enabled_a}</enabled>')
     L.append('            <file id="f_a"/>')
+    L.append(f'            <labels><label2>{COLOR_CAM_A}</label2></labels>')
     L.append('          </clipitem>')
 L.append('        </track>')
 
-# V2: Cam B — file definition + only active B clips
+# V2: Cam B — ALL segments, enabled when cam='B', disabled when cam='A'
 L.append('        <track>')
 L.append('          <name>V2: Cam B</name>')
-b_clips = [c for c in clips if c['cam'] == 'B']
-if b_clips:
-    # First B clip defines the file
-    bc = b_clips[0]
-    L.append(f'          <clipitem id="v2_{bc["i"]}">')
+# First clip defines the Cam B file
+enabled_b = 'TRUE' if c0['cam'] == 'B' else 'FALSE'
+L.append(f'          <clipitem id="v2_0">')
+L.append('            <name>C8890.MP4</name>')
+L.append(f'            <duration>{CAM_B_TOTAL_F}</duration>')
+L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
+L.append(f'            <start>{c0["tl_s"]}</start><end>{c0["tl_e"]}</end>')
+L.append(f'            <in>{c0["in_b"]}</in><out>{c0["out_b"]}</out>')
+L.append(f'            <enabled>{enabled_b}</enabled>')
+L.append('            <file id="f_b">')
+L.append('                <name>C8890.MP4</name>')
+L.append(f'                <pathurl>{cam_b_url}</pathurl>')
+L.append('                <media>')
+L.append('                    <video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video>')
+L.append('                    <audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio>')
+L.append('                </media>')
+L.append('            </file>')
+L.append(f'            <labels><label2>{COLOR_CAM_B}</label2></labels>')
+L.append('          </clipitem>')
+for c in clips[1:]:
+    enabled_b = 'TRUE' if c['cam'] == 'B' else 'FALSE'
+    L.append(f'          <clipitem id="v2_{c["i"]}">')
     L.append('            <name>C8890.MP4</name>')
     L.append(f'            <duration>{CAM_B_TOTAL_F}</duration>')
     L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
-    L.append(f'            <start>{bc["tl_s"]}</start><end>{bc["tl_e"]}</end>')
-    L.append(f'            <in>{bc["in_b"]}</in><out>{bc["out_b"]}</out>')
-    L.append('            <enabled>TRUE</enabled>')
-    L.append('            <file id="f_b">')
-    L.append('                <name>C8890.MP4</name>')
-    L.append(f'                <pathurl>{cam_b_url}</pathurl>')
-    L.append('                <media>')
-    L.append('                    <video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video>')
-    L.append('                    <audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio>')
-    L.append('                </media>')
-    L.append('            </file>')
+    L.append(f'            <start>{c["tl_s"]}</start><end>{c["tl_e"]}</end>')
+    L.append(f'            <in>{c["in_b"]}</in><out>{c["out_b"]}</out>')
+    L.append(f'            <enabled>{enabled_b}</enabled>')
+    L.append('            <file id="f_b"/>')
+    L.append(f'            <labels><label2>{COLOR_CAM_B}</label2></labels>')
     L.append('          </clipitem>')
-    for bc in b_clips[1:]:
-        L.append(f'          <clipitem id="v2_{bc["i"]}">')
-        L.append('            <name>C8890.MP4</name>')
-        L.append(f'            <duration>{CAM_B_TOTAL_F}</duration>')
-        L.append('            <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>')
-        L.append(f'            <start>{bc["tl_s"]}</start><end>{bc["tl_e"]}</end>')
-        L.append(f'            <in>{bc["in_b"]}</in><out>{bc["out_b"]}</out>')
-        L.append('            <enabled>TRUE</enabled>')
-        L.append('            <file id="f_b"/>')
-        L.append('          </clipitem>')
 L.append('        </track>')
 L.append('      </video>')
 
@@ -242,10 +263,8 @@ for c in clips:
     L.append('            <enabled>FALSE</enabled>')
     L.append('            <file id="f_a"/>')
     L.append('            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>')
+    L.append(f'            <labels><label2>{COLOR_CAM_A}</label2></labels>')
     L.append('          </clipitem>')
-L.append('        </track>')
-
-# A2: Cam B audio
 L.append('        <track>')
 L.append('          <name>A2: Cam B Scratch</name>')
 for c in clips:
@@ -258,10 +277,9 @@ for c in clips:
     L.append('            <enabled>FALSE</enabled>')
     L.append('            <file id="f_b"/>')
     L.append('            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>')
+    L.append(f'            <labels><label2>{COLOR_CAM_B}</label2></labels>')
     L.append('          </clipitem>')
 L.append('        </track>')
-
-# A3: TASCAM master
 L.append('        <track>')
 L.append('          <name>A3: TASCAM (Master)</name>')
 # First clip defines the file
@@ -277,6 +295,7 @@ L.append(f'                <pathurl>{tascam_url}</pathurl>')
 L.append('                <media><audio><samplecharacteristics><depth>24</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio></media>')
 L.append('            </file>')
 L.append('            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>')
+L.append(f'            <labels><label2>{COLOR_TASCAM}</label2></labels>')
 L.append('          </clipitem>')
 for c in clips[1:]:
     L.append(f'          <clipitem id="a3_{c["i"]}">')
@@ -287,6 +306,7 @@ for c in clips[1:]:
     L.append(f'            <in>{c["in_t"]}</in><out>{c["out_t"]}</out>')
     L.append('            <file id="f_t"/>')
     L.append('            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>')
+    L.append(f'            <labels><label2>{COLOR_TASCAM}</label2></labels>')
     L.append('          </clipitem>')
 L.append('        </track>')
 
@@ -296,14 +316,15 @@ L.append('  </sequence>')
 L.append('</xmeml>')
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v8.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v9.xml")
 with open(out_path, "w") as fout:
     fout.write("\n".join(L))
 
-m, s = divmod(total_f / FPS, 60)
+m, s = divmod(total_f * 1001 / 30000, 60)
+b_count = sum(1 for c in clips if c['cam'] == 'B')
 print(f"✅ Zamiyah 3min Narrative (Word-Level Precision)")
 print(f"   Duration: {int(m)}:{s:04.1f} | {len(EDIT)} segments")
-print(f"   V1: {len(clips)} Cam A clips | V2: {len(b_clips)} Cam B switches")
+print(f"   V1: {len(clips)} Cam A clips | V2: {len(clips)} Cam B clips ({b_count} active)")
 print(f"   → {out_path}")
 
 # EDL
