@@ -13,9 +13,14 @@ BASE = "/Volumes/WORK 2TB/WORK 2026/Bronson Cancer Equity Project/Cancer Survivo
 CAM_A_OFFSET = 63.2819
 CAM_B_OFFSET = 75.7851
 FPS = 30
+# NTSC frame duration: each frame = 1001/30000 seconds
+# seconds → frames: seconds * 30000/1001
+# This is CRITICAL: using 30 instead of 29.97 causes 1ms drift per second
+# At 23:24 (1404s), that's a 1.4 SECOND error!
 
 def f(s):
-    return int(round(s * FPS))
+    """Convert seconds to NTSC frame number (29.97fps)."""
+    return int(round(s * 30000 / 1001))
 
 # ============================================================
 # WHISPERX FORCED-ALIGNED CUT POINTS
@@ -94,10 +99,10 @@ cam_a_url = f"file://localhost{quote(os.path.join(BASE, 'Footage/Cam A/C8826.MP4
 cam_b_url = f"file://localhost{quote(os.path.join(BASE, 'Footage/Cam B/C8890.MP4'))}"
 tascam_url = f"file://localhost{quote(os.path.join(BASE, 'Audio/TASCAM_1087S34.wav'))}"
 
-# Total file durations in frames (from ffprobe)
-CAM_A_TOTAL_F = 44820   # 1493.993s
-CAM_B_TOTAL_F = 45345   # 1511.510s
-TASCAM_TOTAL_F = 42879  # 1429.296s
+# Total file durations in NTSC frames (seconds * 30000/1001)
+CAM_A_TOTAL_F = int(round(1493.993 * 30000 / 1001))   # = 44775
+CAM_B_TOTAL_F = int(round(1511.510 * 30000 / 1001))   # = 45300
+TASCAM_TOTAL_F = int(round(1429.296 * 30000 / 1001))   # = 42836
 
 # Pre-compute all clips — straight timestamps, no processing
 tl = 0
@@ -291,7 +296,7 @@ L.append('  </sequence>')
 L.append('</xmeml>')
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v7.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v8.xml")
 with open(out_path, "w") as fout:
     fout.write("\n".join(L))
 
