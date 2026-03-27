@@ -6,6 +6,7 @@ Uses WhisperX forced-aligned word timestamps (wav2vec2).
 No onset detector. No hacks. Just precise word boundaries.
 """
 
+import json
 import os
 import sys
 from urllib.parse import quote
@@ -325,6 +326,34 @@ if errors:
     for e in errors:
         print(f"   {e}")
     sys.exit(1)
+
+# ============================================================
+# NARRATIVE LINT — Editorial Intelligence Pre-Flight
+# ============================================================
+try:
+    sys.path.insert(0, os.path.join(os.path.dirname(BASE), "_multicam_framework"))
+    from narrative_lint import lint_edit_list, print_lint_report
+
+    # Load transcript words for sentence completion checks
+    transcript_path = os.path.join(BASE, "Master_S34_Transcript_WhisperX.json")
+    lint_words = []
+    if os.path.exists(transcript_path):
+        with open(transcript_path) as tf:
+            tdata = json.load(tf)
+        for tseg in tdata.get("segments", []):
+            for tw in tseg.get("words", []):
+                if "start" in tw:
+                    lint_words.append(tw)
+        lint_words.sort(key=lambda w: w["start"])
+
+    lint_warnings = lint_edit_list(EDIT, lint_words if lint_words else None)
+    lint_ok = print_lint_report(lint_warnings)
+except ImportError:
+    print("⚠️  narrative_lint.py not found — skipping editorial checks")
+    lint_ok = True
+except Exception as lint_err:
+    print(f"⚠️  Narrative lint error: {lint_err}")
+    lint_ok = True
 
 # Write
 out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v13.xml")
