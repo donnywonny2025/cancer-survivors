@@ -332,7 +332,7 @@ if errors:
     sys.exit(1)
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v10.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v11.xml")
 with open(out_path, "w") as fout:
     fout.write(xml_str)
 
