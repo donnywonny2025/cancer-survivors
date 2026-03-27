@@ -1,18 +1,12 @@
 #!/usr/bin/env python3
 """
-Speech Onset Detector — Core Framework Module
-================================================
-Finds the exact audio frame where speech energy begins,
-correcting Whisper's approximate word timestamps.
+Speech Onset Detector — Core Framework Module v2
+=================================================
+Uses actual waveform energy to find where speech starts.
+Room noise baseline vs speech energy spike detection.
 
-Method: Locates the energy minimum (breath gap) before the
-Whisper timestamp, then finds where energy rises from that
-minimum toward speech. Works in noisy rooms with ambient sound.
-
-Usage:
-    from onset_detector import find_onset, find_offset
-    true_start = find_onset(audio_path, whisper_timestamp)
-    true_end   = find_offset(audio_path, whisper_timestamp)
+Noise floor: ~50-100k | Speech: ~500k-1M+
+The detector finds the SPIKE, then backs up for consonant onset.
 """
 
 import numpy as np
@@ -21,22 +15,18 @@ import struct
 
 
 def read_wav_segment(wav_path, start_sec, end_sec):
-    """Read a segment of a WAV file, returns (samples_array, sample_rate)."""
+    """Read a segment of a WAV file."""
     with wave.open(wav_path, 'r') as wf:
         sr = wf.getframerate()
         nch = wf.getnchannels()
         sw = wf.getsampwidth()
-
         start_frame = max(0, int(start_sec * sr))
         end_frame = int(end_sec * sr)
-
         wf.setpos(start_frame)
         n_frames = end_frame - start_frame
         raw = wf.readframes(n_frames)
-
         if sw == 2:
-            fmt = f"<{n_frames * nch}h"
-            samples = np.array(struct.unpack(fmt, raw), dtype=np.float64)
+            samples = np.array(struct.unpack(f"<{n_frames * nch}h", raw), dtype=np.float64)
         elif sw == 3:
             samples = []
             for i in range(0, len(raw), 3):
@@ -46,12 +36,9 @@ def read_wav_segment(wav_path, start_sec, end_sec):
                 samples.append(val)
             samples = np.array(samples, dtype=np.float64)
         else:
-            fmt = f"<{n_frames * nch}h"
-            samples = np.array(struct.unpack(fmt, raw), dtype=np.float64)
-
+            samples = np.array(struct.unpack(f"<{n_frames * nch}h", raw), dtype=np.float64)
         if nch > 1:
             samples = samples.reshape(-1, nch).mean(axis=1)
-
         return samples, sr
 
 
@@ -59,93 +46,95 @@ def compute_energy(samples, frame_size, hop_size):
     """Compute short-time RMS energy."""
     energy = []
     for i in range(0, len(samples) - frame_size, hop_size):
-        frame = samples[i:i+frame_size]
-        energy.append(np.sqrt(np.mean(frame**2)))
+        frame = samples[i:i + frame_size]
+        energy.append(np.sqrt(np.mean(frame ** 2)))
     return np.array(energy)
 
 
-def find_onset(wav_path, whisper_time, search_window=0.3):
+def find_onset(wav_path, whisper_time, search_window=1.0, pre_speech_pad=0.1):
     """
-    Find the true speech onset before a Whisper word timestamp.
+    Find where speech actually starts using energy spike detection.
     
-    Locates the energy minimum (breath gap) in the window before
-    the timestamp, then finds where energy rises from that minimum.
+    1. Measures room noise baseline from the start of the search window
+    2. Finds the first energy SPIKE that's 3x above noise (= speech)
+    3. Backs up pre_speech_pad seconds for consonant onset
     
-    Returns: precise onset time in seconds (always <= whisper_time)
+    Returns: precise onset time in seconds
     """
     search_start = max(0, whisper_time - search_window)
-    search_end = whisper_time + 0.05
+    search_end = whisper_time + 0.5
 
     samples, sr = read_wav_segment(wav_path, search_start, search_end)
-    hop = int(sr * 0.002)       # 2ms hop for fine resolution
-    frame_sz = int(sr * 0.008)  # 8ms frame
+    hop = int(sr * 0.005)       # 5ms hop
+    frame_sz = int(sr * 0.01)   # 10ms frame
 
     energy = compute_energy(samples, frame_sz, hop)
-    if len(energy) < 5:
+    if len(energy) < 10:
         return whisper_time
 
-    whisper_idx = min(int((whisper_time - search_start) * sr / hop), len(energy) - 1)
-    if whisper_idx <= 0:
-        return whisper_time
+    # Measure noise baseline from first 20% of window (before speech)
+    baseline_end = max(10, int(len(energy) * 0.2))
+    noise_baseline = np.median(energy[:baseline_end])
 
-    # Find energy minimum before whisper_time (the breath gap)
-    min_idx = int(np.argmin(energy[:whisper_idx]))
-    min_energy = energy[min_idx]
+    # Speech threshold: 3x noise baseline
+    speech_threshold = noise_baseline * 3.0
 
-    # Find where energy rises to 50% between min and whisper point
-    whisper_energy = energy[whisper_idx]
-    half_rise = min_energy + 0.5 * (whisper_energy - min_energy)
-
-    onset_idx = min_idx
-    for i in range(min_idx, whisper_idx):
-        if energy[i] >= half_rise:
-            onset_idx = i
+    # Find first frame where energy exceeds speech threshold
+    spike_idx = None
+    for i in range(len(energy)):
+        if energy[i] > speech_threshold:
+            spike_idx = i
             break
 
-    # Back up 2 frames (~4ms) to catch the very start of the consonant
-    onset_idx = max(0, onset_idx - 2)
+    if spike_idx is None:
+        return whisper_time
 
-    onset_time = search_start + (onset_idx * hop / sr)
-    return min(onset_time, whisper_time)
+    # Convert spike to time
+    spike_time = search_start + (spike_idx * hop / sr)
+
+    # Back up for consonant onset (H, S, T etc start before the vowel spike)
+    onset_time = spike_time - pre_speech_pad
+
+    # Never go before the search window start
+    onset_time = max(search_start, onset_time)
+
+    return onset_time
 
 
-def find_offset(wav_path, whisper_time, search_window=0.3):
+def find_offset(wav_path, whisper_time, search_window=0.5, post_speech_pad=0.05):
     """
-    Find the true speech offset after a Whisper word end timestamp.
+    Find where speech actually ends using energy drop detection.
     
-    Returns: precise offset time in seconds (always >= whisper_time)
+    Returns: precise offset time in seconds
     """
-    search_start = whisper_time - 0.05
+    search_start = whisper_time - 0.1
     search_end = whisper_time + search_window
 
     samples, sr = read_wav_segment(wav_path, search_start, search_end)
-    hop = int(sr * 0.002)
-    frame_sz = int(sr * 0.008)
+    hop = int(sr * 0.005)
+    frame_sz = int(sr * 0.01)
 
     energy = compute_energy(samples, frame_sz, hop)
-    if len(energy) < 5:
+    if len(energy) < 10:
         return whisper_time
 
-    whisper_idx = min(int((whisper_time - search_start) * sr / hop), len(energy) - 1)
-    if whisper_idx >= len(energy) - 1:
-        return whisper_time
+    # Measure noise from last 20% of window (after speech)
+    baseline_start = int(len(energy) * 0.8)
+    noise_baseline = np.median(energy[baseline_start:])
 
-    # Find energy minimum AFTER whisper_time
-    min_idx = int(np.argmin(energy[whisper_idx:])) + whisper_idx
-    min_energy = energy[min_idx]
+    speech_threshold = noise_baseline * 3.0
 
-    # Find where energy drops to 50% between whisper point and min
-    whisper_energy = energy[whisper_idx]
-    half_drop = whisper_energy - 0.5 * (whisper_energy - min_energy)
-
-    offset_idx = min_idx
-    for i in range(whisper_idx, min_idx + 1):
-        if energy[i] <= half_drop:
-            offset_idx = i
+    # Find LAST frame where energy exceeds speech threshold
+    drop_idx = None
+    for i in range(len(energy) - 1, -1, -1):
+        if energy[i] > speech_threshold:
+            drop_idx = i
             break
 
-    # Add 2 frames (~4ms) to catch the tail
-    offset_idx = min(len(energy) - 1, offset_idx + 2)
+    if drop_idx is None:
+        return whisper_time
 
-    offset_time = search_start + (offset_idx * hop / sr)
+    drop_time = search_start + (drop_idx * hop / sr)
+    offset_time = drop_time + post_speech_pad
+
     return max(offset_time, whisper_time)

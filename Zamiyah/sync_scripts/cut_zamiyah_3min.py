@@ -25,7 +25,9 @@ def f(s):
 # WORD-LEVEL PRECISE CUTS (verified from Whisper word timestamps)
 # ============================================================
 EDIT = [
-    (23*60+24.32, 23*60+29.64, "IDENTITY", "B"),
+    # IDENTITY: Audio spike at 1404.625s. Start 300ms before = 1404.325
+    # Verified from waveform: room noise until 1404.5, "Hi" vocalization at 1404.625
+    (23*60+24.0, 23*60+29.64, "IDENTITY", "B"),
     (60+23.00, 60+34.12, "PERSONALITY: dancing piano guitar", "A"),
     (60+35.62, 60+44.48, "PERSONALITY: bubbly kind", "A"),
     (44.92, 53.84, "SIGNS: subtle lymph nodes", "B"),
@@ -265,7 +267,7 @@ L.append('  </sequence>')
 L.append('</xmeml>')
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v3.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v4.xml")
 with open(out_path, "w") as fout:
     fout.write("\n".join(L))
 
