@@ -7,6 +7,7 @@ No onset detector. No hacks. Just precise word boundaries.
 """
 
 import os
+import sys
 from urllib.parse import quote
 
 BASE = "/Volumes/WORK 2TB/WORK 2026/Bronson Cancer Equity Project/Cancer Survivors/Zamiyah"
@@ -265,6 +266,9 @@ for c in clips:
     L.append('            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>')
     L.append(f'            <labels><label2>{COLOR_CAM_A}</label2></labels>')
     L.append('          </clipitem>')
+L.append('        </track>')
+
+# A2: Cam B audio
 L.append('        <track>')
 L.append('          <name>A2: Cam B Scratch</name>')
 for c in clips:
@@ -314,11 +318,43 @@ L.append('      </audio>')
 L.append('    </media>')
 L.append('  </sequence>')
 L.append('</xmeml>')
+# ============================================================
+# STRUCTURAL VALIDATION — catch regressions before writing
+# ============================================================
+xml_str = "\n".join(L)
+errors = []
+
+# Tag balance checks
+for tag in ['track', 'clipitem', 'file', 'media', 'sequence', 'xmeml']:
+    opens = xml_str.count(f'<{tag}>') + xml_str.count(f'<{tag} ')
+    closes = xml_str.count(f'</{tag}>')
+    refs = xml_str.count(f'<{tag} id=') + xml_str.count(f'<{tag} id=')
+    if tag in ('file',):  # files have self-closing refs like <file id="f_a"/>
+        continue
+    if opens != closes:
+        errors.append(f"⛔ TAG MISMATCH: <{tag}> has {opens} opens but {closes} closes")
+
+# Track count check
+track_names = [l for l in L if '<name>V1' in l or '<name>V2' in l or '<name>A1' in l or '<name>A2' in l or '<name>A3' in l]
+if len(track_names) != 5:
+    errors.append(f"⛔ TRACK COUNT: Expected 5 tracks (V1,V2,A1,A2,A3), found {len(track_names)}")
+
+# Clip count check per track
+for track_id in ['v1_', 'v2_', 'a1_', 'a2_', 'a3_']:
+    count = xml_str.count(f'clipitem id="{track_id}')
+    if count != len(clips):
+        errors.append(f"⛔ CLIP COUNT: {track_id} has {count} clips, expected {len(clips)}")
+
+if errors:
+    print("❌ VALIDATION FAILED — XML NOT WRITTEN")
+    for e in errors:
+        print(f"   {e}")
+    sys.exit(1)
 
 # Write
 out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v9.xml")
 with open(out_path, "w") as fout:
-    fout.write("\n".join(L))
+    fout.write(xml_str)
 
 m, s = divmod(total_f * 1001 / 30000, 60)
 b_count = sum(1 for c in clips if c['cam'] == 'B')

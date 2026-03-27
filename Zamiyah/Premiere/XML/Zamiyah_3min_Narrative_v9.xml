@@ -944,6 +944,7 @@
             <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
             <labels><label2>Cerulean</label2></labels>
           </clipitem>
+        </track>
         <track>
           <name>A2: Cam B Scratch</name>
           <clipitem id="a2_0">
