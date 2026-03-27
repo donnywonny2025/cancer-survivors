@@ -11,25 +11,35 @@
 *.MXF
 *.mxf
 
-# Premiere Pro project files (binary)
+# ===== Premiere / NLE Project Files =====
 *.prproj
+*.prin
+*.aep
+*.mogrt
+*.fcpxml
 *.pek
 *.cfa
 
+# RAW Photos
+*.ARW
+*.arw
+*.heic
+*.HEIC
+*.CR2
+*.NEF
+*.DNG
+
 # Whisper models (large binaries)
 *.pt
+*.pth
+*.onnx
 *.bin
+*.safetensors
 
 # OS files
 .DS_Store
 Thumbs.db
 
-# Temp files
-/tmp/
-*.raw
+# Python
 __pycache__/
 *.pyc
-
-# Photos (optional — uncomment if you want to track thumbnails)
-# *.jpg
-# *.png
