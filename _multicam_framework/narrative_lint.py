@@ -377,10 +377,11 @@ def _check_sentence_completion(
 
     for i, entry in enumerate(edit_list):
         end = entry[1]
-        # Find the last word in this segment
+        # Find words IN this segment — use tight tolerance to avoid
+        # catching words that start just after the out-point
         seg_words = [
             w for w in transcript_words
-            if entry[0] - 0.3 <= w.get("start", 0) <= end + 0.3
+            if entry[0] - 0.15 <= w.get("start", 0) <= end + 0.05
         ]
         if not seg_words:
             continue
@@ -420,6 +421,36 @@ def _check_sentence_completion(
 # MAIN LINTER
 # ============================================================
 
+def _check_source_overlap(edit_list: list) -> List[Dict]:
+    """Check if consecutive segments from nearby source regions overlap in time."""
+    warnings = []
+
+    for i in range(len(edit_list) - 1):
+        curr_start, curr_end = edit_list[i][0], edit_list[i][1]
+        next_start, next_end = edit_list[i + 1][0], edit_list[i + 1][1]
+
+        # Only check if source times are close (within 30s of each other)
+        # — segments from different parts of the interview can't overlap
+        if abs(curr_start - next_start) > 30:
+            continue
+
+        # Check for actual overlap
+        if curr_end > next_start:
+            overlap = curr_end - next_start
+            warnings.append({
+                "severity": "ERROR",
+                "rule": "SOURCE_OVERLAP",
+                "segment_index": i,
+                "message": (
+                    f"Segments {i+1} and {i+2} have {overlap:.1f}s SOURCE OVERLAP. "
+                    f"Seg {i+1} ends at {curr_end:.3f} but Seg {i+2} starts at {next_start:.3f}. "
+                    f"Audio will repeat/stutter at this cut point."
+                ),
+            })
+
+    return warnings
+
+
 def lint_edit_list(
     edit_list: list,
     transcript_words: Optional[List[Dict]] = None,
@@ -449,6 +480,7 @@ def lint_edit_list(
     warnings.extend(_check_camera_monotony(edit_list))
     warnings.extend(_check_arc_coverage(labels))
     warnings.extend(_check_sentence_completion(edit_list, transcript_words))
+    warnings.extend(_check_source_overlap(edit_list))
 
     # Sort by severity (ERROR > WARN > INFO)
     severity_order = {"ERROR": 0, "WARN": 1, "INFO": 2}

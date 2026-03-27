@@ -52,8 +52,8 @@ EDIT = [
     (547.472, 552.569, "CHANGE: grown as person", "A"),                  # Growth
     (821.965, 827.722, "MUSIC: write my own music", "A"),                # Creative outlet
     (828.253, 835.933, "MUSIC: express feelings emotions", "A"),         # Music as therapy
-    (1303.394, 1312.945, "NURSE: love so dearly had cancer", "B"),       # Support system
-    (1312.374, 1329.527, "NURSE: somebody understands you", "A"),        # Connection
+    (1303.394, 1312.584, "NURSE: love so dearly had cancer", "B"),       # Ends after "before." word-end
+    (1313.517, 1329.527, "NURSE: somebody understands you", "A"),        # Starts at "her" (skips "So")
     (680.163, 695.779, "CLOSE: stay confident be yourself", "A"),        # Advice to others
     (717.756, 720.009, "CLOSE: your journey is your journey", "A"),      # Ownership
     (721.120, 725.236, "CLOSE: break through anything", "B"),            # Final word
