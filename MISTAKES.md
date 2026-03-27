@@ -40,6 +40,31 @@ Track bugs so they never happen again.
 - **Rule**: NEVER multiply by timebase directly. Always use `ntsc_frame()`.
 - **Verified**: v8
 
+## BUG-006: Overwriting XML Instead of Versioning
+- **Issue**: When user gave feedback on v10, re-generated v10 instead of bumping to v11
+- **Effect**: No way to compare before/after. Breaks revision history.
+- **Root Cause**: Lazy — didn't update the output filename after changes
+- **Fix**: EVERY round of feedback = new version number in the output filename
+- **Rule**: NEVER overwrite an XML version. Always increment: v10 → v11 → v12
+- **Verified**: v11
+
+## BUG-007: Missing `</track>` After Adding Color Labels
+- **Issue**: Text replacement edit consumed the `</track>` between A1 and A2
+- **Effect**: Premiere showed only 2 audio tracks instead of 3
+- **Root Cause**: AI edit tool replaced too much context, removing structural XML tags
+- **Fix**: Added structural validator to script (tag balance, track count, clip count)
+- **Rule**: Structural validator runs BEFORE file write. Script refuses to write broken XML.
+- **Verified**: v9+
+
+## BUG-008: Stumbles/False Starts Not Caught in EDIT List
+- **Issue**: COST segment included "It affects your routines... Sorry." stumble
+- **Effect**: Subject says "Sorry" in the middle of the final narrative
+- **Root Cause**: EDIT list was built without scanning transcript for stumble markers
+- **Fix**: Added stumble detection to Intelligent Cut rules (3-option framework)
+- **Rule**: BEFORE finalizing EDIT list, scan EVERY segment's WhisperX words for:
+  "Sorry", repeated sentence openers, "Let me start over", self-corrections
+- **Verified**: v11
+
 ---
 
 ## Pre-Flight Checklist (codified in `_multicam_framework/media_probe.py`)
@@ -57,3 +82,10 @@ It checks:
 - [ ] Audio sample rates match (48kHz)
 - [ ] Video resolutions match (3840x2160)
 - [ ] Total file durations computed at correct NTSC rate
+
+## Versioning Rules
+- [ ] **EVERY change = new version number** — never overwrite
+- [ ] Output filename includes version: `_v11.xml`, `_v12.xml`, etc.
+- [ ] Git commit after every version with a message describing what changed
+- [ ] Changes logged in this file with BUG-### format
+
