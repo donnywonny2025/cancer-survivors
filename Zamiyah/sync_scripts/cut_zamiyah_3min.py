@@ -264,7 +264,7 @@ L.append(f'            <in>{clips[0]["in_t"]}</in><out>{clips[0]["out_t"]}</out>
 L.append('            <file id="f_t">')
 L.append('                <name>TASCAM_1087S34.wav</name>')
 L.append(f'                <pathurl>{tascam_url}</pathurl>')
-L.append('                <media><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio></media>')
+L.append('                <media><audio><samplecharacteristics><depth>24</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio></media>')
 L.append('            </file>')
 L.append('            <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>')
 L.append('          </clipitem>')
@@ -286,7 +286,7 @@ L.append('  </sequence>')
 L.append('</xmeml>')
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v5.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v6.xml")
 with open(out_path, "w") as fout:
     fout.write("\n".join(L))
 
