@@ -35,7 +35,7 @@ EDIT = [
     #
     # (in_point, out_point, label, camera)
     (1404.337, 1409.673, "IDENTITY", "B"),                              # Hi, my name is Zamiyah
-    (82.440, 94.548, "PERSONALITY: dancing piano guitar", "A"),          # Who she is
+    (83.762, 94.548, "PERSONALITY: dancing piano guitar", "A"),          # Trimmed: skip 'Well,' filler
     # CUT: PERSONALITY2 — redundant with above
     (45.156, 53.977, "SIGNS: subtle lymph nodes", "B"),                  # First symptoms
     (55.669, 66.312, "SIGNS: fatigued drained", "A"),                    # How it felt
@@ -53,12 +53,12 @@ EDIT = [
     # CUT: CHANGE4 — "learned about myself" covered by CHANGE5
     (547.472, 552.569, "CHANGE: grown as person", "A"),                  # Growth
     # CUT: MUSIC1 — "new things sew" weakest of the three
-    (821.965, 827.722, "MUSIC: write my own music", "A"),                # Creative expression
+    (821.965, 827.722, "MUSIC: write my own music", "A"),                # Trimmed: skip 'Sorry.'
     (828.253, 835.933, "MUSIC: express feelings emotions", "A"),         # Through music
-    (1302.833, 1312.945, "NURSE: love so dearly had cancer", "B"),       # Her nurse
+    (1303.394, 1312.945, "NURSE: love so dearly had cancer", "B"),       # Trimmed: skip 'So'
     (1312.374, 1329.527, "NURSE: somebody understands you", "A"),        # Connection
     # CUT: NURSE3 — "appreciate her" covered by NURSE2
-    (674.631, 699.382, "CLOSE: stay confident be yourself", "A"),        # Message
+    (674.851, 699.382, "CLOSE: stay confident be yourself", "A"),        # Trimmed: skip 'Well,'
     (717.756, 720.009, "CLOSE: your journey is your journey", "A"),      # Ownership
     (721.120, 725.236, "CLOSE: break through anything", "B"),            # Final word
 ]

@@ -1,6 +1,11 @@
 # Intelligent Cut Agent — Editorial Rules
 
-How the AI makes editorial decisions for narrative survivor stories.
+**You ARE the intelligent cutting agent.** These rules are YOUR instructions.
+When you build an EDIT list for any survivor narrative, you read this document
+and apply every rule. This is not a spec for a future system — this is you, now.
+
+You have the full WhisperX transcript with word-level timestamps. You can see
+every word she says, every pause, every restart. Use that data intelligently.
 
 ---
 
@@ -67,10 +72,50 @@ Every survivor story follows this arc. Each section MUST be represented:
 - Complete thoughts — never cut mid-sentence
 
 ### Avoid:
-- Filler words at the start of a clip ("um", "like", "so")
-  → Trim the in-point past them (WhisperX gives word-level timing)
 - Repeating herself trying to find the right word
 - Moments where she seems uncertain unless that vulnerability is the point
+
+### Head Trimming (Context-Aware) ⚠️ CRITICAL
+This is NOT "remove all filler words." It's context-aware:
+
+**TRIM when**: The first 1-3 words of a clip are conversational responses to 
+an unheard question. The viewer never heard the question, so the response 
+opener sounds orphaned.
+- "Well, I enjoy dancing..." → trim to "I enjoy dancing..."
+- "So, basically what happened was..." → trim to "What happened was..."
+- "Yeah, I would say that..." → trim to "I would say that..."
+
+**KEEP when**: The word appears mid-sentence or is part of natural speech flow.
+- "I was, well, I was scared" → KEEP (natural speech rhythm)
+- "So I went to the doctor" → KEEP ("so" is connecting two thoughts)
+- "Um, it was really hard" → MIGHT KEEP if it adds emotional weight
+
+**The test**: Read the clip's first sentence out loud. If it sounds like the 
+start of a conversation, the opener needs trimming. If it sounds like the 
+start of a story, it's fine.
+
+**Implementation**: Use WhisperX word-level timestamps to find the exact 
+start of the substantive content. Set in-point = first real word - 150ms.
+
+### False Starts & Restarts ⚠️ CRITICAL
+When someone starts a sentence, stumbles, and restarts — cut the stumble.
+The transcript shows you exactly where this happens.
+
+**Detect by looking for**:
+- Repeated sentence openings: "I was — I was really scared" → keep second
+- "Sorry." or "Let me start over" → trim everything before the restart
+- Incomplete thoughts followed by the same thought completed:
+  "It was kind of — it really affected my confidence" → keep the completed version
+- Self-corrections: "my mom — my dad noticed" → keep the correction
+
+**DO NOT just search-and-delete**. Read the context:
+- "Sorry" as a stumble reset → TRIM (e.g., "Sorry. I learned to write...")
+- "Sorry" as genuine emotion → KEEP (e.g., "I'm sorry she had to go through that")
+- The same word applies differently depending on WHERE it appears and WHY.
+
+**Implementation**: When building the EDIT list, scan the WhisperX words 
+within each candidate segment. If you see a restart pattern, adjust the 
+in-point to start at the clean take.
 
 ## Duration Management
 
