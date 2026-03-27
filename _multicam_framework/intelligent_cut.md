@@ -97,25 +97,51 @@ start of a story, it's fine.
 **Implementation**: Use WhisperX word-level timestamps to find the exact 
 start of the substantive content. Set in-point = first real word - 150ms.
 
-### False Starts & Restarts ⚠️ CRITICAL
-When someone starts a sentence, stumbles, and restarts — cut the stumble.
-The transcript shows you exactly where this happens.
+### Stumbles, False Starts & Restarts ⚠️ CRITICAL
 
-**Detect by looking for**:
-- Repeated sentence openings: "I was — I was really scared" → keep second
-- "Sorry." or "Let me start over" → trim everything before the restart
-- Incomplete thoughts followed by the same thought completed:
-  "It was kind of — it really affected my confidence" → keep the completed version
-- Self-corrections: "my mom — my dad noticed" → keep the correction
+**This is NOT black and white.** A stumble doesn't mean you throw away the 
+segment. You evaluate what's salvageable and choose the best approach.
 
-**DO NOT just search-and-delete**. Read the context:
-- "Sorry" as a stumble reset → TRIM (e.g., "Sorry. I learned to write...")
-- "Sorry" as genuine emotion → KEEP (e.g., "I'm sorry she had to go through that")
-- The same word applies differently depending on WHERE it appears and WHY.
+When you find a stumble in a segment, you have THREE options:
 
-**Implementation**: When building the EDIT list, scan the WhisperX words 
-within each candidate segment. If you see a restart pattern, adjust the 
-in-point to start at the clean take.
+**Option 1: CUT AROUND IT (splice)**
+Keep the good content from BOTH sides of the stumble. Make two clips.
+- "It affects your routines. *Sorry.* It also affects your confidence."
+- → Clip A: "It affects your routines, your relationship." (clean first half)
+- → Clip B: "It also affects your confidence and self-identity." (clean restart)
+- **Use when**: Both halves say important, different things.
+
+**Option 2: SKIP THE FIRST PART (trim in-point)**
+If the restart says the same thing better, just start at the clean take.
+- "I was — Sorry. I was really scared when I found out."
+- → Just use: "I was really scared when I found out."
+- **Use when**: The restart replaces the first attempt completely.
+
+**Option 3: USE ONLY THE FIRST PART (trim out-point)** 
+If the first part is complete and the restart adds nothing new.
+- "I love dancing and music. *Sorry, what was the question?* Oh, I also..."
+- → Just use: "I love dancing and music."
+- **Use when**: The thought was already complete before the stumble.
+
+**NEVER**: Throw away the entire segment just because there's a stumble 
+somewhere in it. The content might be the best take she has on that topic.
+
+**How to detect stumbles in the transcript:**
+- "Sorry." / "Let me..." / "Can I start over" between sentences
+- Repeated sentence openings: "I was — I was really..."
+- Incomplete trailing words followed by a pause then a restart
+- Self-corrections: "my mom — sorry, my dad noticed"
+
+**The decision framework:**
+1. Read the full transcript of the segment
+2. Identify where the stumble is
+3. Ask: what's the content before? Is it a complete, usable thought?
+4. Ask: what's the content after? Is it a complete, usable thought?
+5. Ask: are they saying the SAME thing or DIFFERENT things?
+6. Choose Option 1, 2, or 3 based on the answers
+
+**Context matters.** "Sorry" as a reset → cut around it. "Sorry" as emotion → keep it.
+The same word means different things depending on WHERE and WHY.
 
 ## Duration Management
 
