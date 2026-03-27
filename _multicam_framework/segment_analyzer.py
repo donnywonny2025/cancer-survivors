@@ -33,10 +33,11 @@ from collections import defaultdict
 
 THEME_PATTERNS = {
     "IDENTITY": {
-        "keywords": {"name", "my name", "i'm", "i am", "diagnosed", "years old",
-                     "lymphoma", "leukemia", "cancer", "hodgkin"},
+        "keywords": {"my name is", "my name's", "diagnosed with", "years old",
+                     "i was diagnosed"},
         "context": ["introduction", "who they are"],
         "weight": 1.0,
+        "min_matches": 1,  # requires at least 1 keyword (they're very specific)
     },
     "SIGNS": {
         "keywords": {"signs", "symptoms", "subtle", "swollen", "lymph nodes",
@@ -359,11 +360,27 @@ def analyze_transcript(transcript_path: str) -> Dict:
     # Step 1: Break into natural chunks
     chunks = detect_natural_segments(segments)
 
+    # Step 1.5: Filter out interviewer-dominated chunks
+    filtered_chunks = []
+    for chunk in chunks:
+        text_lower = chunk["text"].lower()
+        interviewer_hits = sum(1 for m in INTERVIEWER_MARKERS if m in text_lower)
+        word_count = len(chunk["text"].split())
+        # Skip if 40%+ of content looks like interviewer or too many markers
+        if interviewer_hits >= 3 or (interviewer_hits >= 2 and word_count < 20):
+            continue
+        filtered_chunks.append(chunk)
+
     # Step 2: Analyze each chunk
     candidates = []
-    for chunk in chunks:
+    for chunk in filtered_chunks:
         theme, confidence = tag_theme(chunk["text"])
         scores = score_segment(chunk["text"])
+
+        # Skip low-confidence classifications
+        if confidence < 0.15 and theme != "UNKNOWN":
+            theme = "UNKNOWN"
+            confidence = 0.0
 
         candidates.append({
             "start": chunk["start"],
