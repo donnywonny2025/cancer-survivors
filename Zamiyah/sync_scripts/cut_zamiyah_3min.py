@@ -1,19 +1,15 @@
 #!/usr/bin/env python3
 """
-Zamiyah 3-Minute Narrative — Word-Level Precision Cut
-Uses the PROVEN v34.2 Golden Layout XML pattern (L.append).
-Onset detector refines all Whisper timestamps to true speech start/end.
+Zamiyah 3-Minute Narrative — v5 WhisperX Forced Alignment
+Uses WhisperX forced-aligned word timestamps (wav2vec2).
+150ms pad before first word, 100ms pad after last word.
+No onset detector. No hacks. Just precise word boundaries.
 """
 
-import os, sys
+import os
 from urllib.parse import quote
 
-# Import onset detector from framework
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../../_multicam_framework'))
-from onset_detector import find_onset, find_offset
-
 BASE = "/Volumes/WORK 2TB/WORK 2026/Bronson Cancer Equity Project/Cancer Survivors/Zamiyah"
-TASCAM = os.path.join(BASE, "Audio/TASCAM_1087S34.wav")
 CAM_A_OFFSET = 63.2819
 CAM_B_OFFSET = 75.7851
 FPS = 30
@@ -22,79 +18,102 @@ def f(s):
     return int(round(s * FPS))
 
 # ============================================================
-# WORD-LEVEL PRECISE CUTS (verified from Whisper word timestamps)
+# WHISPERX FORCED-ALIGNED CUT POINTS
+# Source: Master_S34_Transcript_WhisperX.json (wav2vec2 alignment)
+# First word start - 150ms = in-point
+# Last word end + 100ms = out-point
 # ============================================================
 EDIT = [
-    # IDENTITY: Audio spike at 1404.625s. Start 300ms before = 1404.325
-    # Verified from waveform: room noise until 1404.5, "Hi" vocalization at 1404.625
-    (23*60+24.0, 23*60+29.64, "IDENTITY", "B"),
-    (60+23.00, 60+34.12, "PERSONALITY: dancing piano guitar", "A"),
-    (60+35.62, 60+44.48, "PERSONALITY: bubbly kind", "A"),
-    (44.92, 53.84, "SIGNS: subtle lymph nodes", "B"),
-    (55.66, 66.30, "SIGNS: fatigued drained", "A"),
-    (2*60+12.68, 2*60+18.26, "MOMENT: always active dance", "A"),
-    (2*60+18.68, 2*60+21.76, "MOMENT: sleeping more weird", "A"),
-    (2*60+22.82, 2*60+27.12, "MOMENT: mom noticed", "A"),
-    (2*60+29.48, 2*60+35.30, "MOMENT: knew something wasn't right", "B"),
-    (4*60+15.60, 4*60+26.94, "COST: how much life you lose", "A"),
-    (4*60+28.84, 4*60+41.00, "COST: confidence self-identity", "A"),
-    (6*60+59.74, 7*60+5.46, "POWER: catch it early", "A"),
-    (7*60+8.82, 7*60+19.68, "POWER: fear is normal taking power back", "A"),
-    (7*60+19.68, 7*60+35.86, "POWER: knowing is better", "B"),
-    (8*60+30.88, 8*60+35.70, "CHANGE: changed everything", "A"),
-    (8*60+37.78, 8*60+43.62, "CHANGE: small days", "B"),
-    (8*60+46.38, 8*60+56.02, "CHANGE: value rest joy people", "A"),
-    (8*60+56.92, 9*60+0.34, "CHANGE: learned about myself", "A"),
-    (9*60+7.20, 9*60+13.00, "CHANGE: grown as person", "A"),
-    (12*60+56.92, 13*60+5.86, "MUSIC: new things sew", "A"),
-    (13*60+41.82, 13*60+47.74, "MUSIC: write my own music", "A"),
-    (13*60+48.72, 13*60+55.74, "MUSIC: express feelings emotions", "A"),
-    (21*60+43.14, 21*60+52.86, "NURSE: love so dearly had cancer", "B"),
-    (21*60+52.86, 22*60+9.52, "NURSE: somebody understands you", "A"),
-    (22*60+10.96, 22*60+17.32, "NURSE: appreciate her so much", "A"),
-    (11*60+15.00, 11*60+38.96, "CLOSE: stay confident be yourself", "A"),
-    (11*60+38.96, 11*60+47.22, "CLOSE: stay strong break through", "A"),
-    (11*60+57.28, 11*60+59.86, "CLOSE: your journey is your journey", "A"),
-    (12*60+0.96, 12*60+6.32, "CLOSE: break through anything", "B"),
+    # (in_point, out_point, label, camera)
+    # WhisperX: "Hi," 1404.487-1404.948 ... "lymphoma." 1409.092-1409.573
+    (1404.337, 1409.673, "IDENTITY", "B"),
+    # WhisperX: "a" 82.590 ... end 94.448
+    (82.440, 94.548, "PERSONALITY: dancing piano guitar", "A"),
+    # WhisperX: "very" 95.610 ... end 104.431
+    (95.460, 104.531, "PERSONALITY: bubbly kind", "A"),
+    # WhisperX: "think" 45.306 ... end 53.877
+    (45.156, 53.977, "SIGNS: subtle lymph nodes", "B"),
+    # WhisperX: "I" 55.819 ... end 66.212
+    (55.669, 66.312, "SIGNS: fatigued drained", "A"),
+    # WhisperX: "I" 133.075 ... end 138.562
+    (132.925, 138.662, "MOMENT: always active dance", "A"),
+    # WhisperX: "that." 138.342 ... end 141.807
+    (138.192, 141.907, "MOMENT: sleeping more weird", "A"),
+    # WhisperX: "So" 143.008 ... end 147.014
+    (142.858, 147.114, "MOMENT: mom noticed", "A"),
+    # WhisperX: "my" 150.579 ... end 155.385
+    (150.429, 155.485, "MOMENT: knew something wasn't right", "B"),
+    # WhisperX: "People" 256.987 ... end 265.039
+    (256.837, 265.139, "COST: how much life you lose", "A"),
+    # WhisperX: "It" 269.045 ... end 281.122
+    (268.895, 281.222, "COST: confidence self-identity", "A"),
+    # WhisperX: "I'd" 420.016 ... end 423.880
+    (419.866, 423.980, "POWER: catch it early", "A"),
+    # WhisperX: "also" 429.545 ... end 439.695
+    (429.395, 439.795, "POWER: fear is normal taking power back", "A"),
+    # WhisperX: "And" 440.496 ... end 455.615
+    (440.346, 455.715, "POWER: knowing is better", "B"),
+    # WhisperX: "I'd" 511.097 ... end 514.382
+    (510.947, 514.482, "CHANGE: changed everything", "A"),
+    # WhisperX: "don't" 518.109 ... end 522.737
+    (517.959, 522.837, "CHANGE: small days", "B"),
+    # WhisperX: "I" 526.953 ... end 535.946
+    (526.803, 536.046, "CHANGE: value rest joy people", "A"),
+    # WhisperX: "say" 537.568 ... end 540.272
+    (537.418, 540.372, "CHANGE: learned about myself", "A"),
+    # WhisperX: "overall," 547.622 ... end 552.469
+    (547.472, 552.569, "CHANGE: grown as person", "A"),
+    # WhisperX: "more" 776.544 ... end 785.874
+    (776.394, 785.974, "MUSIC: new things sew", "A"),
+    # WhisperX: "I" 822.115 ... end 827.622
+    (821.965, 827.722, "MUSIC: write my own music", "A"),
+    # WhisperX: "I" 828.403 ... end 835.833
+    (828.253, 835.933, "MUSIC: express feelings emotions", "A"),
+    # WhisperX: "So" 1302.983 ... end 1312.845
+    (1302.833, 1312.945, "NURSE: love so dearly had cancer", "B"),
+    # WhisperX: "before." 1312.524 ... end 1329.427
+    (1312.374, 1329.527, "NURSE: somebody understands you", "A"),
+    # WhisperX: "feel" 1331.369 ... end 1337.254
+    (1331.219, 1337.354, "NURSE: appreciate her so much", "A"),
+    # WhisperX: "Well," 674.781 ... end 699.282
+    (674.631, 699.382, "CLOSE: stay confident be yourself", "A"),
+    # WhisperX: "you" 698.882 ... end 705.088
+    (698.732, 705.188, "CLOSE: stay strong break through", "A"),
+    # WhisperX: "And" 717.906 ... end 719.909
+    (717.756, 720.009, "CLOSE: your journey is your journey", "A"),
+    # WhisperX: "And" 721.270 ... end 725.136
+    (721.120, 725.236, "CLOSE: break through anything", "B"),
 ]
 
 # ============================================================
 # Build using the PROVEN v34.2 L.append pattern
-# Onset detector corrects all Whisper timestamps first
+# WhisperX timestamps — no onset detector needed
 # ============================================================
 
 cam_a_url = f"file://localhost{quote(os.path.join(BASE, 'Footage/Cam A/C8826.MP4'))}"
 cam_b_url = f"file://localhost{quote(os.path.join(BASE, 'Footage/Cam B/C8890.MP4'))}"
 tascam_url = f"file://localhost{quote(os.path.join(BASE, 'Audio/TASCAM_1087S34.wav'))}"
 
-# Pre-compute all clips with onset-corrected timestamps
-print("🔍 Running onset detection on all cut points...")
+# Pre-compute all clips — straight timestamps, no processing
 tl = 0
 clips = []
 for i, (start, end, label, cam) in enumerate(EDIT):
-    # Correct Whisper timestamps using audio energy analysis
-    true_start = find_onset(TASCAM, start)
-    true_end = find_offset(TASCAM, end)
-    
-    dur_f = f(true_end - true_start)
+    dur_f = f(end - start)
     tl_s = tl
     tl_e = tl + dur_f
-    in_a = f(true_start + CAM_A_OFFSET)
-    out_a = f(true_end + CAM_A_OFFSET)
-    in_b = f(true_start + CAM_B_OFFSET)
-    out_b = f(true_end + CAM_B_OFFSET)
-    in_t = f(true_start)
-    out_t = f(true_end)
-    
-    correction_ms = (start - true_start) * 1000
+    in_a = f(start + CAM_A_OFFSET)
+    out_a = f(end + CAM_A_OFFSET)
+    in_b = f(start + CAM_B_OFFSET)
+    out_b = f(end + CAM_B_OFFSET)
+    in_t = f(start)
+    out_t = f(end)
     clips.append({
         'i': i, 'tl_s': tl_s, 'tl_e': tl_e, 'dur_f': dur_f,
         'in_a': in_a, 'out_a': out_a,
         'in_b': in_b, 'out_b': out_b,
         'in_t': in_t, 'out_t': out_t,
         'cam': cam, 'label': label,
-        'onset_correction_ms': correction_ms,
-        'true_start': true_start, 'true_end': true_end
+        'src_start': start, 'src_end': end
     })
     tl = tl_e
 
@@ -267,7 +286,7 @@ L.append('  </sequence>')
 L.append('</xmeml>')
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v4.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v5.xml")
 with open(out_path, "w") as fout:
     fout.write("\n".join(L))
 
@@ -279,11 +298,10 @@ print(f"   → {out_path}")
 
 # EDL
 print(f"\n{'='*80}")
-print("EDIT DECISION LIST (with onset corrections)")
+print("EDIT DECISION LIST (WhisperX forced-aligned)")
 print(f"{'='*80}")
 for c in clips:
-    ms, ss = divmod(c['true_start'], 60)
-    me, se = divmod(c['true_end'], 60)
+    ms, ss = divmod(c['src_start'], 60)
+    me, se = divmod(c['src_end'], 60)
     mt, st = divmod(c['tl_s'] / FPS, 60)
-    corr = c['onset_correction_ms']
-    print(f"  {int(mt):02d}:{st:04.1f} | SRC [{int(ms):02d}:{ss:04.1f}-{int(me):02d}:{se:04.1f}] {c['dur_f']/FPS:5.1f}s | Cam {c['cam']} | onset:{corr:+.0f}ms | {c['label']}")
+    print(f"  {int(mt):02d}:{st:04.1f} | SRC [{int(ms):02d}:{ss:04.1f}-{int(me):02d}:{se:04.1f}] {c['dur_f']/FPS:5.1f}s | Cam {c['cam']} | {c['label']}")
