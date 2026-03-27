@@ -35,7 +35,7 @@ EDIT = [
     #
     # (in_point, out_point, label, camera)
     (1404.337, 1409.673, "IDENTITY", "B"),                              # Hi, my name is Zamiyah
-    (83.762, 94.548, "PERSONALITY: dancing piano guitar", "A"),          # Trimmed: skip 'Well,' filler
+    (83.762, 96.912, "PERSONALITY: dancing piano guitar", "A"),          # Trimmed head, extended to 'very musical person.'
     # CUT: PERSONALITY2 — redundant with above
     (45.156, 53.977, "SIGNS: subtle lymph nodes", "B"),                  # First symptoms
     (55.669, 66.312, "SIGNS: fatigued drained", "A"),                    # How it felt
@@ -332,7 +332,7 @@ if errors:
     sys.exit(1)
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v11.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v12.xml")
 with open(out_path, "w") as fout:
     fout.write(xml_str)
 
