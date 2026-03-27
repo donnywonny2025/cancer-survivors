@@ -42,8 +42,8 @@ EDIT = [
     (132.925, 138.662, "MOMENT: always active dance", "A"),              # She was active
     # CUT: MOMENT2+3 — "sleeping more" and "mom noticed" implied by MOMENT1+4
     (150.429, 155.485, "MOMENT: knew something wasn't right", "B"),      # Turning point
-    # CUT: COST1 — "how much life you lose" covered better by COST2
-    (268.895, 281.222, "COST: confidence self-identity", "A"),           # What cancer took
+    (256.837, 265.139, "COST: how much life you lose", "A"),             # Clean take, no stumble
+    (277.587, 281.222, "COST: confidence self-identity", "A"),           # Trimmed: skip 'routines...Sorry.' false start
     # CUT: POWER1 — "catch it early" covered by POWER2
     (429.395, 439.795, "POWER: fear is normal taking power back", "A"),  # Taking power back
     (440.346, 455.715, "POWER: knowing is better", "B"),                 # Knowledge > fear
