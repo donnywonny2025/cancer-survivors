@@ -48,7 +48,7 @@ EDIT = [
     (429.395, 439.795, "POWER: fear is normal taking power back", "A"),  # Empowerment
     (440.346, 455.715, "POWER: knowing is better", "B"),                 # Knowledge > fear
     (517.959, 522.837, "CHANGE: small days", "B"),                       # New perspective
-    (526.803, 536.046, "CHANGE: value rest joy people", "A"),            # What she values now
+    (526.903, 536.046, "CHANGE: value rest joy people", "A"),            # Tight to first word
     (547.472, 552.569, "CHANGE: grown as person", "A"),                  # Growth
     (821.965, 827.722, "MUSIC: write my own music", "A"),                # Creative outlet
     (828.253, 835.933, "MUSIC: express feelings emotions", "A"),         # Music as therapy

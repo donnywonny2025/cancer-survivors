@@ -3,7 +3,7 @@
 <xmeml version="4">
   <sequence>
     <name>Zamiyah — 3min Narrative (Word-Level)</name>
-    <duration>4985</duration>
+    <duration>4982</duration>
     <rate>
       <timebase>30</timebase>
       <ntsc>TRUE</ntsc>
@@ -143,8 +143,8 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>2738</start><end>3015</end>
-            <in>17685</in><out>17962</out>
+            <start>2738</start><end>3012</end>
+            <in>17688</in><out>17962</out>
             <enabled>TRUE</enabled>
             <file id="f_a"/>
             <labels><label2>Forest</label2></labels>
@@ -153,7 +153,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3015</start><end>3168</end>
+            <start>3012</start><end>3165</end>
             <in>18304</in><out>18457</out>
             <enabled>TRUE</enabled>
             <file id="f_a"/>
@@ -163,7 +163,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3168</start><end>3341</end>
+            <start>3165</start><end>3338</end>
             <in>26531</in><out>26703</out>
             <enabled>TRUE</enabled>
             <file id="f_a"/>
@@ -173,7 +173,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3341</start><end>3571</end>
+            <start>3338</start><end>3568</end>
             <in>26719</in><out>26949</out>
             <enabled>TRUE</enabled>
             <file id="f_a"/>
@@ -183,7 +183,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3571</start><end>3846</end>
+            <start>3568</start><end>3843</end>
             <in>40959</in><out>41235</out>
             <enabled>FALSE</enabled>
             <file id="f_a"/>
@@ -193,7 +193,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3846</start><end>4326</end>
+            <start>3843</start><end>4323</end>
             <in>41263</in><out>41743</out>
             <enabled>TRUE</enabled>
             <file id="f_a"/>
@@ -203,7 +203,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4326</start><end>4794</end>
+            <start>4323</start><end>4791</end>
             <in>22281</in><out>22749</out>
             <enabled>TRUE</enabled>
             <file id="f_a"/>
@@ -213,7 +213,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4794</start><end>4862</end>
+            <start>4791</start><end>4859</end>
             <in>23408</in><out>23475</out>
             <enabled>TRUE</enabled>
             <file id="f_a"/>
@@ -223,7 +223,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4862</start><end>4985</end>
+            <start>4859</start><end>4982</end>
             <in>23509</in><out>23632</out>
             <enabled>FALSE</enabled>
             <file id="f_a"/>
@@ -353,8 +353,8 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>2738</start><end>3015</end>
-            <in>18060</in><out>18337</out>
+            <start>2738</start><end>3012</end>
+            <in>18063</in><out>18337</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
             <labels><label2>Forest</label2></labels>
@@ -363,7 +363,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3015</start><end>3168</end>
+            <start>3012</start><end>3165</end>
             <in>18679</in><out>18832</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
@@ -373,7 +373,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3168</start><end>3341</end>
+            <start>3165</start><end>3338</end>
             <in>26906</in><out>27078</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
@@ -383,7 +383,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3341</start><end>3571</end>
+            <start>3338</start><end>3568</end>
             <in>27094</in><out>27324</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
@@ -393,7 +393,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3571</start><end>3846</end>
+            <start>3568</start><end>3843</end>
             <in>41334</in><out>41609</out>
             <enabled>TRUE</enabled>
             <file id="f_b"/>
@@ -403,7 +403,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3846</start><end>4326</end>
+            <start>3843</start><end>4323</end>
             <in>41637</in><out>42117</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
@@ -413,7 +413,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4326</start><end>4794</end>
+            <start>4323</start><end>4791</end>
             <in>22656</in><out>23124</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
@@ -423,7 +423,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4794</start><end>4862</end>
+            <start>4791</start><end>4859</end>
             <in>23782</in><out>23850</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
@@ -433,7 +433,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4862</start><end>4985</end>
+            <start>4859</start><end>4982</end>
             <in>23883</in><out>24007</out>
             <enabled>TRUE</enabled>
             <file id="f_b"/>
@@ -570,8 +570,8 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>2738</start><end>3015</end>
-            <in>17685</in><out>17962</out>
+            <start>2738</start><end>3012</end>
+            <in>17688</in><out>17962</out>
             <enabled>FALSE</enabled>
             <file id="f_a"/>
             <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
@@ -581,7 +581,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3015</start><end>3168</end>
+            <start>3012</start><end>3165</end>
             <in>18304</in><out>18457</out>
             <enabled>FALSE</enabled>
             <file id="f_a"/>
@@ -592,7 +592,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3168</start><end>3341</end>
+            <start>3165</start><end>3338</end>
             <in>26531</in><out>26703</out>
             <enabled>FALSE</enabled>
             <file id="f_a"/>
@@ -603,7 +603,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3341</start><end>3571</end>
+            <start>3338</start><end>3568</end>
             <in>26719</in><out>26949</out>
             <enabled>FALSE</enabled>
             <file id="f_a"/>
@@ -614,7 +614,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3571</start><end>3846</end>
+            <start>3568</start><end>3843</end>
             <in>40959</in><out>41235</out>
             <enabled>FALSE</enabled>
             <file id="f_a"/>
@@ -625,7 +625,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3846</start><end>4326</end>
+            <start>3843</start><end>4323</end>
             <in>41263</in><out>41743</out>
             <enabled>FALSE</enabled>
             <file id="f_a"/>
@@ -636,7 +636,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4326</start><end>4794</end>
+            <start>4323</start><end>4791</end>
             <in>22281</in><out>22749</out>
             <enabled>FALSE</enabled>
             <file id="f_a"/>
@@ -647,7 +647,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4794</start><end>4862</end>
+            <start>4791</start><end>4859</end>
             <in>23408</in><out>23475</out>
             <enabled>FALSE</enabled>
             <file id="f_a"/>
@@ -658,7 +658,7 @@
             <name>C8826.MP4</name>
             <duration>44775</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4862</start><end>4985</end>
+            <start>4859</start><end>4982</end>
             <in>23509</in><out>23632</out>
             <enabled>FALSE</enabled>
             <file id="f_a"/>
@@ -793,8 +793,8 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>2738</start><end>3015</end>
-            <in>18060</in><out>18337</out>
+            <start>2738</start><end>3012</end>
+            <in>18063</in><out>18337</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
             <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
@@ -804,7 +804,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3015</start><end>3168</end>
+            <start>3012</start><end>3165</end>
             <in>18679</in><out>18832</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
@@ -815,7 +815,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3168</start><end>3341</end>
+            <start>3165</start><end>3338</end>
             <in>26906</in><out>27078</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
@@ -826,7 +826,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3341</start><end>3571</end>
+            <start>3338</start><end>3568</end>
             <in>27094</in><out>27324</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
@@ -837,7 +837,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3571</start><end>3846</end>
+            <start>3568</start><end>3843</end>
             <in>41334</in><out>41609</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
@@ -848,7 +848,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3846</start><end>4326</end>
+            <start>3843</start><end>4323</end>
             <in>41637</in><out>42117</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
@@ -859,7 +859,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4326</start><end>4794</end>
+            <start>4323</start><end>4791</end>
             <in>22656</in><out>23124</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
@@ -870,7 +870,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4794</start><end>4862</end>
+            <start>4791</start><end>4859</end>
             <in>23782</in><out>23850</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
@@ -881,7 +881,7 @@
             <name>C8890.MP4</name>
             <duration>45300</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4862</start><end>4985</end>
+            <start>4859</start><end>4982</end>
             <in>23883</in><out>24007</out>
             <enabled>FALSE</enabled>
             <file id="f_b"/>
@@ -1009,8 +1009,8 @@
             <name>TASCAM_1087S34.wav</name>
             <duration>42836</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>2738</start><end>3015</end>
-            <in>15788</in><out>16065</out>
+            <start>2738</start><end>3012</end>
+            <in>15791</in><out>16065</out>
             <file id="f_t"/>
             <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
             <labels><label2>Forest</label2></labels>
@@ -1019,7 +1019,7 @@
             <name>TASCAM_1087S34.wav</name>
             <duration>42836</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3015</start><end>3168</end>
+            <start>3012</start><end>3165</end>
             <in>16408</in><out>16561</out>
             <file id="f_t"/>
             <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
@@ -1029,7 +1029,7 @@
             <name>TASCAM_1087S34.wav</name>
             <duration>42836</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3168</start><end>3341</end>
+            <start>3165</start><end>3338</end>
             <in>24634</in><out>24807</out>
             <file id="f_t"/>
             <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
@@ -1039,7 +1039,7 @@
             <name>TASCAM_1087S34.wav</name>
             <duration>42836</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3341</start><end>3571</end>
+            <start>3338</start><end>3568</end>
             <in>24823</in><out>25053</out>
             <file id="f_t"/>
             <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
@@ -1049,7 +1049,7 @@
             <name>TASCAM_1087S34.wav</name>
             <duration>42836</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3571</start><end>3846</end>
+            <start>3568</start><end>3843</end>
             <in>39063</in><out>39338</out>
             <file id="f_t"/>
             <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
@@ -1059,7 +1059,7 @@
             <name>TASCAM_1087S34.wav</name>
             <duration>42836</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>3846</start><end>4326</end>
+            <start>3843</start><end>4323</end>
             <in>39366</in><out>39846</out>
             <file id="f_t"/>
             <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
@@ -1069,7 +1069,7 @@
             <name>TASCAM_1087S34.wav</name>
             <duration>42836</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4326</start><end>4794</end>
+            <start>4323</start><end>4791</end>
             <in>20385</in><out>20853</out>
             <file id="f_t"/>
             <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
@@ -1079,7 +1079,7 @@
             <name>TASCAM_1087S34.wav</name>
             <duration>42836</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4794</start><end>4862</end>
+            <start>4791</start><end>4859</end>
             <in>21511</in><out>21579</out>
             <file id="f_t"/>
             <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
@@ -1089,7 +1089,7 @@
             <name>TASCAM_1087S34.wav</name>
             <duration>42836</duration>
             <rate><timebase>30</timebase><ntsc>TRUE</ntsc></rate>
-            <start>4862</start><end>4985</end>
+            <start>4859</start><end>4982</end>
             <in>21612</in><out>21735</out>
             <file id="f_t"/>
             <sourcetrack><type>audio</type><trackindex>1</trackindex></sourcetrack>
