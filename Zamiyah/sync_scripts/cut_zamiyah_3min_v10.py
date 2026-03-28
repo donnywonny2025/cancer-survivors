@@ -60,6 +60,90 @@ EDIT = [
 ]
 
 # ============================================================
+# AUTO GAP REMOVAL — cut fillers by skipping word gaps
+# ============================================================
+# Any gap > GAP_THRESHOLD between consecutive words = filler territory.
+# Split the segment at those gaps so the edit jumps over the "um."
+# This is the intelligence layer: Whisper can't transcribe fillers,
+# but it CAN tell us where the words AREN'T.
+
+GAP_THRESHOLD = 0.80  # seconds — natural pauses are 0.3-0.6s, fillers are 0.8s+
+
+def _load_words():
+    """Load word-level timestamps from WhisperX transcript."""
+    path = os.path.join(BASE, "Master_S34_Transcript_WhisperX.json")
+    if not os.path.exists(path):
+        return []
+    with open(path) as fp:
+        data = json.load(fp)
+    words = []
+    for seg in data.get("segments", []):
+        for w in seg.get("words", []):
+            if "start" in w:
+                words.append(w)
+    words.sort(key=lambda w: w["start"])
+    return words
+
+def remove_gaps(edit_list, words, threshold=GAP_THRESHOLD):
+    """Split segments at word gaps to remove fillers.
+    
+    Only splits when the word BEFORE the gap ends with terminal punctuation
+    (period, !, ?) — meaning it's a complete thought, not a mid-sentence pause.
+    """
+    if not words:
+        return edit_list
+    
+    cleaned = []
+    gaps_removed = 0
+    
+    for entry in edit_list:
+        start, end, label, cam = entry[0], entry[1], entry[2], entry[3]
+        
+        # Find words in this segment
+        seg_words = [w for w in words if start - 0.15 <= w["start"] <= end + 0.05]
+        if not seg_words:
+            cleaned.append(entry)
+            continue
+        
+        # Walk through words, split at gaps
+        sub_start = start
+        sub_words = []
+        
+        for i, w in enumerate(seg_words):
+            if sub_words:
+                last_word = sub_words[-1].get("word", "")
+                gap = w["start"] - sub_words[-1].get("end", sub_words[-1]["start"])
+                
+                # Only split if: gap is large AND previous word ends a sentence
+                ends_sentence = last_word.rstrip().endswith((".", "!", "?"))
+                
+                if gap > threshold and ends_sentence:
+                    # Complete thought + big gap = safe to split (filler in between)
+                    sub_end = sub_words[-1].get("end", sub_words[-1]["start"]) + 0.05
+                    cleaned.append((sub_start, sub_end, label, cam))
+                    gaps_removed += 1
+                    sub_start = w["start"] - 0.05
+                    sub_words = []
+            
+            sub_words.append(w)
+        
+        # Add the last sub-clip
+        if sub_words:
+            cleaned.append((sub_start, end, label, cam))
+    
+    if gaps_removed > 0:
+        print(f"\n🔪 GAP REMOVAL: Cut {gaps_removed} filler gaps (>{threshold}s after sentence ends)")
+        print(f"   {len(edit_list)} segments → {len(cleaned)} segments")
+    else:
+        print(f"\n✅ GAP REMOVAL: No filler gaps found (>{threshold}s)")
+    
+    return cleaned
+
+# Apply gap removal
+ALL_WORDS = _load_words()
+EDIT = remove_gaps(EDIT, ALL_WORDS)
+
+# ============================================================
 # Build using the PROVEN v34.2 L.append pattern
 # WhisperX timestamps — no onset detector needed
 # ============================================================
