@@ -89,3 +89,21 @@ It checks:
 - [ ] Git commit after every version with a message describing what changed
 - [ ] Changes logged in this file with BUG-### format
 
+---
+
+## BUG-016: Filler words ("um", "uh") not caught by WhisperX
+**Discovered**: v13 review — audible "um" at edit position 00:08:07
+**Root Cause**: Whisper skips fillers by design. `suppress_tokens=[]` doesn't fix it.
+**Working Fix**: Gap Detection + Auto Gap Removal in `cut_zamiyah_3min_v10.py`
+- Gaps >0.8s after sentence-ending words = filler locations
+- Pipeline splits segments at those gaps, skipping the filler
+- 8 filler gaps cut in v14, 0 linter errors
+
+## BUG-017: CrisperWhisper CPU incompatible
+**Issue**: 1.5B param model — 11 min for 15s on CPU, hallucinated output
+**Resolution**: Archived. Gap detection supersedes need for filler-aware model.
+
+## Filler Detection System (v14+)
+Layer 1: Gap removal (>0.8s after sentence end) → splits segments
+Layer 2: Word boundary alignment → in/out snap to first/last word
+Layer 3: Narrative linter → catches mid-sentence cuts

@@ -31,7 +31,7 @@ def f(s):
 # Last word end + 100ms = out-point
 # ============================================================
 EDIT = [
-    # v13: Reordered arc — IDENTITY → SIGNS → MOMENT → PERSONALITY
+    # v14: Auto gap removal — cuts filler gaps >0.8s after sentence ends
     # Keeps cancer context immediate: "diagnosed with lymphoma" → "signs were subtle"
     # PERSONALITY comes after MOMENT as contrast: "but here's who I really am"
     # 20 segments, ~2:48
@@ -440,7 +440,7 @@ except Exception as lint_err:
     lint_ok = True
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v13.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v14.xml")
 with open(out_path, "w") as fout:
     fout.write(xml_str)
 
