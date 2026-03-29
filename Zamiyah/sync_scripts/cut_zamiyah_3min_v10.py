@@ -41,7 +41,7 @@ EDIT_ANCHORS = [
     (83.285,   "well",      96.260,   "person",    "PERSONALITY: dancing piano guitar", "A"),
     (256.845,  "people",    264.470,  "symptoms",  "COST: how much life you lose", "A"),
     (277.525,  "it",        280.405,  "identity",  "COST: confidence self-identity", "A"),
-    (429.420,  "also",      439.325,  "fear",      "POWER: fear is normal taking power back", "A"),
+    (429.100,  "i'd",       439.325,  "fear",      "POWER: fear is normal taking power back", "A"),
     (440.205,  "and",       455.350,  "knowing",   "POWER: knowing is better", "B"),
     (517.830,  "i",         520.870,  "anymore",   "CHANGE: small days", "B"),
     (526.835,  "i",         534.035,  "situation", "CHANGE: value rest joy people", "A"),
@@ -656,7 +656,7 @@ except Exception as lint_err:
     lint_ok = True
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v21.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v22.xml")
 with open(out_path, "w") as fout:
     fout.write(xml_str)
 
