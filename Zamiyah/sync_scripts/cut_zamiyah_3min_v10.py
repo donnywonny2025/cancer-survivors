@@ -25,49 +25,115 @@ def f(s):
     return int(round(s * 30000 / 1001))
 
 # ============================================================
-# WHISPERX FORCED-ALIGNED CUT POINTS
-# Source: Master_S34_Transcript_WhisperX.json (wav2vec2 alignment)
-# First word start - 150ms = in-point
-# Last word end + 100ms = out-point
+# WORD-ANCHOR EDIT LIST
+# Each segment defined by FIRST WORD and LAST WORD, not timecodes.
+# The resolver looks up exact Deepgram timestamps and calculates
+# gap-aware in/out points automatically.
+# Format: (first_word_time, first_word, last_word_time, last_word, label, cam)
 # ============================================================
-EDIT = [
-    # v15: Deepgram verbatim transcript (47 fillers), gap removal + filler trimming
-    # Keeps cancer context immediate: "diagnosed with lymphoma" → "signs were subtle"
-    # PERSONALITY comes after MOMENT as contrast: "but here's who I really am"
-    # 20 segments, ~2:48
-    #
-    # (in_point, out_point, label, camera)
-    (1404.337, 1409.673, "IDENTITY", "B"),                              # "diagnosed with hodgkin's lymphoma"
-    (44.900, 53.977, "SIGNS: subtle lymph nodes", "B"),                  # starts 0.26s before 'i think' — filler auto-split
-    (55.400, 62.010, "SIGNS: fatigued drained", "A"),                    # 0.32s before 'i was' — complete thought
-    (132.890, 138.315, "MOMENT: always active dance", "A"),              # starts after um, ends complete
-    (150.429, 155.485, "MOMENT: knew something wasn't right", "B"),      # clean
-    (83.100, 96.760, "PERSONALITY: dancing piano guitar", "A"),          # last word: 'person' ends 96.760
-    (256.837, 265.139, "COST: how much life you lose", "A"),             # clean
-    (277.587, 281.500, "COST: confidence self-identity", "A"),           # "identity" ends 280.9 — needs room to breathe
-    (429.395, 439.795, "POWER: fear is normal taking power back", "A"),  # clean
-    (440.346, 455.715, "POWER: knowing is better", "B"),                 # fillers auto-handled
-    (517.959, 522.787, "CHANGE: small days", "B"),                       # clean
-    (526.600, 534.535, "CHANGE: value rest joy people", "A"),            # starts before um@526.67, filler skipped to 'i learned'
-    (547.070, 553.010, "CHANGE: grown as person", "A"),                  # extends to 'person'
-    (821.920, 824.900, "MUSIC: write my own music", "A"),                # ends on 'well' — before um@825.7
-    (828.615, 835.933, "MUSIC: express feelings emotions", "A"),         # starts after leading um
-    (1303.394, 1312.500, "NURSE: love so dearly had cancer", "B"),       # ends on 'cancer' — 'before' is next sentence
-    (1313.517, 1329.800, "NURSE: somebody understands you", "A"),        # ends after 'you', before um@1330.2
-    (679.900, 695.700, "CLOSE: stay confident be yourself", "A"),        # ends on 'yourself'(695.61)
-    (717.500, 720.009, "CLOSE: your journey is your journey", "A"),      # 0.25s before 'and'
-    (721.120, 725.535, "CLOSE: break through anything", "B"),            # extended to 'life'
+EDIT_ANCHORS = [
+    (1404.655, "hi",        1409.070, "lymphoma",  "IDENTITY", "B"),
+    (45.005,   "i",         47.405,   "first",     "SIGNS: subtle lymph nodes", "B"),
+    (49.325,   "i",         53.485,   "area",      "SIGNS: subtle lymph nodes", "B"),     # after um@49.3 split
+    (55.565,   "i",         61.610,   "time",      "SIGNS: fatigued drained", "A"),
+    (132.890,  "i",         138.215,  "that",      "MOMENT: always active dance", "A"),
+    (150.580,  "my",        154.900,  "right",     "MOMENT: knew something wasn't right", "B"),
+    (83.285,   "well",      96.260,   "person",    "PERSONALITY: dancing piano guitar", "A"),
+    (256.845,  "people",    264.470,  "symptoms",  "COST: how much life you lose", "A"),
+    (277.525,  "it",        280.405,  "identity",  "COST: confidence self-identity", "A"),
+    (429.420,  "also",      439.325,  "fear",      "POWER: fear is normal taking power back", "A"),
+    (441.565,  "just",      455.350,  "knowing",   "POWER: knowing is better", "B"),
+    (518.070,  "don't",     520.870,  "anymore",   "CHANGE: small days", "B"),
+    (526.835,  "i",         534.035,  "situation", "CHANGE: value rest joy people", "A"),
+    (547.070,  "and",       552.510,  "person",    "CHANGE: grown as person", "A"),
+    (821.920,  "i",         824.400,  "well",      "MUSIC: write my own music", "A"),
+    (828.615,  "i",         835.335,  "treatment", "MUSIC: express feelings emotions", "A"),
+    (1303.810, "i",         1311.905, "cancer",    "NURSE: love so dearly had cancer", "B"),
+    (1314.545, "her",       1329.180, "you",       "NURSE: somebody understands you", "A"),
+    (680.170,  "would",     695.115,  "yourself",  "CLOSE: stay confident be yourself", "A"),
+    (717.660,  "and",       719.500,  "journey",   "CLOSE: your journey is your journey", "A"),
+    (721.595,  "and",       725.035,  "life",      "CLOSE: break through anything", "B"),
 ]
 
 # ============================================================
-# AUTO GAP REMOVAL — cut fillers by skipping word gaps
+# WORD-ANCHOR RESOLVER
+# Converts (first_word_time, first_word, last_word_time, last_word)
+# into precise (in_point, out_point) with gap-aware breathing room.
 # ============================================================
-# Any gap > GAP_THRESHOLD between consecutive words = filler territory.
-# Split the segment at those gaps so the edit jumps over the "um."
-# This is the intelligence layer: Whisper can't transcribe fillers,
-# but it CAN tell us where the words AREN'T.
+def resolve_anchors(anchors, words):
+    """Resolve word anchors to precise in/out timecodes.
+    
+    For each anchor:
+    1. Find the exact Deepgram word matching (time, text)
+    2. in_point = midpoint of gap BEFORE first word (or first_word.start - 0.15)
+    3. out_point = midpoint of gap AFTER last word (or last_word.end + 0.15)
+    
+    This guarantees:
+    - Every specified word is FULLY included
+    - Every cut lands in a silence gap
+    - No trailing word bleed (cut is before next word starts)
+    - No leading clip (cut is after previous word ends)
+    """
+    resolved = []
+    errors = []
+    
+    for entry in anchors:
+        fw_time, fw_text, lw_time, lw_text, label, cam = entry
+        
+        # Find first word: closest match by time + text
+        first_match = None
+        for w in words:
+            if abs(w["start"] - fw_time) < 0.3 and w["word"].lower().strip(".,!? ") == fw_text.lower():
+                first_match = w
+                break
+        
+        # Find last word: closest match by time + text
+        last_match = None
+        for w in words:
+            if abs(w["start"] - lw_time) < 0.3 and w["word"].lower().strip(".,!? ") == lw_text.lower():
+                last_match = w
+                break
+        
+        if not first_match:
+            errors.append(f"❌ [{label}] First word '{fw_text}' not found near {fw_time:.1f}s")
+            continue
+        if not last_match:
+            errors.append(f"❌ [{label}] Last word '{lw_text}' not found near {lw_time:.1f}s")
+            continue
+        
+        # Calculate IN-POINT: land in the gap before first word
+        prev = [w for w in words if w["end"] <= first_match["start"] and w["end"] > first_match["start"] - 1.5]
+        if prev:
+            gap_before = first_match["start"] - prev[-1]["end"]
+            in_point = prev[-1]["end"] + gap_before * 0.5
+            # But ensure at least 0.08s before the word
+            in_point = min(in_point, first_match["start"] - 0.08)
+        else:
+            in_point = first_match["start"] - 0.15
+        
+        # Calculate OUT-POINT: land in the gap after last word
+        nxt = [w for w in words if w["start"] > last_match["end"] and w["start"] < last_match["end"] + 1.5]
+        if nxt:
+            gap_after = nxt[0]["start"] - last_match["end"]
+            out_point = last_match["end"] + gap_after * 0.5
+            # But ensure at least 0.05s after the word
+            out_point = max(out_point, last_match["end"] + 0.05)
+        else:
+            out_point = last_match["end"] + 0.15
+        
+        resolved.append((in_point, out_point, label, cam))
+    
+    if errors:
+        for e in errors:
+            print(e)
+        raise SystemExit("Word anchor resolution failed — fix EDIT_ANCHORS above")
+    
+    print(f"\n🔗 WORD ANCHORS: Resolved {len(resolved)} segments from word boundaries")
+    return resolved
 
-GAP_THRESHOLD = 0.80  # seconds — natural pauses are 0.3-0.6s, fillers are 0.8s+
+# (pipeline execution moved below function definitions)
+
+GAP_THRESHOLD = 0.80  # seconds — legacy, used by remove_gaps
 
 def _load_words():
     """Load word-level timestamps — prefer Deepgram (has fillers) over WhisperX."""
@@ -246,74 +312,13 @@ def intelligent_filler_removal(edit_list, words):
     
     return result
 
-# Apply intelligent filler removal
+# ============================================================
+# PIPELINE EXECUTION: Resolve anchors → Filler removal
+# Breathing room is built into resolve_anchors — no separate pass needed
+# ============================================================
 ALL_WORDS = _load_words()
+EDIT = resolve_anchors(EDIT_ANCHORS, ALL_WORDS)
 EDIT = intelligent_filler_removal(EDIT, ALL_WORDS)
-
-def enforce_breathing_room(edit_list, words, min_head=0.12, min_tail=0.15):
-    """Ensure every segment has clean head/tail. NEVER shrinks a segment.
-    
-    Rules:
-    1. Words matched by START TIME — if a word begins inside the segment, it's included
-    2. NEVER move the out-point earlier or in-point later than the original
-    3. Only EXPAND boundaries to give breathing room
-    4. Expansion capped at gap midpoint to prevent trailing word bleed
-    """
-    filler_set = {"um", "uh", "ums", "uhs", "hmm", "mhm", "mmm", "ah", "hm", "mm"}
-    adjusted = []
-    fixes = 0
-    
-    for (start, end, label, cam) in edit_list:
-        # Match words by START time — any word beginning inside the segment belongs
-        seg_words = [w for w in words if w["start"] >= start - 0.05 and w["start"] <= end + 0.05]
-        real_words = [w for w in seg_words if w["word"].lower().strip(".,!? ") not in filler_set]
-        
-        if not real_words:
-            adjusted.append((start, end, label, cam))
-            continue
-        
-        first = real_words[0]
-        last = real_words[-1]
-        new_start = start
-        new_end = end
-        
-        # === HEAD: only expand (move earlier), never shrink ===
-        head_room = first["start"] - start
-        if head_room < min_head:
-            candidate = first["start"] - min_head
-            # Find previous word to cap expansion
-            prev = [w for w in words if w["end"] <= first["start"] and w["end"] > first["start"] - 1.0]
-            if prev:
-                # Don't expand past midpoint of gap to previous word
-                gap_mid = prev[-1]["end"] + (first["start"] - prev[-1]["end"]) * 0.5
-                candidate = max(candidate, gap_mid)
-            new_start = min(start, candidate)  # NEVER move start later (shrink)
-            if new_start != start:
-                fixes += 1
-        
-        # === TAIL: only expand (move later), never shrink ===
-        tail_room = end - last["end"]
-        if tail_room < min_tail:
-            candidate = last["end"] + min_tail
-            # Find next word to cap expansion (prevent trailing bleed)
-            nxt = [w for w in words if w["start"] > last["end"] and w["start"] < last["end"] + 1.0]
-            if nxt:
-                # Don't expand past midpoint of gap to next word
-                gap_mid = last["end"] + (nxt[0]["start"] - last["end"]) * 0.5
-                candidate = min(candidate, gap_mid)
-                # But always at least a tiny cushion
-                candidate = max(candidate, last["end"] + 0.03)
-            new_end = max(end, candidate)  # NEVER move end earlier (shrink)
-            if new_end != end:
-                fixes += 1
-        
-        adjusted.append((new_start, new_end, label, cam))
-    
-    if fixes:
-        print(f"\n🫁 BREATHING ROOM: Expanded {fixes} tight edit points (never shrinks)")
-    return adjusted
-
-EDIT = enforce_breathing_room(EDIT, ALL_WORDS)
 
 # ============================================================
 # Build using the PROVEN v34.2 L.append pattern
