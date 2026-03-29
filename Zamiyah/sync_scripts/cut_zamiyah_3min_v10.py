@@ -627,7 +627,7 @@ except Exception as lint_err:
     lint_ok = True
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v17.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v18.xml")
 with open(out_path, "w") as fout:
     fout.write(xml_str)
 
