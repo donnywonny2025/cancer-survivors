@@ -38,7 +38,7 @@ EDIT = [
     #
     # (in_point, out_point, label, camera)
     (1404.337, 1409.673, "IDENTITY", "B"),                              # Hi, my name is Zamiyah, diagnosed Hodgkin's lymphoma
-    (45.156, 53.977, "SIGNS: subtle lymph nodes", "B"),                  # Signs were subtle — flows from diagnosis
+    (45.156, 53.977, "SIGNS: subtle lymph nodes", "B"),                  # Signs were subtle — filler auto-removed
     (55.669, 66.312, "SIGNS: fatigued drained", "A"),                    # How it felt physically
     (132.925, 138.662, "MOMENT: always active dance", "A"),              # She was active — contrast
     (150.429, 155.485, "MOMENT: knew something wasn't right", "B"),      # Turning point
@@ -46,7 +46,7 @@ EDIT = [
     (256.837, 265.139, "COST: how much life you lose", "A"),             # What cancer takes from you
     (277.587, 281.222, "COST: confidence self-identity", "A"),           # Deeper cost
     (429.395, 439.795, "POWER: fear is normal taking power back", "A"),  # Empowerment
-    (441.607, 455.715, "POWER: knowing is better", "B"),                 # Skip orphaned "And"
+    (440.346, 455.715, "POWER: knowing is better", "B"),                 # Knowledge > fear — fillers auto-removed
     (517.959, 522.787, "CHANGE: small days", "B"),                       # Tight out — cuts trailing um
     (526.903, 536.046, "CHANGE: value rest joy people", "A"),            # Tight to first word
     (547.472, 552.569, "CHANGE: grown as person", "A"),                  # Growth
@@ -148,35 +148,107 @@ def remove_gaps(edit_list, words, threshold=GAP_THRESHOLD):
     
     return cleaned
 
-def trim_fillers(edit_list, words):
-    """Trim segment boundaries when filler words sit near edges.
-    Uses Deepgram transcript which has explicit filler timestamps."""
+def intelligent_filler_removal(edit_list, words):
+    """Context-aware filler removal using Deepgram transcript.
+    
+    Rules:
+    1. SPLIT at standalone fillers (um/uh between sentences) — skip the filler
+    2. TRIM trailing fillers at segment tails
+    3. NEVER cut connective words (and, but, so, because) even after pauses
+    4. KEEP natural breathing pauses <0.5s — they add emotional weight
+    5. DROP micro-clips <0.5s that result from splits
+    """
     filler_set = {"um", "uh", "ums", "uhs", "hmm", "mhm", "mmm", "ah", "hm", "mm"}
-    fillers = [w for w in words if w["word"].lower().strip(".,!? ") in filler_set]
-    if not fillers:
-        return edit_list
+    connectives = {"and", "but", "so", "because", "or", "like", "then", "also", "just"}
     
-    trimmed = []
+    result = []
+    splits_made = 0
     trims_made = 0
-    for (start, end, label, cam) in edit_list:
-        new_end = end
-        # Check if a filler sits near the out-point (within 0.3s before end)
-        for f in fillers:
-            if start < f["start"] < end and f["start"] > end - 0.5:
-                # Filler near the tail — trim to just before it
-                new_end = f["start"] - 0.05
-                trims_made += 1
-                break
-        trimmed.append((start, new_end, label, cam))
     
-    if trims_made:
-        print(f"\n✂️  FILLER TRIM: Trimmed {trims_made} trailing fillers")
-    return trimmed
+    for (start, end, label, cam) in edit_list:
+        # Get words in this segment
+        seg_words = [w for w in words if w["start"] >= start - 0.1 and w["end"] <= end + 0.1]
+        if not seg_words:
+            result.append((start, end, label, cam))
+            continue
+        
+        # Walk through words, building sub-clips
+        sub_clips = []
+        clip_start = start
+        clip_words = []
+        
+        for i, w in enumerate(seg_words):
+            word_clean = w["word"].lower().strip(".,!? ")
+            is_filler = word_clean in filler_set
+            
+            if is_filler:
+                # Check context: is this filler between two thoughts?
+                has_words_before = len(clip_words) > 0
+                has_words_after = i < len(seg_words) - 1
+                
+                if has_words_before and has_words_after:
+                    last_real = clip_words[-1]
+                    last_clean = last_real["word"].lower().strip(".,!? ")
+                    
+                    if last_clean in connectives:
+                        # "but um I like..." → keep "but", skip "um", continue thought
+                        # Don't split — just skip the filler word entirely
+                        # The connective stays in clip_words, next real word joins too
+                        continue
+                    else:
+                        # Standalone filler between completed thoughts — SPLIT
+                        clip_end = last_real["end"] + 0.10
+                        sub_clips.append((clip_start, clip_end, label, cam))
+                        
+                        next_word = seg_words[i + 1]
+                        clip_start = next_word["start"] - 0.15
+                        clip_words = []
+                        splits_made += 1
+                elif has_words_before and not has_words_after:
+                    # Trailing filler — trim the out-point before it
+                    last_real = clip_words[-1]
+                    clip_end = last_real["end"] + 0.10
+                    sub_clips.append((clip_start, clip_end, label, cam))
+                    clip_words = []
+                    clip_start = None
+                    trims_made += 1
+                # If filler is at the start with no words before, skip it silently
+                elif not has_words_before and has_words_after:
+                    next_word = seg_words[i + 1]
+                    clip_start = next_word["start"] - 0.15
+                    trims_made += 1
+            else:
+                clip_words.append(w)
+        
+        # Flush remaining words
+        if clip_words and clip_start is not None:
+            last_real = clip_words[-1]
+            clip_end = min(last_real["end"] + 0.10, end)
+            sub_clips.append((clip_start, clip_end, label, cam))
+        
+        # Filter out micro-clips <0.5s (they sound like glitches)
+        for clip in sub_clips:
+            duration = clip[1] - clip[0]
+            if duration >= 0.5:
+                result.append(clip)
+            else:
+                splits_made -= 1  # Don't count dropped micro-clips as splits
+    
+    if splits_made or trims_made:
+        print(f"\n🧠 INTELLIGENT FILLER REMOVAL:")
+        if splits_made:
+            print(f"   Split {splits_made} standalone fillers between thoughts")
+        if trims_made:
+            print(f"   Trimmed {trims_made} edge fillers (leading/trailing)")
+        print(f"   {len(edit_list)} segments → {len(result)} segments")
+    else:
+        print(f"\n✅ FILLER CHECK: No fillers found in edit segments")
+    
+    return result
 
-# Apply gap removal then filler trimming
+# Apply intelligent filler removal
 ALL_WORDS = _load_words()
-EDIT = remove_gaps(EDIT, ALL_WORDS)
-EDIT = trim_fillers(EDIT, ALL_WORDS)
+EDIT = intelligent_filler_removal(EDIT, ALL_WORDS)
 
 # ============================================================
 # Build using the PROVEN v34.2 L.append pattern
