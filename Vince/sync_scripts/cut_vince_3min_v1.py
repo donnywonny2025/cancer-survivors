@@ -321,6 +321,11 @@ L.append('  <media>')
 
 # V1 — Cam A
 L.append('   <video>')
+L.append('    <format>')
+L.append('      <samplecharacteristics>')
+L.append('        <width>3840</width><height>2160</height>')
+L.append('      </samplecharacteristics>')
+L.append('    </format>')
 L.append('    <track>')
 
 seq_cursor = 0
@@ -344,7 +349,7 @@ for idx, (s, e, label, cam) in enumerate(EDIT):
     L.append('       <pathurl>{}</pathurl>'.format(cam_a_url))
     L.append('       <duration>{}</duration>'.format(CAM_A_TOTAL_F))
     L.append('       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>')
-    L.append('       <media><video><duration>{}</duration></video><audio><channelcount>2</channelcount></audio></media>'.format(CAM_A_TOTAL_F))
+    L.append('       <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio></media>')
     L.append('      </file>')
     L.append('     </clipitem>')
     seq_cursor += dur_f
@@ -375,7 +380,7 @@ for idx, (s, e, label, cam) in enumerate(EDIT):
     L.append('       <pathurl>{}</pathurl>'.format(cam_b_url))
     L.append('       <duration>{}</duration>'.format(CAM_B_TOTAL_F))
     L.append('       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>')
-    L.append('       <media><video><duration>{}</duration></video><audio><channelcount>2</channelcount></audio></media>'.format(CAM_B_TOTAL_F))
+    L.append('       <media><video><samplecharacteristics><width>3840</width><height>2160</height></samplecharacteristics></video><audio><samplecharacteristics><depth>16</depth><samplerate>48000</samplerate></samplecharacteristics><channelcount>2</channelcount></audio></media>')
     L.append('      </file>')
     L.append('     </clipitem>')
     seq_cursor += dur_f
@@ -453,7 +458,7 @@ print(f"   V1: {len(EDIT)} Cam A clips ({active_a} active) | V2: {len(EDIT)} Cam
 
 # Write
 os.makedirs(os.path.join(BASE, "Premiere/XML"), exist_ok=True)
-out_path = os.path.join(BASE, "Premiere/XML/Vince_3min_Narrative_v1.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Vince_3min_Narrative_v2.xml")
 with open(out_path, "w") as fout:
     fout.write(xml_str)
 
