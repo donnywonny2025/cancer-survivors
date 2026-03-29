@@ -94,16 +94,61 @@ It checks:
 ## BUG-016: Filler words ("um", "uh") not caught by WhisperX
 **Discovered**: v13 review — audible "um" at edit position 00:08:07
 **Root Cause**: Whisper skips fillers by design. `suppress_tokens=[]` doesn't fix it.
-**Working Fix**: Gap Detection + Auto Gap Removal in `cut_zamiyah_3min_v10.py`
-- Gaps >0.8s after sentence-ending words = filler locations
-- Pipeline splits segments at those gaps, skipping the filler
-- 8 filler gaps cut in v14, 0 linter errors
+**v14 Fix**: Gap Detection + Auto Gap Removal (blunt — gaps >0.8s after sentence ends)
+**v16 Fix**: Deepgram Nova-2 transcription + Intelligent Filler Removal (see below)
 
 ## BUG-017: CrisperWhisper CPU incompatible
 **Issue**: 1.5B param model — 11 min for 15s on CPU, hallucinated output
-**Resolution**: Archived. Gap detection supersedes need for filler-aware model.
+**Resolution**: Archived. Deepgram API supersedes the need for a local filler-aware model.
 
-## Filler Detection System (v14+)
-Layer 1: Gap removal (>0.8s after sentence end) → splits segments
-Layer 2: Word boundary alignment → in/out snap to first/last word
-Layer 3: Narrative linter → catches mid-sentence cuts
+## BUG-018: Deepgram solves filler transcription
+**Discovered**: v14 review — WhisperX caught 1 filler, Deepgram caught 47
+**Solution**: Deepgram Nova-2 API with `filler_words=true`
+- $200 free credits (no expiry), ~$0.50 per 23-min transcription
+- API key stored as env var `DEEPGRAM_API_KEY`
+- 12.9 seconds for full 23-min interview
+- Word-level timestamps for every filler
+
+## BUG-019: Segment boundaries cutting mid-thought
+**Discovered**: v15 audit — SIGNS:fatigued ended on "that" (connector), CHANGE:value ended on "and", CHANGE:grown ended on "a"
+**Fix**: Full Deepgram word audit of every segment. All 20 segments now end on complete thoughts:
+- "drained all the time" not "things like that"
+- "in my situation" not trailing "and"  
+- "grown as a person" not just "a"
+
+## BUG-020: Connective words cut by filler removal  
+**Discovered**: v15 — "but um I like to play piano" split after "but", leaving "but" dangling
+**Fix**: Connective-aware filler logic. When a filler follows a connective (but/and/so/because), skip just the filler and keep the thought flowing.
+
+---
+
+## Filler Detection System (v16 — Current)
+
+```
+Deepgram Nova-2 API (filler_words=true)
+    ↓
+intelligent_filler_removal()
+    ├── Standalone filler between thoughts → SPLIT (skip filler)
+    ├── Filler after connective (but/and/so) → SKIP filler only (keep flow)
+    ├── Leading filler at segment start → TRIM (start at next word)
+    ├── Trailing filler at segment end → TRIM (end at last real word)
+    └── Micro-clips <0.5s → DROP (sound like glitches)
+    ↓
+Narrative Linter
+    ├── Mid-sentence cuts → ERROR
+    ├── Connector endings (but, and, that) → ERROR
+    ├── Pacing balance (heavy/light) → WARNING
+    └── Camera monotony → WARNING
+```
+
+## Version History (Zamiyah 3min Narrative)
+
+| Version | Date | Changes |
+|---------|------|---------|
+| v11 | 2026-03-27 | First working XML import into Premiere |
+| v12 | 2026-03-27 | Word boundary alignment (in/out snap to first/last word) |
+| v13 | 2026-03-27 | Narrative linter added, caught "um" at 00:08:07 |
+| v14 | 2026-03-28 | Gap detection + auto gap removal (blunt, WhisperX-based) |
+| v15 | 2026-03-28 | Deepgram integration, intelligent filler removal, segment audit |
+| v16 | 2026-03-28 | Complete Deepgram audit, connective-aware filler logic, all thoughts complete |
+
