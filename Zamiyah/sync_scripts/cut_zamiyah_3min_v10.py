@@ -321,6 +321,44 @@ EDIT = resolve_anchors(EDIT_ANCHORS, ALL_WORDS)
 EDIT = intelligent_filler_removal(EDIT, ALL_WORDS)
 
 # ============================================================
+# NARRATIVE READ-THROUGH — the viewer transcript
+# This is what the audience actually hears. If it doesn't
+# read well here, it won't sound right in the edit.
+# ============================================================
+def narrative_readthrough(edit_list, words):
+    """Print the complete story as the viewer will hear it."""
+    filler_set = {"um","uh","ums","uhs","hmm","mhm","mmm"}
+    
+    print(f"\n{'='*60}")
+    print("  📖 NARRATIVE READ-THROUGH — what the viewer hears")
+    print(f"{'='*60}\n")
+    
+    full_text = []
+    prev_section = ""
+    for i, (start, end, label, cam) in enumerate(edit_list):
+        seg_w = [w for w in words if w["start"] >= start - 0.1 and w["end"] <= end + 0.1]
+        real = [w for w in seg_w if w["word"].lower().strip(".,!? ") not in filler_set]
+        text = " ".join(w["word"] for w in real)
+        
+        section = label.split(":")[0].strip()
+        if section != prev_section:
+            print(f"  [{section}]")
+            prev_section = section
+        
+        # Capitalize first letter
+        clean = text[0].upper() + text[1:] if text else ""
+        print(f"  {clean}")
+        full_text.append(text)
+    
+    all_text = " ".join(full_text)
+    word_count = len(all_text.split())
+    print(f"\n  ─── {word_count} words ───")
+    print(f"{'='*60}")
+    return word_count
+
+WORD_COUNT = narrative_readthrough(EDIT, ALL_WORDS)
+
+# ============================================================
 # Build using the PROVEN v34.2 L.append pattern
 # WhisperX timestamps — no onset detector needed
 # ============================================================
