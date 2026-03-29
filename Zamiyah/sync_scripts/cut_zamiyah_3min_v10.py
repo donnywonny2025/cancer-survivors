@@ -37,26 +37,26 @@ EDIT = [
     # 20 segments, ~2:48
     #
     # (in_point, out_point, label, camera)
-    (1404.337, 1409.673, "IDENTITY", "B"),                              # Hi, my name is Zamiyah, diagnosed Hodgkin's lymphoma
-    (45.156, 53.977, "SIGNS: subtle lymph nodes", "B"),                  # Signs were subtle — filler auto-removed
-    (55.669, 66.312, "SIGNS: fatigued drained", "A"),                    # How it felt physically
-    (132.925, 138.662, "MOMENT: always active dance", "A"),              # She was active — contrast
-    (150.429, 155.485, "MOMENT: knew something wasn't right", "B"),      # Turning point
-    (83.762, 96.912, "PERSONALITY: dancing piano guitar", "A"),          # Who she is beyond cancer — contrast beat
-    (256.837, 265.139, "COST: how much life you lose", "A"),             # What cancer takes from you
-    (277.587, 281.222, "COST: confidence self-identity", "A"),           # Deeper cost
-    (429.395, 439.795, "POWER: fear is normal taking power back", "A"),  # Empowerment
-    (440.346, 455.715, "POWER: knowing is better", "B"),                 # Knowledge > fear — fillers auto-removed
-    (517.959, 522.787, "CHANGE: small days", "B"),                       # Tight out — cuts trailing um
-    (526.903, 536.046, "CHANGE: value rest joy people", "A"),            # Tight to first word
-    (547.472, 552.569, "CHANGE: grown as person", "A"),                  # Growth
-    (821.965, 827.722, "MUSIC: write my own music", "A"),                # Creative outlet
-    (828.253, 835.933, "MUSIC: express feelings emotions", "A"),         # Music as therapy
-    (1303.394, 1312.584, "NURSE: love so dearly had cancer", "B"),       # Ends after "before." word-end
-    (1313.517, 1329.527, "NURSE: somebody understands you", "A"),        # Starts at "her" (skips "So")
-    (680.163, 695.779, "CLOSE: stay confident be yourself", "A"),        # Advice to others
-    (717.756, 720.009, "CLOSE: your journey is your journey", "A"),      # Ownership
-    (721.120, 725.236, "CLOSE: break through anything", "B"),            # Final word
+    (1404.337, 1409.673, "IDENTITY", "B"),                              # "diagnosed with hodgkin's lymphoma"
+    (45.156, 53.977, "SIGNS: subtle lymph nodes", "B"),                  # filler auto-split at um@49.3
+    (55.669, 62.010, "SIGNS: fatigued drained", "A"),                    # ends on 'time' — complete thought
+    (132.890, 138.315, "MOMENT: always active dance", "A"),              # starts after um, ends complete
+    (150.429, 155.485, "MOMENT: knew something wasn't right", "B"),      # clean
+    (83.762, 96.912, "PERSONALITY: dancing piano guitar", "A"),          # fillers auto-handled
+    (256.837, 265.139, "COST: how much life you lose", "A"),             # clean
+    (277.587, 281.222, "COST: confidence self-identity", "A"),           # clean
+    (429.395, 439.795, "POWER: fear is normal taking power back", "A"),  # clean
+    (440.346, 455.715, "POWER: knowing is better", "B"),                 # fillers auto-handled
+    (517.959, 522.787, "CHANGE: small days", "B"),                       # clean
+    (526.903, 534.535, "CHANGE: value rest joy people", "A"),            # ends on 'situation' not 'and'
+    (547.070, 553.010, "CHANGE: grown as person", "A"),                  # extends to 'person'
+    (821.920, 824.900, "MUSIC: write my own music", "A"),                # ends on 'well' — before um@825.7
+    (828.615, 835.933, "MUSIC: express feelings emotions", "A"),         # starts after leading um
+    (1303.394, 1312.584, "NURSE: love so dearly had cancer", "B"),       # clean
+    (1313.517, 1329.527, "NURSE: somebody understands you", "A"),        # clean
+    (680.163, 695.779, "CLOSE: stay confident be yourself", "A"),        # clean
+    (717.756, 720.009, "CLOSE: your journey is your journey", "A"),      # clean
+    (721.120, 725.535, "CLOSE: break through anything", "B"),            # extended to 'life'
 ]
 
 # ============================================================
@@ -191,10 +191,10 @@ def intelligent_filler_removal(edit_list, words):
                     last_clean = last_real["word"].lower().strip(".,!? ")
                     
                     if last_clean in connectives:
-                        # "but um I like..." → keep "but", skip "um", continue thought
-                        # Don't split — just skip the filler word entirely
-                        # The connective stays in clip_words, next real word joins too
-                        continue
+                        # "but um I like..." → keep thought flowing
+                        # Skip the filler, stitch the next word right after
+                        # Don't add to sub_clips — just advance past the filler
+                        pass  # filler skipped, next word joins clip_words naturally
                     else:
                         # Standalone filler between completed thoughts — SPLIT
                         clip_end = last_real["end"] + 0.10
