@@ -31,7 +31,7 @@ def f(s):
 # Last word end + 100ms = out-point
 # ============================================================
 EDIT = [
-    # v14: Auto gap removal — cuts filler gaps >0.8s after sentence ends
+    # v15: Deepgram verbatim transcript (47 fillers), gap removal + filler trimming
     # Keeps cancer context immediate: "diagnosed with lymphoma" → "signs were subtle"
     # PERSONALITY comes after MOMENT as contrast: "but here's who I really am"
     # 20 segments, ~2:48
@@ -475,7 +475,7 @@ except Exception as lint_err:
     lint_ok = True
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v14.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v15.xml")
 with open(out_path, "w") as fout:
     fout.write(xml_str)
 
