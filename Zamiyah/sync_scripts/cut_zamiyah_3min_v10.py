@@ -44,7 +44,7 @@ EDIT = [
     (150.429, 155.485, "MOMENT: knew something wasn't right", "B"),      # clean
     (83.762, 96.912, "PERSONALITY: dancing piano guitar", "A"),          # fillers auto-handled
     (256.837, 265.139, "COST: how much life you lose", "A"),             # clean
-    (277.587, 281.222, "COST: confidence self-identity", "A"),           # clean
+    (277.587, 281.500, "COST: confidence self-identity", "A"),           # "identity" ends 280.9 — needs room to breathe
     (429.395, 439.795, "POWER: fear is normal taking power back", "A"),  # clean
     (440.346, 455.715, "POWER: knowing is better", "B"),                 # fillers auto-handled
     (517.959, 522.787, "CHANGE: small days", "B"),                       # clean
@@ -249,6 +249,46 @@ def intelligent_filler_removal(edit_list, words):
 # Apply intelligent filler removal
 ALL_WORDS = _load_words()
 EDIT = intelligent_filler_removal(EDIT, ALL_WORDS)
+
+def enforce_breathing_room(edit_list, words, min_head=0.15, min_tail=0.35):
+    """Ensure every segment has breathing room around spoken words.
+    
+    No word should be clipped at the edge of a segment.
+    min_head: seconds before first word (default 0.15s)
+    min_tail: seconds after last word (default 0.35s)
+    """
+    adjusted = []
+    fixes = 0
+    for (start, end, label, cam) in edit_list:
+        seg_words = [w for w in words if w["start"] >= start - 0.2 and w["end"] <= end + 0.2]
+        if not seg_words:
+            adjusted.append((start, end, label, cam))
+            continue
+        
+        first = seg_words[0]
+        last = seg_words[-1]
+        new_start = start
+        new_end = end
+        
+        # Fix head room
+        head_room = first["start"] - start
+        if head_room < min_head:
+            new_start = first["start"] - min_head
+            fixes += 1
+        
+        # Fix tail room
+        tail_room = end - last["end"]
+        if tail_room < min_tail:
+            new_end = last["end"] + min_tail
+            fixes += 1
+        
+        adjusted.append((new_start, new_end, label, cam))
+    
+    if fixes:
+        print(f"\n🫁 BREATHING ROOM: Adjusted {fixes} tight edit points (min head={min_head}s, tail={min_tail}s)")
+    return adjusted
+
+EDIT = enforce_breathing_room(EDIT, ALL_WORDS)
 
 # ============================================================
 # Build using the PROVEN v34.2 L.append pattern
@@ -547,7 +587,7 @@ except Exception as lint_err:
     lint_ok = True
 
 # Write
-out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v16.xml")
+out_path = os.path.join(BASE, "Premiere/XML/Zamiyah_3min_Narrative_v17.xml")
 with open(out_path, "w") as fout:
     fout.write(xml_str)
 
