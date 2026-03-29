@@ -38,11 +38,11 @@ EDIT = [
     #
     # (in_point, out_point, label, camera)
     (1404.337, 1409.673, "IDENTITY", "B"),                              # "diagnosed with hodgkin's lymphoma"
-    (45.156, 53.977, "SIGNS: subtle lymph nodes", "B"),                  # filler auto-split at um@49.3
-    (55.669, 62.010, "SIGNS: fatigued drained", "A"),                    # ends on 'time' — complete thought
+    (44.900, 53.977, "SIGNS: subtle lymph nodes", "B"),                  # starts 0.26s before 'i think' — filler auto-split
+    (55.400, 62.010, "SIGNS: fatigued drained", "A"),                    # 0.32s before 'i was' — complete thought
     (132.890, 138.315, "MOMENT: always active dance", "A"),              # starts after um, ends complete
     (150.429, 155.485, "MOMENT: knew something wasn't right", "B"),      # clean
-    (83.762, 96.912, "PERSONALITY: dancing piano guitar", "A"),          # fillers auto-handled
+    (83.100, 96.500, "PERSONALITY: dancing piano guitar", "A"),          # "Well, I enjoy dancing...person" — tight before 'i think'
     (256.837, 265.139, "COST: how much life you lose", "A"),             # clean
     (277.587, 281.500, "COST: confidence self-identity", "A"),           # "identity" ends 280.9 — needs room to breathe
     (429.395, 439.795, "POWER: fear is normal taking power back", "A"),  # clean
@@ -54,8 +54,8 @@ EDIT = [
     (828.615, 835.933, "MUSIC: express feelings emotions", "A"),         # starts after leading um
     (1303.394, 1312.584, "NURSE: love so dearly had cancer", "B"),       # clean
     (1313.517, 1329.527, "NURSE: somebody understands you", "A"),        # clean
-    (680.163, 695.779, "CLOSE: stay confident be yourself", "A"),        # clean
-    (717.756, 720.009, "CLOSE: your journey is your journey", "A"),      # clean
+    (679.900, 695.779, "CLOSE: stay confident be yourself", "A"),        # 0.26s before 'would say'
+    (717.500, 720.009, "CLOSE: your journey is your journey", "A"),      # 0.25s before 'and'
     (721.120, 725.535, "CLOSE: break through anything", "B"),            # extended to 'life'
 ]
 
@@ -253,33 +253,42 @@ EDIT = intelligent_filler_removal(EDIT, ALL_WORDS)
 def enforce_breathing_room(edit_list, words, min_head=0.15, min_tail=0.35):
     """Ensure every segment has breathing room around spoken words.
     
-    No word should be clipped at the edge of a segment.
-    min_head: seconds before first word (default 0.15s)
-    min_tail: seconds after last word (default 0.35s)
+    Filters out filler words — only real content words set the boundaries.
+    Caps expansion to avoid pulling in words from adjacent sentences.
     """
+    filler_set = {"um", "uh", "ums", "uhs", "hmm", "mhm", "mmm", "ah", "hm", "mm"}
     adjusted = []
     fixes = 0
+    
     for (start, end, label, cam) in edit_list:
-        seg_words = [w for w in words if w["start"] >= start - 0.2 and w["end"] <= end + 0.2]
-        if not seg_words:
+        # Find words STRICTLY inside original segment boundaries
+        seg_words = [w for w in words if w["start"] >= start - 0.05 and w["end"] <= end + 0.05]
+        
+        # Filter to only real words (not fillers)
+        real_words = [w for w in seg_words if w["word"].lower().strip(".,!? ") not in filler_set]
+        
+        if not real_words:
             adjusted.append((start, end, label, cam))
             continue
         
-        first = seg_words[0]
-        last = seg_words[-1]
+        first = real_words[0]
+        last = real_words[-1]
         new_start = start
         new_end = end
         
-        # Fix head room
+        # Fix head room — push in-point earlier, but never more than 0.5s
         head_room = first["start"] - start
         if head_room < min_head:
             new_start = first["start"] - min_head
             fixes += 1
         
-        # Fix tail room
+        # Fix tail room — push out-point later, but never more than 0.5s past original
         tail_room = end - last["end"]
         if tail_room < min_tail:
             new_end = last["end"] + min_tail
+            # Cap: don't expand more than 0.5s past original out-point
+            max_end = end + 0.5
+            new_end = min(new_end, max_end)
             fixes += 1
         
         adjusted.append((new_start, new_end, label, cam))
