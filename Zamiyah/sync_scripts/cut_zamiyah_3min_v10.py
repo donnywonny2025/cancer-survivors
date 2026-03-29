@@ -42,18 +42,18 @@ EDIT = [
     (55.400, 62.010, "SIGNS: fatigued drained", "A"),                    # 0.32s before 'i was' — complete thought
     (132.890, 138.315, "MOMENT: always active dance", "A"),              # starts after um, ends complete
     (150.429, 155.485, "MOMENT: knew something wasn't right", "B"),      # clean
-    (83.100, 96.500, "PERSONALITY: dancing piano guitar", "A"),          # "Well, I enjoy dancing...person" — tight before 'i think'
+    (83.100, 97.100, "PERSONALITY: dancing piano guitar", "A"),          # "Well...very musical person" — person ends 96.76
     (256.837, 265.139, "COST: how much life you lose", "A"),             # clean
     (277.587, 281.500, "COST: confidence self-identity", "A"),           # "identity" ends 280.9 — needs room to breathe
     (429.395, 439.795, "POWER: fear is normal taking power back", "A"),  # clean
     (440.346, 455.715, "POWER: knowing is better", "B"),                 # fillers auto-handled
     (517.959, 522.787, "CHANGE: small days", "B"),                       # clean
-    (526.903, 534.535, "CHANGE: value rest joy people", "A"),            # ends on 'situation' not 'and'
+    (526.600, 534.535, "CHANGE: value rest joy people", "A"),            # starts before um@526.67, filler skipped to 'i learned'
     (547.070, 553.010, "CHANGE: grown as person", "A"),                  # extends to 'person'
     (821.920, 824.900, "MUSIC: write my own music", "A"),                # ends on 'well' — before um@825.7
     (828.615, 835.933, "MUSIC: express feelings emotions", "A"),         # starts after leading um
-    (1303.394, 1312.584, "NURSE: love so dearly had cancer", "B"),       # clean
-    (1313.517, 1329.527, "NURSE: somebody understands you", "A"),        # clean
+    (1303.394, 1312.500, "NURSE: love so dearly had cancer", "B"),       # ends on 'cancer' — 'before' is next sentence
+    (1313.517, 1329.800, "NURSE: somebody understands you", "A"),        # ends after 'you', before um@1330.2
     (679.900, 695.779, "CLOSE: stay confident be yourself", "A"),        # 0.26s before 'would say'
     (717.500, 720.009, "CLOSE: your journey is your journey", "A"),      # 0.25s before 'and'
     (721.120, 725.535, "CLOSE: break through anything", "B"),            # extended to 'life'
@@ -250,21 +250,24 @@ def intelligent_filler_removal(edit_list, words):
 ALL_WORDS = _load_words()
 EDIT = intelligent_filler_removal(EDIT, ALL_WORDS)
 
-def enforce_breathing_room(edit_list, words, min_head=0.15, min_tail=0.35):
-    """Ensure every segment has breathing room around spoken words.
+def enforce_breathing_room(edit_list, words, min_head=0.15, min_tail=0.20):
+    """Ensure every segment has clean head/tail with NO trailing word bleed.
     
-    Filters out filler words — only real content words set the boundaries.
-    Caps expansion to avoid pulling in words from adjacent sentences.
+    Rules:
+    1. TAIL: Out-point lands in the silence gap AFTER the last real word.
+       If the next word starts too close, pull the out-point back to the midpoint
+       of the gap. Never let a trailing word bleed into the clip.
+    2. HEAD: In-point lands in the silence gap BEFORE the first real word.
+       If the previous word ends too close, push the in-point to the midpoint
+       of the gap. Never clip the start of the first word.
     """
     filler_set = {"um", "uh", "ums", "uhs", "hmm", "mhm", "mmm", "ah", "hm", "mm"}
     adjusted = []
     fixes = 0
     
     for (start, end, label, cam) in edit_list:
-        # Find words STRICTLY inside original segment boundaries
+        # Find words inside segment boundaries
         seg_words = [w for w in words if w["start"] >= start - 0.05 and w["end"] <= end + 0.05]
-        
-        # Filter to only real words (not fillers)
         real_words = [w for w in seg_words if w["word"].lower().strip(".,!? ") not in filler_set]
         
         if not real_words:
@@ -276,25 +279,53 @@ def enforce_breathing_room(edit_list, words, min_head=0.15, min_tail=0.35):
         new_start = start
         new_end = end
         
-        # Fix head room — push in-point earlier, but never more than 0.5s
-        head_room = first["start"] - start
-        if head_room < min_head:
+        # === HEAD: place in-point before first real word ===
+        # Find the word BEFORE the first real word (could be outside segment)
+        prev_words = [w for w in words if w["end"] <= first["start"] and w["end"] > first["start"] - 1.0]
+        if prev_words:
+            prev_word = prev_words[-1]
+            gap_start = prev_word["end"]
+            gap_end = first["start"]
+            gap = gap_end - gap_start
+            # Place in-point in the middle of the gap, biased toward the first word
+            new_start = max(gap_start + 0.05, first["start"] - min_head)
+            # But never start after the first word
+            new_start = min(new_start, first["start"] - 0.08)
+        else:
             new_start = first["start"] - min_head
+        
+        if new_start != start:
             fixes += 1
         
-        # Fix tail room — push out-point later, but never more than 0.5s past original
-        tail_room = end - last["end"]
-        if tail_room < min_tail:
+        # === TAIL: place out-point after last real word, in the gap ===
+        # Find the word AFTER the last real word (could be outside segment)
+        next_words = [w for w in words if w["start"] >= last["end"] and w["start"] < last["end"] + 1.0]
+        if next_words:
+            next_word = next_words[0]
+            gap_start = last["end"]
+            gap_end = next_word["start"]
+            gap = gap_end - gap_start
+            
+            if gap >= min_tail:
+                # Plenty of gap — place out-point with desired breathing room
+                new_end = last["end"] + min_tail
+            else:
+                # Gap is tight — place out-point at the MIDPOINT of the gap
+                # This ensures we don't bleed into the next word
+                new_end = gap_start + (gap * 0.5)
+                # But give at least a tiny cushion after the word
+                new_end = max(new_end, last["end"] + 0.05)
+        else:
+            # No next word found — use default breathing room
             new_end = last["end"] + min_tail
-            # Cap: don't expand more than 0.5s past original out-point
-            max_end = end + 0.5
-            new_end = min(new_end, max_end)
+        
+        if new_end != end:
             fixes += 1
         
         adjusted.append((new_start, new_end, label, cam))
     
     if fixes:
-        print(f"\n🫁 BREATHING ROOM: Adjusted {fixes} tight edit points (min head={min_head}s, tail={min_tail}s)")
+        print(f"\n🫁 BREATHING ROOM: Adjusted {fixes} edit points (gap-aware, no trailing bleed)")
     return adjusted
 
 EDIT = enforce_breathing_room(EDIT, ALL_WORDS)
