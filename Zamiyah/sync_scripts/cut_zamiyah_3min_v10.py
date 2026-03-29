@@ -46,7 +46,7 @@ EDIT = [
     (256.837, 265.139, "COST: how much life you lose", "A"),             # What cancer takes from you
     (277.587, 281.222, "COST: confidence self-identity", "A"),           # Deeper cost
     (429.395, 439.795, "POWER: fear is normal taking power back", "A"),  # Empowerment
-    (440.346, 455.715, "POWER: knowing is better", "B"),                 # Knowledge > fear
+    (441.607, 455.715, "POWER: knowing is better", "B"),                 # Skip orphaned "And"
     (517.959, 522.837, "CHANGE: small days", "B"),                       # New perspective
     (526.903, 536.046, "CHANGE: value rest joy people", "A"),            # Tight to first word
     (547.472, 552.569, "CHANGE: grown as person", "A"),                  # Growth
