@@ -119,10 +119,10 @@ def remove_gaps(edit_list, words, threshold=GAP_THRESHOLD):
                 
                 if gap > threshold and ends_sentence:
                     # Complete thought + big gap = safe to split (filler in between)
-                    sub_end = sub_words[-1].get("end", sub_words[-1]["start"]) + 0.05
+                    sub_end = sub_words[-1].get("end", sub_words[-1]["start"]) + 0.10
                     cleaned.append((sub_start, sub_end, label, cam))
                     gaps_removed += 1
-                    sub_start = w["start"] - 0.05
+                    sub_start = w["start"] - 0.15
                     sub_words = []
             
             sub_words.append(w)
