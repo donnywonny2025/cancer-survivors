@@ -1,0 +1,1763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xmeml>
+<xmeml version="4">
+ <sequence>
+  <name>Vince 3min Narrative v1</name>
+  <duration>6304</duration>
+  <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+  <media>
+   <video>
+    <track>
+     <clipitem id="V1_clip_0">
+      <name>IDENTITY: name and diagnosis</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>0</start>
+      <end>146</end>
+      <in>2898</in>
+      <out>3044</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_1">
+      <name>IDENTITY: stage one to four</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>146</start>
+      <end>495</end>
+      <in>3112</in>
+      <out>3461</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_2">
+      <name>FAMILY: cancer runs in family</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>495</start>
+      <end>679</end>
+      <in>3516</in>
+      <out>3700</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_3">
+      <name>FAMILY: never thought I'd get it</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>679</start>
+      <end>962</end>
+      <in>5844</in>
+      <out>6127</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_4">
+      <name>DIAGNOSIS: blood tests PSA oh my god</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>962</start>
+      <end>1283</end>
+      <in>4626</in>
+      <out>4947</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_5">
+      <name>STAGE4: stay strong</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1283</start>
+      <end>1349</end>
+      <in>6989</in>
+      <out>7055</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_6">
+      <name>HOSPITAL: top notch</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1349</start>
+      <end>1480</end>
+      <in>8353</in>
+      <out>8484</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_7">
+      <name>NEUROPATHY: didn't expect</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1480</start>
+      <end>1580</end>
+      <in>10200</in>
+      <out>10300</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_8">
+      <name>NEUROPATHY: didn't expect</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1580</start>
+      <end>1911</end>
+      <in>10326</in>
+      <out>10657</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_9">
+      <name>NEUROPATHY: you wouldn't know</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1911</start>
+      <end>2083</end>
+      <in>11349</in>
+      <out>11521</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_10">
+      <name>FAMILY: they were bedridden</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2083</start>
+      <end>2242</end>
+      <in>11521</in>
+      <out>11680</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_11">
+      <name>FAMILY: they were bedridden</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2242</start>
+      <end>2471</end>
+      <in>11708</in>
+      <out>11937</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_12">
+      <name>POSITIVE: appreciate every day</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2471</start>
+      <end>2723</end>
+      <in>12864</in>
+      <out>13116</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_13">
+      <name>POSITIVE: appreciate every day</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2723</start>
+      <end>2966</end>
+      <in>13141</in>
+      <out>13384</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_14">
+      <name>GRIT: can't do buttons still move on</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2966</start>
+      <end>3050</end>
+      <in>13430</in>
+      <out>13514</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_15">
+      <name>GRIT: can't do buttons still move on</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3050</start>
+      <end>3483</end>
+      <in>13536</in>
+      <out>13969</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_16">
+      <name>SUPPORT: family celebrated life</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3483</start>
+      <end>3803</end>
+      <in>15284</in>
+      <out>15604</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_17">
+      <name>SUPPORT: family celebrated life</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3803</start>
+      <end>3859</end>
+      <in>15621</in>
+      <out>15677</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_18">
+      <name>ACTIVE: yoga twice a week</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3859</start>
+      <end>3884</end>
+      <in>16471</in>
+      <out>16496</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_19">
+      <name>ACTIVE: yoga twice a week</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3884</start>
+      <end>3983</end>
+      <in>16514</in>
+      <out>16613</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_20">
+      <name>ADVOCACY: talked him into chemo</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3983</start>
+      <end>4447</end>
+      <in>17947</in>
+      <out>18411</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_21">
+      <name>ADVOCACY: talked him into chemo</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4447</start>
+      <end>4654</end>
+      <in>18438</in>
+      <out>18645</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_22">
+      <name>ADVOCACY: body will tell you</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4654</start>
+      <end>4741</end>
+      <in>27103</in>
+      <out>27190</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_23">
+      <name>HOPE: never lose hope</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4741</start>
+      <end>4886</end>
+      <in>22274</in>
+      <out>22419</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_24">
+      <name>HOPE: brick walls as rest stops</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4886</start>
+      <end>5388</end>
+      <in>22699</in>
+      <out>23201</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_25">
+      <name>HOPE: stay positive even in pain</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5388</start>
+      <end>5567</end>
+      <in>23201</in>
+      <out>23380</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_26">
+      <name>HOPE: stay positive even in pain</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5567</start>
+      <end>5656</end>
+      <in>23402</in>
+      <out>23491</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_27">
+      <name>CLOSE: never give up</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5656</start>
+      <end>5742</end>
+      <in>24225</in>
+      <out>24311</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_28">
+      <name>CLOSE: never give up</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5742</start>
+      <end>6165</end>
+      <in>24374</in>
+      <out>24797</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V1_clip_29">
+      <name>CLOSE: live life never give up</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>6165</start>
+      <end>6304</end>
+      <in>24909</in>
+      <out>25048</out>
+      <file id="CamA_file">
+       <name>C9045.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/A%20Cam/C9045.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+    </track>
+    <track>
+     <clipitem id="V2_clip_0">
+      <name>IDENTITY: name and diagnosis</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>0</start>
+      <end>146</end>
+      <in>2898</in>
+      <out>3044</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_1">
+      <name>IDENTITY: stage one to four</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>146</start>
+      <end>495</end>
+      <in>3112</in>
+      <out>3461</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_2">
+      <name>FAMILY: cancer runs in family</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>495</start>
+      <end>679</end>
+      <in>3516</in>
+      <out>3700</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_3">
+      <name>FAMILY: never thought I'd get it</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>679</start>
+      <end>962</end>
+      <in>5844</in>
+      <out>6127</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_4">
+      <name>DIAGNOSIS: blood tests PSA oh my god</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>962</start>
+      <end>1283</end>
+      <in>4626</in>
+      <out>4947</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_5">
+      <name>STAGE4: stay strong</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1283</start>
+      <end>1349</end>
+      <in>6989</in>
+      <out>7055</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_6">
+      <name>HOSPITAL: top notch</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1349</start>
+      <end>1480</end>
+      <in>8353</in>
+      <out>8484</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_7">
+      <name>NEUROPATHY: didn't expect</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1480</start>
+      <end>1580</end>
+      <in>10200</in>
+      <out>10300</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_8">
+      <name>NEUROPATHY: didn't expect</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1580</start>
+      <end>1911</end>
+      <in>10326</in>
+      <out>10657</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_9">
+      <name>NEUROPATHY: you wouldn't know</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1911</start>
+      <end>2083</end>
+      <in>11349</in>
+      <out>11521</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_10">
+      <name>FAMILY: they were bedridden</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2083</start>
+      <end>2242</end>
+      <in>11521</in>
+      <out>11680</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_11">
+      <name>FAMILY: they were bedridden</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2242</start>
+      <end>2471</end>
+      <in>11708</in>
+      <out>11937</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_12">
+      <name>POSITIVE: appreciate every day</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2471</start>
+      <end>2723</end>
+      <in>12864</in>
+      <out>13116</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_13">
+      <name>POSITIVE: appreciate every day</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2723</start>
+      <end>2966</end>
+      <in>13141</in>
+      <out>13384</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_14">
+      <name>GRIT: can't do buttons still move on</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2966</start>
+      <end>3050</end>
+      <in>13430</in>
+      <out>13514</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_15">
+      <name>GRIT: can't do buttons still move on</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3050</start>
+      <end>3483</end>
+      <in>13536</in>
+      <out>13969</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_16">
+      <name>SUPPORT: family celebrated life</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3483</start>
+      <end>3803</end>
+      <in>15284</in>
+      <out>15604</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_17">
+      <name>SUPPORT: family celebrated life</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3803</start>
+      <end>3859</end>
+      <in>15621</in>
+      <out>15677</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_18">
+      <name>ACTIVE: yoga twice a week</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3859</start>
+      <end>3884</end>
+      <in>16471</in>
+      <out>16496</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_19">
+      <name>ACTIVE: yoga twice a week</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3884</start>
+      <end>3983</end>
+      <in>16514</in>
+      <out>16613</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_20">
+      <name>ADVOCACY: talked him into chemo</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3983</start>
+      <end>4447</end>
+      <in>17947</in>
+      <out>18411</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_21">
+      <name>ADVOCACY: talked him into chemo</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4447</start>
+      <end>4654</end>
+      <in>18438</in>
+      <out>18645</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_22">
+      <name>ADVOCACY: body will tell you</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4654</start>
+      <end>4741</end>
+      <in>27103</in>
+      <out>27190</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_23">
+      <name>HOPE: never lose hope</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4741</start>
+      <end>4886</end>
+      <in>22274</in>
+      <out>22419</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_24">
+      <name>HOPE: brick walls as rest stops</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4886</start>
+      <end>5388</end>
+      <in>22699</in>
+      <out>23201</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_25">
+      <name>HOPE: stay positive even in pain</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5388</start>
+      <end>5567</end>
+      <in>23201</in>
+      <out>23380</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_26">
+      <name>HOPE: stay positive even in pain</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5567</start>
+      <end>5656</end>
+      <in>23402</in>
+      <out>23491</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_27">
+      <name>CLOSE: never give up</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5656</start>
+      <end>5742</end>
+      <in>24225</in>
+      <out>24311</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_28">
+      <name>CLOSE: never give up</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5742</start>
+      <end>6165</end>
+      <in>24374</in>
+      <out>24797</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+     <clipitem id="V2_clip_29">
+      <name>CLOSE: live life never give up</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>6165</start>
+      <end>6304</end>
+      <in>24909</in>
+      <out>25048</out>
+      <file id="CamB_file">
+       <name>C8894.MP4</name>
+       <pathurl>file://localhost/Volumes/WORK%202TB/WORK%202026/Bronson%20Cancer%20Equity%20Project/Cancer%20Survivors/Vince/Footage/B%20Cam/C8894.MP4</pathurl>
+       <duration>33852</duration>
+       <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+       <media><video><duration>33852</duration></video><audio><channelcount>2</channelcount></audio></media>
+      </file>
+     </clipitem>
+    </track>
+   </video>
+   <audio>
+    <track>
+     <clipitem id="A1_clip_0">
+      <name>IDENTITY: name and diagnosis</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>0</start>
+      <end>146</end>
+      <in>2898</in>
+      <out>3044</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_1">
+      <name>IDENTITY: stage one to four</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>146</start>
+      <end>495</end>
+      <in>3112</in>
+      <out>3461</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_2">
+      <name>FAMILY: cancer runs in family</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>495</start>
+      <end>679</end>
+      <in>3516</in>
+      <out>3700</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_3">
+      <name>FAMILY: never thought I'd get it</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>679</start>
+      <end>962</end>
+      <in>5844</in>
+      <out>6127</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_4">
+      <name>DIAGNOSIS: blood tests PSA oh my god</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>962</start>
+      <end>1283</end>
+      <in>4626</in>
+      <out>4947</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_5">
+      <name>STAGE4: stay strong</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1283</start>
+      <end>1349</end>
+      <in>6989</in>
+      <out>7055</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_6">
+      <name>HOSPITAL: top notch</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1349</start>
+      <end>1480</end>
+      <in>8353</in>
+      <out>8484</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_7">
+      <name>NEUROPATHY: didn't expect</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1480</start>
+      <end>1580</end>
+      <in>10200</in>
+      <out>10300</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_8">
+      <name>NEUROPATHY: didn't expect</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1580</start>
+      <end>1911</end>
+      <in>10326</in>
+      <out>10657</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_9">
+      <name>NEUROPATHY: you wouldn't know</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1911</start>
+      <end>2083</end>
+      <in>11349</in>
+      <out>11521</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_10">
+      <name>FAMILY: they were bedridden</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2083</start>
+      <end>2242</end>
+      <in>11521</in>
+      <out>11680</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_11">
+      <name>FAMILY: they were bedridden</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2242</start>
+      <end>2471</end>
+      <in>11708</in>
+      <out>11937</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_12">
+      <name>POSITIVE: appreciate every day</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2471</start>
+      <end>2723</end>
+      <in>12864</in>
+      <out>13116</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_13">
+      <name>POSITIVE: appreciate every day</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2723</start>
+      <end>2966</end>
+      <in>13141</in>
+      <out>13384</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_14">
+      <name>GRIT: can't do buttons still move on</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2966</start>
+      <end>3050</end>
+      <in>13430</in>
+      <out>13514</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_15">
+      <name>GRIT: can't do buttons still move on</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3050</start>
+      <end>3483</end>
+      <in>13536</in>
+      <out>13969</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_16">
+      <name>SUPPORT: family celebrated life</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3483</start>
+      <end>3803</end>
+      <in>15284</in>
+      <out>15604</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_17">
+      <name>SUPPORT: family celebrated life</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3803</start>
+      <end>3859</end>
+      <in>15621</in>
+      <out>15677</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_18">
+      <name>ACTIVE: yoga twice a week</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3859</start>
+      <end>3884</end>
+      <in>16471</in>
+      <out>16496</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_19">
+      <name>ACTIVE: yoga twice a week</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3884</start>
+      <end>3983</end>
+      <in>16514</in>
+      <out>16613</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_20">
+      <name>ADVOCACY: talked him into chemo</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3983</start>
+      <end>4447</end>
+      <in>17947</in>
+      <out>18411</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_21">
+      <name>ADVOCACY: talked him into chemo</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4447</start>
+      <end>4654</end>
+      <in>18438</in>
+      <out>18645</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_22">
+      <name>ADVOCACY: body will tell you</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4654</start>
+      <end>4741</end>
+      <in>27103</in>
+      <out>27190</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_23">
+      <name>HOPE: never lose hope</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4741</start>
+      <end>4886</end>
+      <in>22274</in>
+      <out>22419</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_24">
+      <name>HOPE: brick walls as rest stops</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4886</start>
+      <end>5388</end>
+      <in>22699</in>
+      <out>23201</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_25">
+      <name>HOPE: stay positive even in pain</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5388</start>
+      <end>5567</end>
+      <in>23201</in>
+      <out>23380</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_26">
+      <name>HOPE: stay positive even in pain</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5567</start>
+      <end>5656</end>
+      <in>23402</in>
+      <out>23491</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_27">
+      <name>CLOSE: never give up</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5656</start>
+      <end>5742</end>
+      <in>24225</in>
+      <out>24311</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_28">
+      <name>CLOSE: never give up</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5742</start>
+      <end>6165</end>
+      <in>24374</in>
+      <out>24797</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A1_clip_29">
+      <name>CLOSE: live life never give up</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>6165</start>
+      <end>6304</end>
+      <in>24909</in>
+      <out>25048</out>
+      <file id="CamA_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+    </track>
+    <track>
+     <clipitem id="A2_clip_0">
+      <name>IDENTITY: name and diagnosis</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>0</start>
+      <end>146</end>
+      <in>2898</in>
+      <out>3044</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_1">
+      <name>IDENTITY: stage one to four</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>146</start>
+      <end>495</end>
+      <in>3112</in>
+      <out>3461</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_2">
+      <name>FAMILY: cancer runs in family</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>495</start>
+      <end>679</end>
+      <in>3516</in>
+      <out>3700</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_3">
+      <name>FAMILY: never thought I'd get it</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>679</start>
+      <end>962</end>
+      <in>5844</in>
+      <out>6127</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_4">
+      <name>DIAGNOSIS: blood tests PSA oh my god</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>962</start>
+      <end>1283</end>
+      <in>4626</in>
+      <out>4947</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_5">
+      <name>STAGE4: stay strong</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1283</start>
+      <end>1349</end>
+      <in>6989</in>
+      <out>7055</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_6">
+      <name>HOSPITAL: top notch</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1349</start>
+      <end>1480</end>
+      <in>8353</in>
+      <out>8484</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_7">
+      <name>NEUROPATHY: didn't expect</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1480</start>
+      <end>1580</end>
+      <in>10200</in>
+      <out>10300</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_8">
+      <name>NEUROPATHY: didn't expect</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1580</start>
+      <end>1911</end>
+      <in>10326</in>
+      <out>10657</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_9">
+      <name>NEUROPATHY: you wouldn't know</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>1911</start>
+      <end>2083</end>
+      <in>11349</in>
+      <out>11521</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_10">
+      <name>FAMILY: they were bedridden</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2083</start>
+      <end>2242</end>
+      <in>11521</in>
+      <out>11680</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_11">
+      <name>FAMILY: they were bedridden</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2242</start>
+      <end>2471</end>
+      <in>11708</in>
+      <out>11937</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_12">
+      <name>POSITIVE: appreciate every day</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2471</start>
+      <end>2723</end>
+      <in>12864</in>
+      <out>13116</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_13">
+      <name>POSITIVE: appreciate every day</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2723</start>
+      <end>2966</end>
+      <in>13141</in>
+      <out>13384</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_14">
+      <name>GRIT: can't do buttons still move on</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>2966</start>
+      <end>3050</end>
+      <in>13430</in>
+      <out>13514</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_15">
+      <name>GRIT: can't do buttons still move on</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3050</start>
+      <end>3483</end>
+      <in>13536</in>
+      <out>13969</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_16">
+      <name>SUPPORT: family celebrated life</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3483</start>
+      <end>3803</end>
+      <in>15284</in>
+      <out>15604</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_17">
+      <name>SUPPORT: family celebrated life</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3803</start>
+      <end>3859</end>
+      <in>15621</in>
+      <out>15677</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_18">
+      <name>ACTIVE: yoga twice a week</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3859</start>
+      <end>3884</end>
+      <in>16471</in>
+      <out>16496</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_19">
+      <name>ACTIVE: yoga twice a week</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3884</start>
+      <end>3983</end>
+      <in>16514</in>
+      <out>16613</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_20">
+      <name>ADVOCACY: talked him into chemo</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>3983</start>
+      <end>4447</end>
+      <in>17947</in>
+      <out>18411</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_21">
+      <name>ADVOCACY: talked him into chemo</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4447</start>
+      <end>4654</end>
+      <in>18438</in>
+      <out>18645</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_22">
+      <name>ADVOCACY: body will tell you</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4654</start>
+      <end>4741</end>
+      <in>27103</in>
+      <out>27190</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_23">
+      <name>HOPE: never lose hope</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4741</start>
+      <end>4886</end>
+      <in>22274</in>
+      <out>22419</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_24">
+      <name>HOPE: brick walls as rest stops</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>4886</start>
+      <end>5388</end>
+      <in>22699</in>
+      <out>23201</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_25">
+      <name>HOPE: stay positive even in pain</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5388</start>
+      <end>5567</end>
+      <in>23201</in>
+      <out>23380</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_26">
+      <name>HOPE: stay positive even in pain</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5567</start>
+      <end>5656</end>
+      <in>23402</in>
+      <out>23491</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_27">
+      <name>CLOSE: never give up</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5656</start>
+      <end>5742</end>
+      <in>24225</in>
+      <out>24311</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_28">
+      <name>CLOSE: never give up</name>
+      <enabled>FALSE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>5742</start>
+      <end>6165</end>
+      <in>24374</in>
+      <out>24797</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+     <clipitem id="A2_clip_29">
+      <name>CLOSE: live life never give up</name>
+      <enabled>TRUE</enabled>
+      <duration>33852</duration>
+      <rate><timebase>24</timebase><ntsc>TRUE</ntsc></rate>
+      <start>6165</start>
+      <end>6304</end>
+      <in>24909</in>
+      <out>25048</out>
+      <file id="CamB_file"/>
+      <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+     </clipitem>
+    </track>
+   </audio>
+  </media>
+ </sequence>
+</xmeml>
