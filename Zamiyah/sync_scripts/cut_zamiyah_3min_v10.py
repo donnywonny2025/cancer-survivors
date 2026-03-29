@@ -47,7 +47,7 @@ EDIT = [
     (277.587, 281.222, "COST: confidence self-identity", "A"),           # Deeper cost
     (429.395, 439.795, "POWER: fear is normal taking power back", "A"),  # Empowerment
     (441.607, 455.715, "POWER: knowing is better", "B"),                 # Skip orphaned "And"
-    (517.959, 522.837, "CHANGE: small days", "B"),                       # New perspective
+    (517.959, 522.787, "CHANGE: small days", "B"),                       # Tight out — cuts trailing um
     (526.903, 536.046, "CHANGE: value rest joy people", "A"),            # Tight to first word
     (547.472, 552.569, "CHANGE: grown as person", "A"),                  # Growth
     (821.965, 827.722, "MUSIC: write my own music", "A"),                # Creative outlet
@@ -70,10 +70,16 @@ EDIT = [
 GAP_THRESHOLD = 0.80  # seconds — natural pauses are 0.3-0.6s, fillers are 0.8s+
 
 def _load_words():
-    """Load word-level timestamps from WhisperX transcript."""
-    path = os.path.join(BASE, "Master_S34_Transcript_WhisperX.json")
+    """Load word-level timestamps — prefer Deepgram (has fillers) over WhisperX."""
+    # Deepgram transcript has 47 fillers; WhisperX has 1
+    dg_path = os.path.join(BASE, "Master_S34_Transcript_Deepgram.json")
+    wx_path = os.path.join(BASE, "Master_S34_Transcript_WhisperX.json")
+    
+    path = dg_path if os.path.exists(dg_path) else wx_path
     if not os.path.exists(path):
         return []
+    
+    source = "Deepgram" if "Deepgram" in path else "WhisperX"
     with open(path) as fp:
         data = json.load(fp)
     words = []
@@ -82,6 +88,7 @@ def _load_words():
             if "start" in w:
                 words.append(w)
     words.sort(key=lambda w: w["start"])
+    print(f"📝 Transcript: {source} ({len(words)} words)", flush=True)
     return words
 
 def remove_gaps(edit_list, words, threshold=GAP_THRESHOLD):
@@ -115,9 +122,11 @@ def remove_gaps(edit_list, words, threshold=GAP_THRESHOLD):
                 gap = w["start"] - sub_words[-1].get("end", sub_words[-1]["start"])
                 
                 # Only split if: gap is large AND previous word ends a sentence
+                # For very large gaps (>1.5s), split regardless — always a filler
                 ends_sentence = last_word.rstrip().endswith((".", "!", "?"))
+                large_gap = gap > 1.5  # 1.5s+ gap = always split
                 
-                if gap > threshold and ends_sentence:
+                if gap > threshold and (ends_sentence or large_gap):
                     # Complete thought + big gap = safe to split (filler in between)
                     sub_end = sub_words[-1].get("end", sub_words[-1]["start"]) + 0.10
                     cleaned.append((sub_start, sub_end, label, cam))
@@ -139,9 +148,35 @@ def remove_gaps(edit_list, words, threshold=GAP_THRESHOLD):
     
     return cleaned
 
-# Apply gap removal
+def trim_fillers(edit_list, words):
+    """Trim segment boundaries when filler words sit near edges.
+    Uses Deepgram transcript which has explicit filler timestamps."""
+    filler_set = {"um", "uh", "ums", "uhs", "hmm", "mhm", "mmm", "ah", "hm", "mm"}
+    fillers = [w for w in words if w["word"].lower().strip(".,!? ") in filler_set]
+    if not fillers:
+        return edit_list
+    
+    trimmed = []
+    trims_made = 0
+    for (start, end, label, cam) in edit_list:
+        new_end = end
+        # Check if a filler sits near the out-point (within 0.3s before end)
+        for f in fillers:
+            if start < f["start"] < end and f["start"] > end - 0.5:
+                # Filler near the tail — trim to just before it
+                new_end = f["start"] - 0.05
+                trims_made += 1
+                break
+        trimmed.append((start, new_end, label, cam))
+    
+    if trims_made:
+        print(f"\n✂️  FILLER TRIM: Trimmed {trims_made} trailing fillers")
+    return trimmed
+
+# Apply gap removal then filler trimming
 ALL_WORDS = _load_words()
 EDIT = remove_gaps(EDIT, ALL_WORDS)
+EDIT = trim_fillers(EDIT, ALL_WORDS)
 
 # ============================================================
 # Build using the PROVEN v34.2 L.append pattern
